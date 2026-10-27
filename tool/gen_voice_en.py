@@ -12,6 +12,7 @@ tool/pronunciation.json:
   ipa    — phonemes to speak instead of the English text
   text   — different text to speak (e.g. spelling out "T V")
   accept — extra transcriptions that count as correct (homophones)
+  voice, speed, form — use exactly this rendering instead of trying VARIANTS
 
 Only missing files are generated; --force regenerates, --only id1,id2 limits.
 
@@ -116,6 +117,9 @@ def main():
         o = overrides.get(id_, {})
         ok = cp.accepted(id_, expected)
         variants = WORD_VARIANTS if kind == "word" else SENTENCE_VARIANTS
+        if "voice" in o:
+            # A rendering chosen by hand after testing (see pronunciation.json).
+            variants = [(o["voice"], o.get("speed", 1.0), o.get("form", "{W}!"))]
         best = None
         for voice, speed, form in variants:
             samples, sr = render(kokoro, voice, speed, form, text=text_for(form, o.get("text", expected)), ipa=o.get("ipa"))

@@ -34,14 +34,20 @@
   "ipa": "ˈiː",
   "accept": [
    "e"
-  ]
+  ],
+  "voice": "af_heart",
+  "speed": 1.05,
+  "form": "{W}!"
  },
  "letter_f": {
-  "ipa": "ˈɛf",
+  "ipa": "ˈɛːf",
   "accept": [
    "f",
    "eff"
-  ]
+  ],
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
  },
  "letter_g": {
   "ipa": "dʒˈiː",
@@ -192,5 +198,106 @@
    "z",
    "zee"
   ]
+ },
+ "alphabet_25": {
+  "accept": [
+   "why is for yo yo"
+  ]
+ },
+ "phrases_1": {
+  "accept": [
+   "hello my name is sarah"
+  ]
+ },
+ "chick": {
+  "ipa": "tʃˈɪːk",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "croissant": {
+  "ipa": "kɹəsˈɑːnt",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "fish": {
+  "ipa": "ffˈɪʃ",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}."
+ },
+ "mirror": {
+  "ipa": "mˈɪɹəɹ",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "sofa": {
+  "ipa": "sˈoʊfɐ",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "scissors": {
+  "ipa": "sˈɪzɚz",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "calm": {
+  "ipa": "kˈɑːːm",
+  "voice": "af_heart",
+  "speed": 0.95,
+  "form": "{W}."
+ },
+ "fox": {
+  "ipa": "fˈɑːks",
+  "voice": "af_heart",
+  "speed": 1.05,
+  "form": "{W}!"
+ },
+ "olive": {
+  "ipa": "ˈɑlᵻv",
+  "voice": "af_heart",
+  "speed": 1.05,
+  "form": "{W}."
+ },
+ "mouth": {
+  "ipa": "mˈaʊθ",
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "peach": {
+  "ipa": "pˈiːtʃ",
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "peas": {
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}."
+ },
+ "tv": {
+  "text": "T.V.",
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{W}.",
+  "accept": [
+   "t v"
+  ]
+ },
+ "key": {
+  "accept": [
+   "q"
+  ],
+  "note": "Whisper writes the isolated word as the letter Q; Parakeet hears 'key' in every voice."
+ },
+ "body_4": {
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{w}"
  }
 }

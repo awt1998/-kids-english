@@ -1,0 +1,240 @@
+<title>مراجعة نطق لبيب</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700;800&family=Baloo+2:wght@600;700&display=swap">
+<style>
+  /* Layout: a sticky listening bar over unit sections; each unit is a grid of word tiles, then its sentences. */
+  :root {
+    --bg: #FFF8E7;
+    --surface: #FFFFFF;
+    --soft: #FFF1D6;
+    --ink: #2B2D42;
+    --ink-soft: #6B6F86;
+    --line: #E9DCC0;
+    --mint: #2EC4B6;
+    --mint-ink: #1E9C90;
+    --flag: #E8590C;
+    --flag-soft: #FFE8D6;
+    --font-ar: "Baloo Bhaijaan 2", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+    --font-en: "Baloo 2", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1E1F2B; --surface: #2A2C3B; --soft: #333548; --ink: #F4F1EA; --ink-soft: #B4B6C6;
+      --line: #3E4055; --mint: #36D3C4; --mint-ink: #7EE6DC; --flag: #FF8A3D; --flag-soft: #4A3324;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1E1F2B; --surface: #2A2C3B; --soft: #333548; --ink: #F4F1EA; --ink-soft: #B4B6C6;
+    --line: #3E4055; --mint: #36D3C4; --mint-ink: #7EE6DC; --flag: #FF8A3D; --flag-soft: #4A3324;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-ar); font-size: 16px; direction: rtl; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+  .wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 1100px; margin: 0 auto; }
+  header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 2px solid var(--line); }
+  header .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding-block: 12px; }
+  h1 { font-size: 24px; margin: 0; font-weight: 800; text-wrap: balance; }
+  .stat { font-size: 15px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .stat b { color: var(--flag); }
+  .spacer { flex: 1; }
+  .toggle { font: inherit; font-weight: 700; border: 2px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 16px; cursor: pointer; min-height: 44px; }
+  .toggle[aria-pressed="true"] { background: var(--flag-soft); border-color: var(--flag); color: var(--flag); }
+  .units-nav { display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; padding-block: 0 12px; scrollbar-width: thin; }
+  .units-nav a { flex: none; display: flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px 4px 6px; font-size: 14px; }
+  .units-nav img { width: 24px; height: 24px; }
+  .intro { color: var(--ink-soft); max-width: 65ch; line-height: 1.7; padding-block: 16px 4px; margin: 0; }
+  section { padding-block: 24px 8px; scroll-margin-top: 130px; }
+  .unit-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .unit-head img { width: 44px; height: 44px; }
+  .unit-head h2 { margin: 0; font-size: 22px; }
+  .unit-head .en { font-family: var(--font-en); color: var(--ink-soft); font-size: 15px; }
+  .play-all { font: inherit; font-weight: 700; background: var(--mint); color: #fff; border: 0; border-radius: 999px; padding: 6px 16px; cursor: pointer; min-height: 40px; }
+  .play-all[aria-pressed="true"] { background: var(--ink-soft); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .tile { background: var(--surface); border: 2px solid var(--line); border-radius: 18px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; }
+  .tile.flagged { border-color: var(--flag); background: var(--flag-soft); }
+  .tile.playing, .sent.playing { outline: 3px solid var(--mint); outline-offset: 2px; }
+  .tile img { width: 64px; height: 64px; }
+  .tile .word { font-family: var(--font-en); font-weight: 700; font-size: 22px; line-height: 1.1; direction: ltr; text-align: center; overflow-wrap: anywhere; }
+  .tile .ar { color: var(--ink-soft); font-size: 14px; text-align: center; }
+  .actions { display: flex; gap: 6px; margin-top: 4px; }
+  .btn { font: inherit; border: 0; border-radius: 12px; min-width: 44px; min-height: 40px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .btn.play { background: var(--mint); color: #fff; padding: 0 14px; }
+  .btn.flag { background: var(--soft); color: var(--ink-soft); padding: 0 10px; font-size: 13px; font-weight: 700; }
+  .flagged .btn.flag { background: var(--flag); color: #fff; }
+  .note { width: 100%; font: inherit; font-size: 13px; border: 1px solid var(--flag); border-radius: 10px; padding: 6px 8px; background: var(--surface); color: var(--ink); }
+  .sents { display: grid; gap: 8px; margin-top: 14px; }
+  .sent { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; background: var(--surface); border: 2px solid var(--line); border-radius: 14px; padding: 8px 10px; }
+  .sent.flagged { border-color: var(--flag); background: var(--flag-soft); }
+  .sent .text { min-width: 0; }
+  .sent .en { font-family: var(--font-en); font-weight: 600; font-size: 18px; direction: ltr; text-align: left; }
+  .sent .ar { color: var(--ink-soft); font-size: 14px; }
+  .sent .note { grid-column: 1 / -1; }
+  .hidden-by-filter { display: none !important; }
+  .notice { background: var(--soft); border-radius: 12px; padding: 10px 14px; color: var(--ink-soft); font-size: 14px; }
+  :focus-visible { outline: 3px solid var(--mint-ink); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  @media (max-width: 480px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } h1 { font-size: 20px; } }
+</style>
+
+<header>
+  <div class="wrap bar">
+    <h1>مراجعة نطق لبيب</h1>
+    <span class="stat" id="stat"></span>
+    <span class="spacer"></span>
+    <button class="toggle" id="filter" type="button" aria-pressed="false">المعلَّم فقط</button>
+  </div>
+  <nav class="wrap units-nav" id="nav" aria-label="الوحدات"></nav>
+</header>
+
+<main class="wrap">
+  <p class="intro">اضغط ▶ لتسمع الكلمة، أو «شغّل الوحدة» لتسمع كلماتها واحدة بعد الأخرى. إذا سمعت نطقاً غير صحيح اضغط «غلط» واكتب ملاحظتك إن أردت. علاماتك تُحفظ تلقائياً وأقرؤها أنا لأصلح الكلمات.</p>
+  <p class="notice" id="storeNote" hidden></p>
+  <div id="units"></div>
+</main>
+
+<script>
+const UNITS = /*__DATA__*/null;
+const flags = new Map();          // id -> {note}
+let db = null, flagsCol = null;
+const player = new Audio();
+let queue = [], queueBtn = null;
+
+const $ = (sel, el = document) => el.querySelector(sel);
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
+  }
+  for (const k of kids) if (k) e.append(k);
+  return e;
+}
+
+function clearPlaying() { document.querySelectorAll(".playing").forEach(n => n.classList.remove("playing")); }
+function play(item, node) {
+  clearPlaying();
+  node?.classList.add("playing");
+  player.src = item.audio;
+  player.play().catch(() => {});
+}
+player.addEventListener("ended", () => {
+  clearPlaying();
+  if (queue.length) { const [item, node] = queue.shift(); node.scrollIntoView({ block: "nearest", behavior: "smooth" }); setTimeout(() => play(item, node), 350); }
+  else if (queueBtn) { queueBtn.setAttribute("aria-pressed", "false"); queueBtn.textContent = "▶ شغّل الوحدة"; queueBtn = null; }
+});
+
+function itemNode(item, kind, unit) {
+  const isWord = kind === "word";
+  const node = el("div", { class: isWord ? "tile" : "sent", "data-id": item.id });
+  const playBtn = el("button", { class: "btn play", type: "button", "aria-label": "استمع: " + item.en, text: "▶" });
+  playBtn.onclick = () => { queue = []; play(item, node); };
+  const flagBtn = el("button", { class: "btn flag", type: "button", "aria-pressed": "false", text: "غلط؟" });
+  flagBtn.onclick = () => toggleFlag(item, kind, unit, node);
+  const note = el("input", { class: "note", id: "note-" + item.id, type: "text", placeholder: "ملاحظة (اختياري)", hidden: "" });
+  let timer;
+  note.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => saveNote(item, kind, unit, note.value), 800); });
+  if (isWord) {
+    node.append(el("img", { src: item.img, alt: "" }), el("div", { class: "word", text: item.en }), el("div", { class: "ar", text: item.ar }),
+      el("div", { class: "actions" }, playBtn, flagBtn), note);
+  } else {
+    const text = el("div", { class: "text" }, el("div", { class: "en", text: item.en }), el("div", { class: "ar", text: item.ar }));
+    node.append(playBtn, text, flagBtn, note);
+  }
+  node._item = item;
+  return node;
+}
+
+function render() {
+  const nav = $("#nav"), root = $("#units");
+  for (const u of UNITS) {
+    const a = el("a", { href: "#u-" + u.id }, el("img", { src: u.icon, alt: "" }), document.createTextNode(u.ar));
+    nav.append(a);
+    const sec = el("section", { id: "u-" + u.id });
+    const all = el("button", { class: "play-all", type: "button", "aria-pressed": "false", text: "▶ شغّل الوحدة" });
+    sec.append(el("div", { class: "unit-head" }, el("img", { src: u.icon, alt: "" }), el("h2", { text: u.ar }), el("span", { class: "en", text: u.en }), all));
+    const grid = el("div", { class: "grid" });
+    u.words.forEach(w => grid.append(itemNode(w, "word", u.id)));
+    const sents = el("div", { class: "sents" });
+    u.sentences.forEach(s => sents.append(itemNode(s, "sentence", u.id)));
+    sec.append(grid, sents);
+    all.onclick = () => {
+      if (queueBtn === all) { queue = []; player.pause(); clearPlaying(); all.setAttribute("aria-pressed", "false"); all.textContent = "▶ شغّل الوحدة"; queueBtn = null; return; }
+      if (queueBtn) { queueBtn.setAttribute("aria-pressed", "false"); queueBtn.textContent = "▶ شغّل الوحدة"; }
+      queueBtn = all; all.setAttribute("aria-pressed", "true"); all.textContent = "■ إيقاف";
+      queue = [...sec.querySelectorAll("[data-id]")].filter(n => !n.classList.contains("hidden-by-filter")).map(n => [n._item, n]);
+      const [item, node] = queue.shift(); play(item, node);
+    };
+    root.append(sec);
+  }
+  updateStat();
+}
+
+function paintFlags() {
+  document.querySelectorAll("[data-id]").forEach(n => {
+    const f = flags.get(n.dataset.id);
+    n.classList.toggle("flagged", !!f);
+    const btn = $(".btn.flag", n), note = $(".note", n);
+    btn.setAttribute("aria-pressed", f ? "true" : "false");
+    btn.textContent = f ? "معلَّم ✓" : "غلط؟";
+    note.hidden = !f;
+    if (f && document.activeElement !== note) note.value = f.note || "";
+  });
+  applyFilter();
+  updateStat();
+}
+
+function updateStat() {
+  const words = UNITS.reduce((a, u) => a + u.words.length, 0), sents = UNITS.reduce((a, u) => a + u.sentences.length, 0);
+  $("#stat").innerHTML = "";
+  $("#stat").append(document.createTextNode(`${words} كلمة · ${sents} جملة · `), el("b", { text: `${flags.size} معلَّم` }));
+}
+
+function applyFilter() {
+  const only = $("#filter").getAttribute("aria-pressed") === "true";
+  document.querySelectorAll("[data-id]").forEach(n => n.classList.toggle("hidden-by-filter", only && !flags.has(n.dataset.id)));
+  document.querySelectorAll("section").forEach(s => s.classList.toggle("hidden-by-filter", only && !s.querySelector("[data-id]:not(.hidden-by-filter)")));
+}
+$("#filter").onclick = () => {
+  const b = $("#filter"); b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); applyFilter();
+};
+
+async function toggleFlag(item, kind, unit) {
+  if (flags.has(item.id)) {
+    flags.delete(item.id); paintFlags();
+    if (flagsCol) await flagsCol.doc(item.id).delete().catch(storeError);
+  } else {
+    const body = { kind, unit, en: item.en, ar: item.ar, note: "", at: new Date().toISOString() };
+    flags.set(item.id, body); paintFlags();
+    $("#note-" + CSS.escape(item.id))?.focus();
+    if (flagsCol) await flagsCol.doc(item.id).set(body).catch(storeError);
+  }
+}
+async function saveNote(item, kind, unit, note) {
+  const f = flags.get(item.id); if (!f) return;
+  const body = { ...f, note };
+  flags.set(item.id, body);
+  if (flagsCol) await flagsCol.doc(item.id).set(body).catch(storeError);
+}
+function storeError(e) {
+  const n = $("#storeNote"); n.hidden = false;
+  n.textContent = "تعذّر حفظ العلامة الآن (" + (e && e.code || "خطأ") + "). أعد المحاولة بعد قليل.";
+}
+
+render();
+(async () => {
+  db = await window.claude?.use?.("db");
+  if (!db) {
+    const n = $("#storeNote"); n.hidden = false;
+    n.textContent = "الحفظ غير متاح في هذا العرض: يمكنك الاستماع، لكن العلامات لن تُحفظ. افتح الصفحة وأنت مسجّل الدخول.";
+    return;
+  }
+  flagsCol = db.collection("flags");
+  flagsCol.onSnapshot(snap => {
+    flags.clear();
+    snap.docs.forEach(d => { if (d.exists) flags.set(d.id, d.data()); });
+    paintFlags();
+  }, storeError);
+})();
+</script>

@@ -530,6 +530,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "autumn": {
+  "expected": "autumn",
+  "heard": {
+   "parakeet": "Autumn",
+   "whisper": "Autumn"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "avocado": {
   "expected": "avocado",
   "heard": {
@@ -749,11 +758,11 @@
  "body_4": {
   "expected": "I eat with my mouth.",
   "heard": {
-   "parakeet": "I eat with my mouse.",
-   "whisper": "I eat with my mouse."
+   "parakeet": "I eat with my mouth.",
+   "whisper": "I eat with my mouth."
   },
-  "ok": false,
-  "variant": "af_heart 0.9 {w}"
+  "ok": true,
+  "variant": "af_aoede 1.0 {w}"
  },
  "body_5": {
   "expected": "I brush my teeth.",
@@ -845,6 +854,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "broccoli": {
+  "expected": "broccoli",
+  "heard": {
+   "parakeet": "Broccoli",
+   "whisper": "Broccoli"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "broom": {
   "expected": "broom",
   "heard": {
@@ -926,6 +944,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "cactus": {
+  "expected": "cactus",
+  "heard": {
+   "parakeet": "Cactus",
+   "whisper": "cactus"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "cake": {
   "expected": "cake",
   "heard": {
@@ -938,11 +965,11 @@
  "calm": {
   "expected": "calm",
   "heard": {
-   "parakeet": "Come",
-   "whisper": "com"
+   "parakeet": "Calm",
+   "whisper": "calm"
   },
-  "ok": false,
-  "variant": "af_heart 1.0 {W}!"
+  "ok": true,
+  "variant": "af_heart 0.95 {W}."
  },
  "camel": {
   "expected": "camel",
@@ -976,6 +1003,15 @@
   "heard": {
    "parakeet": "Car",
    "whisper": "car"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "carrot": {
+  "expected": "carrot",
+  "heard": {
+   "parakeet": "Carrot",
+   "whisper": "carrot"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -1037,10 +1073,10 @@
  "chick": {
   "expected": "chick",
   "heard": {
-   "parakeet": "Shake.",
-   "whisper": "Check"
+   "parakeet": "Chick",
+   "whisper": "chick"
   },
-  "ok": false,
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "chicken": {
@@ -1075,6 +1111,24 @@
   "heard": {
    "parakeet": "City",
    "whisper": "City"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "clap": {
+  "expected": "clap",
+  "heard": {
+   "parakeet": "Clap.",
+   "whisper": "Clap"
+  },
+  "ok": true,
+  "variant": "af_bella 1.0 {W}!"
+ },
+ "climb": {
+  "expected": "climb",
+  "heard": {
+   "parakeet": "Climb",
+   "whisper": "Climb"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -1150,6 +1204,15 @@
   },
   "ok": true,
   "variant": "af_heart 0.9 {w}"
+ },
+ "cloud": {
+  "expected": "cloud",
+  "heard": {
+   "parakeet": "Cloud",
+   "whisper": "Cloud"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
  },
  "coat": {
   "expected": "coat",
@@ -1259,6 +1322,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "cook": {
+  "expected": "cook",
+  "heard": {
+   "parakeet": "Cook",
+   "whisper": "cook"
+  },
+  "ok": true,
+  "variant": "af_bella 1.0 {W}!"
+ },
  "cookie": {
   "expected": "cookie",
   "heard": {
@@ -1276,6 +1348,15 @@
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}."
+ },
+ "corn": {
+  "expected": "corn",
+  "heard": {
+   "parakeet": "Corn",
+   "whisper": "corn"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
  },
  "cow": {
   "expected": "cow",
@@ -1325,10 +1406,28 @@
  "croissant": {
   "expected": "croissant",
   "heard": {
-   "parakeet": "Quasi",
-   "whisper": "quasi"
+   "parakeet": "Croissant",
+   "whisper": "croissant"
   },
-  "ok": false,
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "cry": {
+  "expected": "cry",
+  "heard": {
+   "parakeet": "Cry",
+   "whisper": "Cry"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "cucumber": {
+  "expected": "cucumber",
+  "heard": {
+   "parakeet": "Cucumber",
+   "whisper": "Cucumber"
+  },
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "cup": {
@@ -1502,6 +1601,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "drink": {
+  "expected": "drink",
+  "heard": {
+   "parakeet": "Drink",
+   "whisper": "drink"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "duck": {
   "expected": "duck",
   "heard": {
@@ -1529,11 +1637,29 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "eat": {
+  "expected": "eat",
+  "heard": {
+   "parakeet": "Eat",
+   "whisper": "eat"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "egg": {
   "expected": "egg",
   "heard": {
    "parakeet": "Egg",
    "whisper": "egg"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "eggplant": {
+  "expected": "eggplant",
+  "heard": {
+   "parakeet": "Eggplant",
+   "whisper": "eggplant"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -1785,9 +1911,18 @@
   "expected": "fish",
   "heard": {
    "parakeet": "Fish",
-   "whisper": "Vessi"
+   "whisper": "fish"
   },
-  "ok": false,
+  "ok": true,
+  "variant": "af_heart 1.0 {W}."
+ },
+ "flower": {
+  "expected": "flower",
+  "heard": {
+   "parakeet": "Flower",
+   "whisper": "Flower"
+  },
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "fly": {
@@ -1795,6 +1930,15 @@
   "heard": {
    "parakeet": "Fly",
    "whisper": "Fly"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "fog": {
+  "expected": "fog",
+  "heard": {
+   "parakeet": "Fog",
+   "whisper": "fog"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -1892,11 +2036,11 @@
  "fox": {
   "expected": "fox",
   "heard": {
-   "parakeet": "Vox.",
-   "whisper": "Vox"
+   "parakeet": "Fox.",
+   "whisper": "Fox"
   },
-  "ok": false,
-  "variant": "af_heart 1.0 {W}!"
+  "ok": true,
+  "variant": "af_heart 1.05 {W}!"
  },
  "friday": {
   "expected": "Friday",
@@ -1996,6 +2140,15 @@
   },
   "ok": true,
   "variant": "af_heart 0.9 {w}"
+ },
+ "garlic": {
+  "expected": "garlic",
+  "heard": {
+   "parakeet": "Garlic",
+   "whisper": "Garlic"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
  },
  "giraffe": {
   "expected": "giraffe",
@@ -2516,8 +2669,17 @@
    "parakeet": "Key",
    "whisper": "q"
   },
-  "ok": false,
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
+ },
+ "kick": {
+  "expected": "kick",
+  "heard": {
+   "parakeet": "Kick",
+   "whisper": "kick"
+  },
+  "ok": true,
+  "variant": "af_bella 1.0 {W}!"
  },
  "kite": {
   "expected": "kite",
@@ -2563,6 +2725,24 @@
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
+ },
+ "laugh": {
+  "expected": "laugh",
+  "heard": {
+   "parakeet": "Laugh.",
+   "whisper": "laugh"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "leaf": {
+  "expected": "leaf",
+  "heard": {
+   "parakeet": "Leaf",
+   "whisper": "leaf"
+  },
+  "ok": true,
+  "variant": "af_bella 1.0 {W}!"
  },
  "leg": {
   "expected": "leg",
@@ -2630,19 +2810,19 @@
  "letter_e": {
   "expected": "E",
   "heard": {
-   "parakeet": "A",
-   "whisper": "a"
+   "parakeet": "E",
+   "whisper": "e"
   },
-  "ok": false,
-  "variant": "af_heart 1.0 {W}!"
+  "ok": true,
+  "variant": "af_heart 1.05 {W}!"
  },
  "letter_f": {
   "expected": "F",
   "heard": {
-   "parakeet": "S",
-   "whisper": "S"
+   "parakeet": "F",
+   "whisper": "F"
   },
-  "ok": false,
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "letter_g": {
@@ -2825,6 +3005,24 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "lettuce": {
+  "expected": "lettuce",
+  "heard": {
+   "parakeet": "Lettuce",
+   "whisper": "Lettuce"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "lightning": {
+  "expected": "lightning",
+  "heard": {
+   "parakeet": "Lightning",
+   "whisper": "Lightning"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "lion": {
   "expected": "lion",
   "heard": {
@@ -2918,10 +3116,10 @@
  "mirror": {
   "expected": "mirror",
   "heard": {
-   "parakeet": "Mira",
-   "whisper": "Mira"
+   "parakeet": "Mirror",
+   "whisper": "mirror"
   },
-  "ok": false,
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "mom": {
@@ -2996,6 +3194,15 @@
   "ok": true,
   "variant": "af_heart 0.9 {w}"
  },
+ "moon": {
+  "expected": "moon",
+  "heard": {
+   "parakeet": "Moon",
+   "whisper": "Moon"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "mosquito": {
   "expected": "mosquito",
   "heard": {
@@ -3014,6 +3221,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "mountain": {
+  "expected": "mountain",
+  "heard": {
+   "parakeet": "Mountain",
+   "whisper": "mountain"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "mouse": {
   "expected": "mouse",
   "heard": {
@@ -3026,10 +3242,19 @@
  "mouth": {
   "expected": "mouth",
   "heard": {
-   "parakeet": "Mouse",
-   "whisper": "mouse"
+   "parakeet": "Mouth",
+   "whisper": "Mouth"
   },
-  "ok": false,
+  "ok": true,
+  "variant": "af_aoede 1.0 {W}!"
+ },
+ "mushroom": {
+  "expected": "mushroom",
+  "heard": {
+   "parakeet": "Mushroom",
+   "whisper": "mushroom"
+  },
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "no": {
@@ -3359,10 +3584,19 @@
  "olive": {
   "expected": "olive",
   "heard": {
-   "parakeet": "Olives",
-   "whisper": "Olives"
+   "parakeet": "Olive",
+   "whisper": "Olive"
   },
-  "ok": false,
+  "ok": true,
+  "variant": "af_heart 1.05 {W}."
+ },
+ "onion": {
+  "expected": "onion",
+  "heard": {
+   "parakeet": "Onion",
+   "whisper": "onion"
+  },
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "orange": {
@@ -3400,6 +3634,15 @@
   },
   "ok": true,
   "variant": "af_bella 1.0 {W}!"
+ },
+ "palm_tree": {
+  "expected": "palm tree",
+  "heard": {
+   "parakeet": "Palm tree",
+   "whisper": "Palm tree"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
  },
  "pancakes": {
   "expected": "pancakes",
@@ -3458,11 +3701,11 @@
  "peach": {
   "expected": "peach",
   "heard": {
-   "parakeet": "Peter",
-   "whisper": "Peter"
+   "parakeet": "Peach",
+   "whisper": "Peach."
   },
-  "ok": false,
-  "variant": "af_heart 1.0 {W}!"
+  "ok": true,
+  "variant": "af_aoede 1.0 {W}!"
  },
  "peanuts": {
   "expected": "peanuts",
@@ -3481,6 +3724,15 @@
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
+ },
+ "peas": {
+  "expected": "peas",
+  "heard": {
+   "parakeet": "P's",
+   "whisper": "Peas"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}."
  },
  "pen": {
   "expected": "pen",
@@ -3505,6 +3757,15 @@
   "heard": {
    "parakeet": "Penguin",
    "whisper": "penguin"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "pepper": {
+  "expected": "pepper",
+  "heard": {
+   "parakeet": "Pepper",
+   "whisper": "Pepper"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -3716,6 +3977,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "potato": {
+  "expected": "potato",
+  "heard": {
+   "parakeet": "Potato",
+   "whisper": "Potato"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "purple": {
   "expected": "purple",
   "heard": {
@@ -3739,6 +4009,33 @@
   "heard": {
    "parakeet": "Rabbit",
    "whisper": "Rabbit"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "rain": {
+  "expected": "rain",
+  "heard": {
+   "parakeet": "Rain",
+   "whisper": "Rain"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "rainbow": {
+  "expected": "rainbow",
+  "heard": {
+   "parakeet": "Rainbow",
+   "whisper": "Rainbow"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "read": {
+  "expected": "read",
+  "heard": {
+   "parakeet": "Read",
+   "whisper": "Read"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -3779,11 +4076,29 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "ride": {
+  "expected": "ride",
+  "heard": {
+   "parakeet": "Ride",
+   "whisper": "Ride"
+  },
+  "ok": true,
+  "variant": "af_heart 0.95 {W}!"
+ },
  "robot": {
   "expected": "robot",
   "heard": {
    "parakeet": "Robot",
    "whisper": "Robot"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "rock": {
+  "expected": "rock",
+  "heard": {
+   "parakeet": "Rock",
+   "whisper": "rock"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -3811,6 +4126,15 @@
   "heard": {
    "parakeet": "Ruler",
    "whisper": "ruler"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "run": {
+  "expected": "run",
+  "heard": {
+   "parakeet": "Run",
+   "whisper": "Run"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -3971,10 +4295,10 @@
  "scissors": {
   "expected": "scissors",
   "heard": {
-   "parakeet": "Sisters",
+   "parakeet": "Scissors",
    "whisper": "scissors"
   },
-  "ok": false,
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "scooter": {
@@ -3982,6 +4306,15 @@
   "heard": {
    "parakeet": "Scooter",
    "whisper": "Scooter"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "sea": {
+  "expected": "sea",
+  "heard": {
+   "parakeet": "C",
+   "whisper": "C."
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -4193,6 +4526,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "sleep": {
+  "expected": "sleep",
+  "heard": {
+   "parakeet": "Sleep.",
+   "whisper": "sleep"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "slide": {
   "expected": "slide",
   "heard": {
@@ -4220,6 +4562,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "snow": {
+  "expected": "snow",
+  "heard": {
+   "parakeet": "Snow",
+   "whisper": "snow"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "soap": {
   "expected": "soap",
   "heard": {
@@ -4242,9 +4593,9 @@
   "expected": "sofa",
   "heard": {
    "parakeet": "Sofa",
-   "whisper": "Sulfur"
+   "whisper": "Sofa"
   },
-  "ok": false,
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "sorry": {
@@ -4328,6 +4679,15 @@
   "ok": true,
   "variant": "af_heart 0.9 {w}"
  },
+ "spring": {
+  "expected": "spring",
+  "heard": {
+   "parakeet": "Spring",
+   "whisper": "spring"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "square": {
   "expected": "square",
   "heard": {
@@ -4347,6 +4707,15 @@
   "variant": "af_heart 1.0 {W}!"
  },
  "star": {
+  "expected": "star",
+  "heard": {
+   "parakeet": "Star",
+   "whisper": "star"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "star_sky": {
   "expected": "star",
   "heard": {
    "parakeet": "Star",
@@ -4391,6 +4760,24 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "summer": {
+  "expected": "summer",
+  "heard": {
+   "parakeet": "Summer",
+   "whisper": "Summer"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "sun": {
+  "expected": "sun",
+  "heard": {
+   "parakeet": "Son",
+   "whisper": "Sun"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "sunday": {
   "expected": "Sunday",
   "heard": {
@@ -4405,6 +4792,15 @@
   "heard": {
    "parakeet": "Surprised.",
    "whisper": "Surprised"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "swim": {
+  "expected": "swim",
+  "heard": {
+   "parakeet": "Swim",
+   "whisper": "Swim"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -4481,6 +4877,15 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "think": {
+  "expected": "think",
+  "heard": {
+   "parakeet": "Think.",
+   "whisper": "Think"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "thursday": {
   "expected": "Thursday",
   "heard": {
@@ -4504,6 +4909,15 @@
   "heard": {
    "parakeet": "Tired",
    "whisper": "Tired"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "tomato": {
+  "expected": "tomato",
+  "heard": {
+   "parakeet": "Tomato",
+   "whisper": "tomato"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -4616,6 +5030,87 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "transport_1": {
+  "expected": "We go to school by bus.",
+  "heard": {
+   "parakeet": "We go to school by bus.",
+   "whisper": "We go to school by bus."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_2": {
+  "expected": "The car is fast.",
+  "heard": {
+   "parakeet": "The car is fast.",
+   "whisper": "The car is fast."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_3": {
+  "expected": "The airplane can fly.",
+  "heard": {
+   "parakeet": "The airplane can fly.",
+   "whisper": "The airplane can fly."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_4": {
+  "expected": "I ride my bicycle.",
+  "heard": {
+   "parakeet": "I ride my bicycle.",
+   "whisper": "I ride my bicycle."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_5": {
+  "expected": "The train is long.",
+  "heard": {
+   "parakeet": "The train is long.",
+   "whisper": "The train is long."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_6": {
+  "expected": "The boat is on the water.",
+  "heard": {
+   "parakeet": "The boat is on the water.",
+   "whisper": "The boat is on the water."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_7": {
+  "expected": "The fire truck is red.",
+  "heard": {
+   "parakeet": "The fire truck is red.",
+   "whisper": "The fire truck is red."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "transport_8": {
+  "expected": "The rocket goes to the moon.",
+  "heard": {
+   "parakeet": "The rocket goes to the moon.",
+   "whisper": "The rocket goes to the moon."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "tree": {
+  "expected": "tree",
+  "heard": {
+   "parakeet": "Tree",
+   "whisper": "tree"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "triangle": {
   "expected": "triangle",
   "heard": {
@@ -4655,10 +5150,19 @@
  "tv": {
   "expected": "TV",
   "heard": {
-   "parakeet": "T V A",
-   "whisper": "TVA"
+   "parakeet": "T V",
+   "whisper": "TV"
   },
-  "ok": false,
+  "ok": true,
+  "variant": "af_aoede 1.0 {W}."
+ },
+ "umbrella": {
+  "expected": "umbrella",
+  "heard": {
+   "parakeet": "Umbrella",
+   "whisper": "Umbrella"
+  },
+  "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
  "van": {
@@ -4670,6 +5174,159 @@
   "ok": true,
   "variant": "af_heart 0.9 {W}."
  },
+ "vegetables_1": {
+  "expected": "The carrot is orange.",
+  "heard": {
+   "parakeet": "The carrot is orange.",
+   "whisper": "The carrot is orange."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_2": {
+  "expected": "The tomato is red.",
+  "heard": {
+   "parakeet": "The tomato is red.",
+   "whisper": "The tomato is red."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_3": {
+  "expected": "I like potatoes.",
+  "heard": {
+   "parakeet": "I like potatoes.",
+   "whisper": "I like potatoes."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_4": {
+  "expected": "The cucumber is green.",
+  "heard": {
+   "parakeet": "The cucumber is green.",
+   "whisper": "The cucumber is green."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_5": {
+  "expected": "Corn is yellow.",
+  "heard": {
+   "parakeet": "Corn is yellow.",
+   "whisper": "Corn is yellow."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_6": {
+  "expected": "I eat my vegetables.",
+  "heard": {
+   "parakeet": "I eat my vegetables.",
+   "whisper": "I eat my vegetables."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_7": {
+  "expected": "The onion is round.",
+  "heard": {
+   "parakeet": "The onion is round.",
+   "whisper": "The onion is round."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "vegetables_8": {
+  "expected": "Broccoli is good for you.",
+  "heard": {
+   "parakeet": "Broccoli is good for you.",
+   "whisper": "Broccoli is good for you."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_1": {
+  "expected": "I can run fast.",
+  "heard": {
+   "parakeet": "I can run fast.",
+   "whisper": "I can run fast."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_2": {
+  "expected": "Fish swim in the sea.",
+  "heard": {
+   "parakeet": "Fish swim in the sea.",
+   "whisper": "Fish swim in the sea."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_3": {
+  "expected": "I sleep at night.",
+  "heard": {
+   "parakeet": "I sleep at night.",
+   "whisper": "I sleep at night."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_4": {
+  "expected": "I eat my lunch.",
+  "heard": {
+   "parakeet": "I eat my lunch.",
+   "whisper": "I eat my lunch."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_5": {
+  "expected": "I drink water.",
+  "heard": {
+   "parakeet": "I drink water.",
+   "whisper": "I drink water."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_6": {
+  "expected": "I read every day.",
+  "heard": {
+   "parakeet": "I read every day.",
+   "whisper": "I read every day."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_7": {
+  "expected": "Clap your hands!",
+  "heard": {
+   "parakeet": "Clap your hands.",
+   "whisper": "Clap your hands."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "verbs_8": {
+  "expected": "Mom cooks dinner.",
+  "heard": {
+   "parakeet": "Mom cooks dinner.",
+   "whisper": "Mom cooks dinner."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "volcano": {
+  "expected": "volcano",
+  "heard": {
+   "parakeet": "Volcano",
+   "whisper": "Volcano"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "volleyball": {
   "expected": "volleyball",
   "heard": {
@@ -4678,6 +5335,15 @@
   },
   "ok": true,
   "variant": "af_heart 0.95 {W}!"
+ },
+ "walk": {
+  "expected": "walk",
+  "heard": {
+   "parakeet": "Walk.",
+   "whisper": "walk"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
  },
  "water": {
   "expected": "water",
@@ -4696,6 +5362,78 @@
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
+ },
+ "weather_1": {
+  "expected": "The sun is hot.",
+  "heard": {
+   "parakeet": "The sun is hot",
+   "whisper": "The sun is hot."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_2": {
+  "expected": "It is raining.",
+  "heard": {
+   "parakeet": "It is raining.",
+   "whisper": "It is raining."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_3": {
+  "expected": "I see a rainbow.",
+  "heard": {
+   "parakeet": "I see a rainbow.",
+   "whisper": "I see a rainbow."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_4": {
+  "expected": "The moon is bright.",
+  "heard": {
+   "parakeet": "The moon is bright.",
+   "whisper": "The moon is bright."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_5": {
+  "expected": "The tree is tall.",
+  "heard": {
+   "parakeet": "The tree is tall.",
+   "whisper": "The tree is tall."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_6": {
+  "expected": "The flower smells nice.",
+  "heard": {
+   "parakeet": "The flower smells nice.",
+   "whisper": "The flower smells nice."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_7": {
+  "expected": "It is cold in winter.",
+  "heard": {
+   "parakeet": "It is cold in winter.",
+   "whisper": "It is cold in winter."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
+ },
+ "weather_8": {
+  "expected": "It is hot in summer.",
+  "heard": {
+   "parakeet": "It is hot in summer.",
+   "whisper": "It is hot in summer."
+  },
+  "ok": true,
+  "variant": "af_heart 0.9 {w}"
  },
  "wednesday": {
   "expected": "Wednesday",
@@ -4733,11 +5471,29 @@
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
  },
+ "wind": {
+  "expected": "wind",
+  "heard": {
+   "parakeet": "Wind",
+   "whisper": "Wind"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
  "window": {
   "expected": "window",
   "heard": {
    "parakeet": "Window",
    "whisper": "Window"
+  },
+  "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "winter": {
+  "expected": "winter",
+  "heard": {
+   "parakeet": "Winter",
+   "whisper": "winter"
   },
   "ok": true,
   "variant": "af_heart 1.0 {W}!"
@@ -4758,6 +5514,15 @@
    "whisper": "worm"
   },
   "ok": true,
+  "variant": "af_heart 1.0 {W}!"
+ },
+ "write": {
+  "expected": "write",
+  "heard": {
+   "parakeet": "Right.",
+   "whisper": "Right"
+  },
+  "ok": false,
   "variant": "af_heart 1.0 {W}!"
  },
  "yellow": {

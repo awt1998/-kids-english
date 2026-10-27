@@ -39,7 +39,9 @@ OVERRIDES = Path(__file__).resolve().parent / "pronunciation.json"
 # Homophones the recognisers may legitimately write instead of the expected text.
 HOMOPHONES = {"pear": {"pair"}, "sun": {"son"}, "eight": {"ate"}, "bee": {"be", "b"},
               "two": {"to", "too"}, "four": {"for"}, "one": {"won"}, "no": {"know"},
-              "sea": {"see", "c"}, "flower": {"flour"}, "tea": {"t"}}
+              "sea": {"see", "c"}, "flower": {"flour"}, "tea": {"t"}, "deer": {"dear"},
+              "eye": {"i"}, "meat": {"meet"}, "hi": {"high"}, "write": {"right"}, "beetle": {"beatle"},
+              "fire truck": {"firetruck"}, "peas": {"p's"}}
 
 
 def accepted(id_: str, expected: str) -> set:
