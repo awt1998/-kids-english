@@ -1,0 +1,13 @@
+{
+  "id": "fruits",
+  "words": [
+    { "id": "apple",      "en": "apple",      "ar": "تفاحة" },
+    { "id": "banana",     "en": "banana",     "ar": "موزة" },
+    { "id": "grapes",     "en": "grapes",     "ar": "عنب" },
+    { "id": "orange",     "en": "orange",     "ar": "برتقالة" },
+    { "id": "strawberry", "en": "strawberry", "ar": "فراولة" },
+    { "id": "watermelon", "en": "watermelon", "ar": "بطيخة" },
+    { "id": "lemon",      "en": "lemon",      "ar": "ليمونة" },
+    { "id": "pear",       "en": "pear",       "ar": "كمثرى" }
+  ]
+}

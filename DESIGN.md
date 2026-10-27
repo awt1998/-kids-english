@@ -69,7 +69,14 @@
 | المكوّن | الملف | ملاحظات |
 |---|---|---|
 | `KidButton` | `lib/core/widgets/kid_button.dart` | زر لعبة ينضغط في حافته. يقبل نصاً أو رمزاً أو الاثنين |
-| `Mascot` | `lib/core/widgets/mascot.dart` | الشخصية المرافقة مع حركة تنفّس خفيفة |
+| `Mascot` | `lib/core/widgets/mascot.dart` | لبيب (صقر صغير): وضع `idle` يتنفّس بهدوء، ووضع `cheer` يقفز فرحاً |
+| `MascotSays` | `lib/core/widgets/mascot.dart` | لبيب مع فقاعة كلام (النص للأهل، والطفل يسمع التعليمة) |
+| `Shake` / `Pulse` | `lib/core/widgets/shake.dart` | هزّة لطيفة عند الخطأ، ونبض للتلميح وللمرحلة التالية |
+| `Confetti` | `lib/core/widgets/confetti.dart` | قصاصات ملوّنة في الاحتفال |
+
+## نصوص الواجهة
+
+كل النصوص العربية في `lib/core/strings_ar.dart`، ولا تُكتب نصوص داخل الشاشات مباشرة.
 
 ## الرسومات
 

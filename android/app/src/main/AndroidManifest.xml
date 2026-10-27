@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="kids_english"
+        android:label="لبيب"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

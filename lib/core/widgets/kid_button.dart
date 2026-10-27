@@ -80,8 +80,10 @@ class _KidButtonState extends State<KidButton> {
                     borderRadius: BorderRadius.circular(AppRadius.lg),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppSpacing.lg,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: widget.label == null
+                          ? AppSpacing.sm
+                          : AppSpacing.lg,
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,

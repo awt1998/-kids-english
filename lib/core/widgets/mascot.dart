@@ -1,29 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-/// The mascot candidates. Only one survives once the owner picks.
-enum MascotKind {
-  fenno('fenno', 'فِنّو'),
-  jamool('jamool', 'جمّول'),
-  saqr('saqr', 'صقّور');
+import '../strings_ar.dart';
+import '../theme/app_spacing.dart';
 
-  const MascotKind(this.asset, this.arabicName);
+enum MascotPose {
+  idle('labeeb_idle'),
+  cheer('labeeb_cheer');
+
+  const MascotPose(this.asset);
   final String asset;
-  final String arabicName;
-
   String get path => 'assets/images/mascot/$asset.svg';
 }
 
-/// The mascot, gently bobbing so the screen feels alive without distracting.
+/// Labeeb the baby falcon. Gently bobs while idle and hops when cheering.
 class Mascot extends StatefulWidget {
   const Mascot({
     super.key,
-    required this.kind,
+    this.pose = MascotPose.idle,
     this.size = 200,
     this.animate = true,
   });
 
-  final MascotKind kind;
+  final MascotPose pose;
   final double size;
   final bool animate;
 
@@ -32,15 +31,29 @@ class Mascot extends StatefulWidget {
 }
 
 class _MascotState extends State<Mascot> with SingleTickerProviderStateMixin {
-  late final _controller = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 1600),
-  );
+  late final _controller = AnimationController(vsync: this);
 
   @override
   void initState() {
     super.initState();
-    if (widget.animate) _controller.repeat(reverse: true);
+    _start();
+  }
+
+  @override
+  void didUpdateWidget(Mascot old) {
+    super.didUpdateWidget(old);
+    if (old.pose != widget.pose || old.animate != widget.animate) _start();
+  }
+
+  void _start() {
+    if (!widget.animate) {
+      _controller.stop();
+      return;
+    }
+    _controller.duration = widget.pose == MascotPose.cheer
+        ? const Duration(milliseconds: 420)
+        : const Duration(milliseconds: 1600);
+    _controller.repeat(reverse: true);
   }
 
   @override
@@ -52,22 +65,74 @@ class _MascotState extends State<Mascot> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final art = SvgPicture.asset(
-      widget.kind.path,
+      widget.pose.path,
       width: widget.size,
       height: widget.size,
-      semanticsLabel: widget.kind.arabicName,
+      semanticsLabel: Ar.appName,
     );
     if (!widget.animate) return art;
+    final hop = widget.pose == MascotPose.cheer ? 0.12 : 0.04;
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
         final t = Curves.easeInOut.transform(_controller.value);
         return Transform.translate(
-          offset: Offset(0, -widget.size * 0.04 * t),
-          child: Transform.scale(scaleY: 1 - 0.02 * (1 - t), child: child),
+          offset: Offset(0, -widget.size * hop * t),
+          child: Transform.scale(
+            scaleY: 1 - 0.03 * (1 - t),
+            alignment: Alignment.bottomCenter,
+            child: child,
+          ),
         );
       },
       child: art,
+    );
+  }
+}
+
+/// Mascot with a speech bubble. The bubble text is for parents; kids hear the prompt.
+class MascotSays extends StatelessWidget {
+  const MascotSays({
+    super.key,
+    required this.text,
+    this.pose = MascotPose.idle,
+    this.size,
+  });
+
+  final String text;
+  final MascotPose pose;
+
+  /// Defaults to a bigger mascot on tablets.
+  final double? size;
+
+  @override
+  Widget build(BuildContext context) {
+    final isWide = MediaQuery.sizeOf(context).width >= tabletBreakpoint;
+    final size = this.size ?? (isWide ? 140.0 : 96.0);
+    final style = Theme.of(context).textTheme.titleLarge!;
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Mascot(pose: pose, size: size),
+        const SizedBox(width: 8),
+        Flexible(
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(24),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0x14000000),
+                  blurRadius: 8,
+                  offset: Offset(0, 3),
+                ),
+              ],
+            ),
+            child: Text(text, style: style),
+          ),
+        ),
+      ],
     );
   }
 }

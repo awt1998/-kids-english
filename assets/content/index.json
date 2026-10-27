@@ -1,0 +1,10 @@
+{
+  "units": [
+    { "id": "fruits",    "titleAr": "الفواكه",   "titleEn": "Fruits",    "icon": "unit_fruits",    "color": "coral" },
+    { "id": "animals",   "titleAr": "الحيوانات", "titleEn": "Animals",   "icon": "unit_animals",   "color": "leaf" },
+    { "id": "colors",    "titleAr": "الألوان",   "titleEn": "Colors",    "icon": "unit_colors",    "color": "grape" },
+    { "id": "numbers",   "titleAr": "الأرقام",   "titleEn": "Numbers",   "icon": "unit_numbers",   "color": "sky" },
+    { "id": "transport", "titleAr": "المواصلات", "titleEn": "Transport", "icon": "unit_transport", "color": "sun" },
+    { "id": "weather",   "titleAr": "الطقس",     "titleEn": "Weather",   "icon": "unit_weather",   "color": "mint" }
+  ]
+}
