@@ -1,0 +1,6182 @@
+[
+ {
+  "kind": "word",
+  "id": "letter_a",
+  "expected": "A",
+  "heard": {
+   "whisper": "A",
+   "parakeet": "A"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_b",
+  "expected": "B",
+  "heard": {
+   "whisper": "B",
+   "parakeet": "B"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_c",
+  "expected": "C",
+  "heard": {
+   "whisper": "C.",
+   "parakeet": "C"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_d",
+  "expected": "D",
+  "heard": {
+   "whisper": "D",
+   "parakeet": "D"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_e",
+  "expected": "E",
+  "heard": {
+   "whisper": "e",
+   "parakeet": "E"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_f",
+  "expected": "F",
+  "heard": {
+   "whisper": "F",
+   "parakeet": "F"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_g",
+  "expected": "G",
+  "heard": {
+   "whisper": "G",
+   "parakeet": "G"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_h",
+  "expected": "H",
+  "heard": {
+   "whisper": "H",
+   "parakeet": "H"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_i",
+  "expected": "I",
+  "heard": {
+   "whisper": "I",
+   "parakeet": "I"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_j",
+  "expected": "J",
+  "heard": {
+   "whisper": "J",
+   "parakeet": "J."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_k",
+  "expected": "K",
+  "heard": {
+   "whisper": "K",
+   "parakeet": "K"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_l",
+  "expected": "L",
+  "heard": {
+   "whisper": "L",
+   "parakeet": "L"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_m",
+  "expected": "M",
+  "heard": {
+   "whisper": "M",
+   "parakeet": "M"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_n",
+  "expected": "N",
+  "heard": {
+   "whisper": "N",
+   "parakeet": "N"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_o",
+  "expected": "O",
+  "heard": {
+   "whisper": "O",
+   "parakeet": "Oh"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_p",
+  "expected": "P",
+  "heard": {
+   "whisper": "P",
+   "parakeet": "P"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_q",
+  "expected": "Q",
+  "heard": {
+   "whisper": "Q",
+   "parakeet": "Q"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_r",
+  "expected": "R",
+  "heard": {
+   "whisper": "R",
+   "parakeet": "R"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_s",
+  "expected": "S",
+  "heard": {
+   "whisper": "S",
+   "parakeet": "S"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_t",
+  "expected": "T",
+  "heard": {
+   "whisper": "T",
+   "parakeet": "T"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_u",
+  "expected": "U",
+  "heard": {
+   "whisper": "You",
+   "parakeet": "You"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_v",
+  "expected": "V",
+  "heard": {
+   "whisper": "V",
+   "parakeet": "V"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_w",
+  "expected": "W",
+  "heard": {
+   "whisper": "W",
+   "parakeet": "W"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_x",
+  "expected": "X",
+  "heard": {
+   "whisper": "X",
+   "parakeet": "X"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_y",
+  "expected": "Y",
+  "heard": {
+   "whisper": "Why",
+   "parakeet": "Why?"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "letter_z",
+  "expected": "Z",
+  "heard": {
+   "whisper": "Z",
+   "parakeet": "Z"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_1",
+  "expected": "A is for apple.",
+  "heard": {
+   "whisper": "A is for apple.",
+   "parakeet": "A is for apple."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_2",
+  "expected": "B is for ball.",
+  "heard": {
+   "whisper": "B is for ball.",
+   "parakeet": "B is for ball."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_3",
+  "expected": "C is for cat.",
+  "heard": {
+   "whisper": "C is for cat.",
+   "parakeet": "C is for cat."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_4",
+  "expected": "D is for dog.",
+  "heard": {
+   "whisper": "D is for dog.",
+   "parakeet": "D is for dog."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_5",
+  "expected": "E is for egg.",
+  "heard": {
+   "whisper": "E is for egg.",
+   "parakeet": "E is for egg."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_6",
+  "expected": "F is for fish.",
+  "heard": {
+   "whisper": "F is for fish.",
+   "parakeet": "F is for fish."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_7",
+  "expected": "G is for grapes.",
+  "heard": {
+   "whisper": "G is for grapes.",
+   "parakeet": "G is for grapes."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_8",
+  "expected": "H is for house.",
+  "heard": {
+   "whisper": "H is for house.",
+   "parakeet": "H is for house."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_9",
+  "expected": "I is for ice cream.",
+  "heard": {
+   "whisper": "I is for ice cream.",
+   "parakeet": "I is for ice cream."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_10",
+  "expected": "J is for juice.",
+  "heard": {
+   "whisper": "J is for Juice.",
+   "parakeet": "J is for juice."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_11",
+  "expected": "K is for kite.",
+  "heard": {
+   "whisper": "K is for kite.",
+   "parakeet": "K is for kite."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_12",
+  "expected": "L is for lion.",
+  "heard": {
+   "whisper": "L is for lion.",
+   "parakeet": "L is for lion."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_13",
+  "expected": "M is for moon.",
+  "heard": {
+   "whisper": "M is for moon.",
+   "parakeet": "M is for moon."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_14",
+  "expected": "N is for nose.",
+  "heard": {
+   "whisper": "N is for nose.",
+   "parakeet": "N is for nose."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_15",
+  "expected": "O is for orange.",
+  "heard": {
+   "whisper": "O is for orange.",
+   "parakeet": "O is for orange."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_16",
+  "expected": "P is for pencil.",
+  "heard": {
+   "whisper": "P is for pencil.",
+   "parakeet": "P is for pencil."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_17",
+  "expected": "Q is for queen.",
+  "heard": {
+   "whisper": "Q is for Queen.",
+   "parakeet": "Q is for Queen."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_18",
+  "expected": "R is for rabbit.",
+  "heard": {
+   "whisper": "R is for rabbit.",
+   "parakeet": "R is for rabbit."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_19",
+  "expected": "S is for sun.",
+  "heard": {
+   "whisper": "S is for sun.",
+   "parakeet": "S is for sun."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_20",
+  "expected": "T is for tiger.",
+  "heard": {
+   "whisper": "T is for Tiger.",
+   "parakeet": "T is for Tiger."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_21",
+  "expected": "U is for umbrella.",
+  "heard": {
+   "whisper": "U is for umbrella.",
+   "parakeet": "U is for umbrella."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_22",
+  "expected": "V is for van.",
+  "heard": {
+   "whisper": "V is for van.",
+   "parakeet": "V is for van."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_23",
+  "expected": "W is for watermelon.",
+  "heard": {
+   "whisper": "W is for watermelon.",
+   "parakeet": "W is for watermelon."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_24",
+  "expected": "X is for x-ray.",
+  "heard": {
+   "whisper": "X is for X-ray.",
+   "parakeet": "X is for X-ray."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_25",
+  "expected": "Y is for yo-yo.",
+  "heard": {
+   "whisper": "Y is for yo-yo.",
+   "parakeet": "Why is for Yo-Yo?"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "alphabet_26",
+  "expected": "Z is for zebra.",
+  "heard": {
+   "whisper": "Z is for Zebra.",
+   "parakeet": "Z is for zebra."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cat",
+  "expected": "cat",
+  "heard": {
+   "whisper": "cat",
+   "parakeet": "Cat"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "dog",
+  "expected": "dog",
+  "heard": {
+   "whisper": "dog",
+   "parakeet": "Dog"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rabbit",
+  "expected": "rabbit",
+  "heard": {
+   "whisper": "Rabbit",
+   "parakeet": "Rabbit"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bird",
+  "expected": "bird",
+  "heard": {
+   "whisper": "bird",
+   "parakeet": "Bird"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "parrot",
+  "expected": "parrot",
+  "heard": {
+   "whisper": "parrot",
+   "parakeet": "Parrot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hamster",
+  "expected": "hamster",
+  "heard": {
+   "whisper": "hamster",
+   "parakeet": "Hamster"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "turtle",
+  "expected": "turtle",
+  "heard": {
+   "whisper": "turtle",
+   "parakeet": "Turtle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cow",
+  "expected": "cow",
+  "heard": {
+   "whisper": "cow",
+   "parakeet": "Cow"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "horse",
+  "expected": "horse",
+  "heard": {
+   "whisper": "horse",
+   "parakeet": "Horse"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sheep",
+  "expected": "sheep",
+  "heard": {
+   "whisper": "sheep",
+   "parakeet": "Sheep"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "goat",
+  "expected": "goat",
+  "heard": {
+   "whisper": "goat",
+   "parakeet": "Goat"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "chicken",
+  "expected": "chicken",
+  "heard": {
+   "whisper": "chicken",
+   "parakeet": "Chicken"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rooster",
+  "expected": "rooster",
+  "heard": {
+   "whisper": "Rooster",
+   "parakeet": "Rooster"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "chick",
+  "expected": "chick",
+  "heard": {
+   "whisper": "chick",
+   "parakeet": "Chick"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "duck",
+  "expected": "duck",
+  "heard": {
+   "whisper": "Duck",
+   "parakeet": "Duck"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "donkey",
+  "expected": "donkey",
+  "heard": {
+   "whisper": "donkey",
+   "parakeet": "Donkey"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "camel",
+  "expected": "camel",
+  "heard": {
+   "whisper": "camel",
+   "parakeet": "Camel"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bee",
+  "expected": "bee",
+  "heard": {
+   "whisper": "B",
+   "parakeet": "B"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mouse",
+  "expected": "mouse",
+  "heard": {
+   "whisper": "mouse",
+   "parakeet": "Mouse"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_1",
+  "expected": "The cat is small.",
+  "heard": {
+   "whisper": "The cat is small.",
+   "parakeet": "The cat is small."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_2",
+  "expected": "The dog can run.",
+  "heard": {
+   "whisper": "The dog can run.",
+   "parakeet": "The dog can run."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_3",
+  "expected": "The bird can fly.",
+  "heard": {
+   "whisper": "The bird can fly.",
+   "parakeet": "The bird can fly."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_4",
+  "expected": "The cow gives us milk.",
+  "heard": {
+   "whisper": "The cow gives us milk.",
+   "parakeet": "The cow gives us milk."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_5",
+  "expected": "I can ride a horse.",
+  "heard": {
+   "whisper": "I can ride a horse.",
+   "parakeet": "I can ride a horse."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_6",
+  "expected": "The duck can swim.",
+  "heard": {
+   "whisper": "The duck can swim.",
+   "parakeet": "The duck can swim."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_7",
+  "expected": "The camel is tall.",
+  "heard": {
+   "whisper": "The camel is tall.",
+   "parakeet": "The camel is tall."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_home_8",
+  "expected": "The turtle is slow.",
+  "heard": {
+   "whisper": "The turtle is slow.",
+   "parakeet": "The turtle is slow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "fish",
+  "expected": "fish",
+  "heard": {
+   "whisper": "fish",
+   "parakeet": "Fish"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "whale",
+  "expected": "whale",
+  "heard": {
+   "whisper": "Whale",
+   "parakeet": "Whale"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "dolphin",
+  "expected": "dolphin",
+  "heard": {
+   "whisper": "Dolphin",
+   "parakeet": "Dolphin"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shark",
+  "expected": "shark",
+  "heard": {
+   "whisper": "shark",
+   "parakeet": "Shark"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "octopus",
+  "expected": "octopus",
+  "heard": {
+   "whisper": "Octopus",
+   "parakeet": "Octopus"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "crab",
+  "expected": "crab",
+  "heard": {
+   "whisper": "crab",
+   "parakeet": "Crab"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shrimp",
+  "expected": "shrimp",
+  "heard": {
+   "whisper": "shrimp",
+   "parakeet": "Shrimp"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lobster",
+  "expected": "lobster",
+  "heard": {
+   "whisper": "Lobster",
+   "parakeet": "Lobster"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "jellyfish",
+  "expected": "jellyfish",
+  "heard": {
+   "whisper": "Jellyfish",
+   "parakeet": "Jellyfish"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "seal",
+  "expected": "seal",
+  "heard": {
+   "whisper": "seal",
+   "parakeet": "Seal"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shell",
+  "expected": "shell",
+  "heard": {
+   "whisper": "shell",
+   "parakeet": "Shell"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "coral",
+  "expected": "coral",
+  "heard": {
+   "whisper": "Coral",
+   "parakeet": "Coral"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_sea_1",
+  "expected": "The fish can swim.",
+  "heard": {
+   "whisper": "The fish can swim.",
+   "parakeet": "The fish can swim."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_sea_2",
+  "expected": "The whale is very big.",
+  "heard": {
+   "whisper": "The whale is very big.",
+   "parakeet": "The whale is very big."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_sea_3",
+  "expected": "The dolphin can jump.",
+  "heard": {
+   "whisper": "The dolphin can jump.",
+   "parakeet": "The dolphin can jump."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_sea_4",
+  "expected": "The octopus has eight arms.",
+  "heard": {
+   "whisper": "The octopus has eight arms.",
+   "parakeet": "The octopus has eight arms."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_sea_5",
+  "expected": "The crab is red.",
+  "heard": {
+   "whisper": "The crab is red.",
+   "parakeet": "The crab is red."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_sea_6",
+  "expected": "I found a shell on the beach.",
+  "heard": {
+   "whisper": "I found a shell on the beach.",
+   "parakeet": "I found a shell on the beach."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lion",
+  "expected": "lion",
+  "heard": {
+   "whisper": "lion",
+   "parakeet": "Lion"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tiger",
+  "expected": "tiger",
+  "heard": {
+   "whisper": "Tiger",
+   "parakeet": "Tiger"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "elephant",
+  "expected": "elephant",
+  "heard": {
+   "whisper": "Elephant",
+   "parakeet": "Elephant"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "giraffe",
+  "expected": "giraffe",
+  "heard": {
+   "whisper": "giraffe",
+   "parakeet": "Giraffe"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "monkey",
+  "expected": "monkey",
+  "heard": {
+   "whisper": "monkey",
+   "parakeet": "Monkey"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "zebra",
+  "expected": "zebra",
+  "heard": {
+   "whisper": "Zebra",
+   "parakeet": "Zebra"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bear",
+  "expected": "bear",
+  "heard": {
+   "whisper": "bear",
+   "parakeet": "Bear"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "fox",
+  "expected": "fox",
+  "heard": {
+   "whisper": "Fox",
+   "parakeet": "Fox."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "wolf",
+  "expected": "wolf",
+  "heard": {
+   "whisper": "wolf",
+   "parakeet": "Wolf"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "deer",
+  "expected": "deer",
+  "heard": {
+   "whisper": "Dear",
+   "parakeet": "Dear"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "kangaroo",
+  "expected": "kangaroo",
+  "heard": {
+   "whisper": "Kangaroo",
+   "parakeet": "Kangaroo"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "snake",
+  "expected": "snake",
+  "heard": {
+   "whisper": "snake",
+   "parakeet": "Snake"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "crocodile",
+  "expected": "crocodile",
+  "heard": {
+   "whisper": "crocodile",
+   "parakeet": "Crocodile"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hippo",
+  "expected": "hippo",
+  "heard": {
+   "whisper": "Hippo",
+   "parakeet": "Hippo"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rhino",
+  "expected": "rhino",
+  "heard": {
+   "whisper": "Rhino",
+   "parakeet": "Rhino"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "gorilla",
+  "expected": "gorilla",
+  "heard": {
+   "whisper": "Gorilla",
+   "parakeet": "Gorilla"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "panda",
+  "expected": "panda",
+  "heard": {
+   "whisper": "panda",
+   "parakeet": "Panda"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "koala",
+  "expected": "koala",
+  "heard": {
+   "whisper": "Koala",
+   "parakeet": "Koala"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "frog",
+  "expected": "frog",
+  "heard": {
+   "whisper": "frog",
+   "parakeet": "Frog"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "butterfly",
+  "expected": "butterfly",
+  "heard": {
+   "whisper": "butterfly",
+   "parakeet": "Butterfly"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "eagle",
+  "expected": "eagle",
+  "heard": {
+   "whisper": "Eagle",
+   "parakeet": "Eagle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "penguin",
+  "expected": "penguin",
+  "heard": {
+   "whisper": "penguin",
+   "parakeet": "Penguin"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "leopard",
+  "expected": "leopard",
+  "heard": {
+   "whisper": "leopard",
+   "parakeet": "Leopard"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hedgehog",
+  "expected": "hedgehog",
+  "heard": {
+   "whisper": "Hedgehog",
+   "parakeet": "Hedgehog"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "squirrel",
+  "expected": "squirrel",
+  "heard": {
+   "whisper": "squirrel",
+   "parakeet": "Squirrel"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_1",
+  "expected": "The lion is strong.",
+  "heard": {
+   "whisper": "The lion is strong.",
+   "parakeet": "The lion is strong."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_2",
+  "expected": "The elephant is big.",
+  "heard": {
+   "whisper": "The elephant is big.",
+   "parakeet": "The elephant is big."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_3",
+  "expected": "The giraffe has a long neck.",
+  "heard": {
+   "whisper": "The giraffe has a long neck.",
+   "parakeet": "The giraffe has a long neck."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_4",
+  "expected": "The monkey likes bananas.",
+  "heard": {
+   "whisper": "The monkey likes bananas.",
+   "parakeet": "The monkey likes bananas."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_5",
+  "expected": "The zebra has stripes.",
+  "heard": {
+   "whisper": "The zebra has stripes.",
+   "parakeet": "The zebra has stripes."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_6",
+  "expected": "The frog can jump.",
+  "heard": {
+   "whisper": "The frog can jump.",
+   "parakeet": "The frog can jump."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_7",
+  "expected": "The butterfly is pretty.",
+  "heard": {
+   "whisper": "The butterfly is pretty.",
+   "parakeet": "The butterfly is pretty."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "animals_wild_8",
+  "expected": "The penguin lives in the cold.",
+  "heard": {
+   "whisper": "The Penguin Lives in the Cold",
+   "parakeet": "The penguin lives in the cold."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "eye",
+  "expected": "eye",
+  "heard": {
+   "whisper": "I",
+   "parakeet": "I"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ear",
+  "expected": "ear",
+  "heard": {
+   "whisper": "ear",
+   "parakeet": "Ear"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "nose",
+  "expected": "nose",
+  "heard": {
+   "whisper": "nose",
+   "parakeet": "Nose"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mouth",
+  "expected": "mouth",
+  "heard": {
+   "whisper": "Mouth",
+   "parakeet": "Mouth"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tooth",
+  "expected": "tooth",
+  "heard": {
+   "whisper": "tooth",
+   "parakeet": "Tooth"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tongue",
+  "expected": "tongue",
+  "heard": {
+   "whisper": "Tongue",
+   "parakeet": "Tongue"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hand",
+  "expected": "hand",
+  "heard": {
+   "whisper": "hand",
+   "parakeet": "Hand"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "foot",
+  "expected": "foot",
+  "heard": {
+   "whisper": "foot",
+   "parakeet": "Foot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "leg",
+  "expected": "leg",
+  "heard": {
+   "whisper": "Leg",
+   "parakeet": "Leg"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "arm",
+  "expected": "arm",
+  "heard": {
+   "whisper": "arm",
+   "parakeet": "Arm"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "face",
+  "expected": "face",
+  "heard": {
+   "whisper": "face",
+   "parakeet": "Face"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "finger",
+  "expected": "finger",
+  "heard": {
+   "whisper": "finger",
+   "parakeet": "Finger"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_1",
+  "expected": "I see with my eyes.",
+  "heard": {
+   "whisper": "I see with my eyes.",
+   "parakeet": "I see with my eyes."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_2",
+  "expected": "I hear with my ears.",
+  "heard": {
+   "whisper": "I hear with my ears.",
+   "parakeet": "I hear with my ears."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_3",
+  "expected": "I smell with my nose.",
+  "heard": {
+   "whisper": "I smell with my nose.",
+   "parakeet": "I smell with my nose."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_4",
+  "expected": "I eat with my mouth.",
+  "heard": {
+   "whisper": "I eat with my mouth.",
+   "parakeet": "I eat with my mouth."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_5",
+  "expected": "I brush my teeth.",
+  "heard": {
+   "whisper": "I brush my teeth.",
+   "parakeet": "I brush my teeth."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_6",
+  "expected": "I wash my hands.",
+  "heard": {
+   "whisper": "I wash my hands.",
+   "parakeet": "I wash my hands."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_7",
+  "expected": "I walk with my feet.",
+  "heard": {
+   "whisper": "I walk with my feet.",
+   "parakeet": "I walk with my feet."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "body_8",
+  "expected": "Touch your nose!",
+  "heard": {
+   "whisper": "Touch your nose.",
+   "parakeet": "Touch your nose."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shirt",
+  "expected": "shirt",
+  "heard": {
+   "whisper": "shirt",
+   "parakeet": "Shirt"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pants",
+  "expected": "pants",
+  "heard": {
+   "whisper": "Pants",
+   "parakeet": "Pants"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "dress",
+  "expected": "dress",
+  "heard": {
+   "whisper": "dress",
+   "parakeet": "Dress"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shoes",
+  "expected": "shoes",
+  "heard": {
+   "whisper": "Shoes",
+   "parakeet": "Shoes"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "socks",
+  "expected": "socks",
+  "heard": {
+   "whisper": "socks",
+   "parakeet": "Socks"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cap",
+  "expected": "cap",
+  "heard": {
+   "whisper": "Cap",
+   "parakeet": "Cap"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "coat",
+  "expected": "coat",
+  "heard": {
+   "whisper": "coat",
+   "parakeet": "Coat"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "scarf",
+  "expected": "scarf",
+  "heard": {
+   "whisper": "scarf",
+   "parakeet": "Scarf."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "gloves",
+  "expected": "gloves",
+  "heard": {
+   "whisper": "Gloves",
+   "parakeet": "Gloves"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "glasses",
+  "expected": "glasses",
+  "heard": {
+   "whisper": "glasses",
+   "parakeet": "Glasses"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "boots",
+  "expected": "boots",
+  "heard": {
+   "whisper": "Boots",
+   "parakeet": "Boots"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shorts",
+  "expected": "shorts",
+  "heard": {
+   "whisper": "Shorts",
+   "parakeet": "Shorts"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_1",
+  "expected": "I wear a shirt.",
+  "heard": {
+   "whisper": "I wear a shirt.",
+   "parakeet": "I wear a shirt."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_2",
+  "expected": "My shoes are new.",
+  "heard": {
+   "whisper": "My shoes are new.",
+   "parakeet": "My shoes are new."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_3",
+  "expected": "Put on your socks.",
+  "heard": {
+   "whisper": "Put on your socks.",
+   "parakeet": "Put on your socks"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_4",
+  "expected": "I wear a coat in winter.",
+  "heard": {
+   "whisper": "I wear a coat in winter.",
+   "parakeet": "I wear a coat in winter."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_5",
+  "expected": "My cap is blue.",
+  "heard": {
+   "whisper": "My cap is blue.",
+   "parakeet": "My cap is blue."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_6",
+  "expected": "My dad wears glasses.",
+  "heard": {
+   "whisper": "My dad wears glasses.",
+   "parakeet": "My dad wears glasses."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "clothes_7",
+  "expected": "The scarf is warm.",
+  "heard": {
+   "whisper": "The scarf is warm.",
+   "parakeet": "The scarf is warm."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "red",
+  "expected": "red",
+  "heard": {
+   "whisper": "Red",
+   "parakeet": "Red"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "blue",
+  "expected": "blue",
+  "heard": {
+   "whisper": "Blue",
+   "parakeet": "Blue"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "green",
+  "expected": "green",
+  "heard": {
+   "whisper": "green",
+   "parakeet": "Green"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "yellow",
+  "expected": "yellow",
+  "heard": {
+   "whisper": "Yellow",
+   "parakeet": "Yellow"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "orange_color",
+  "expected": "orange",
+  "heard": {
+   "whisper": "Orange",
+   "parakeet": "Orange"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "purple",
+  "expected": "purple",
+  "heard": {
+   "whisper": "Purple",
+   "parakeet": "Purple"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pink",
+  "expected": "pink",
+  "heard": {
+   "whisper": "pink",
+   "parakeet": "Pink"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "brown",
+  "expected": "brown",
+  "heard": {
+   "whisper": "Brown",
+   "parakeet": "Brown"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "black",
+  "expected": "black",
+  "heard": {
+   "whisper": "black",
+   "parakeet": "Black"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "white",
+  "expected": "white",
+  "heard": {
+   "whisper": "White",
+   "parakeet": "White"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "gray",
+  "expected": "gray",
+  "heard": {
+   "whisper": "Gray",
+   "parakeet": "Gray"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_1",
+  "expected": "The sky is blue.",
+  "heard": {
+   "whisper": "The sky is blue.",
+   "parakeet": "The sky is blue."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_2",
+  "expected": "The grass is green.",
+  "heard": {
+   "whisper": "The grass is green.",
+   "parakeet": "The grass is green."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_3",
+  "expected": "My bag is red.",
+  "heard": {
+   "whisper": "My bag is red.",
+   "parakeet": "My bag is red."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_4",
+  "expected": "The sun is yellow.",
+  "heard": {
+   "whisper": "The sun is yellow.",
+   "parakeet": "The sun is yellow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_5",
+  "expected": "I like pink.",
+  "heard": {
+   "whisper": "I like pink.",
+   "parakeet": "I like pink."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_6",
+  "expected": "The cloud is white.",
+  "heard": {
+   "whisper": "The cloud is white.",
+   "parakeet": "The cloud is white."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_7",
+  "expected": "The night is black.",
+  "heard": {
+   "whisper": "The night is black.",
+   "parakeet": "The night is black."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "colors_8",
+  "expected": "My shoes are brown.",
+  "heard": {
+   "whisper": "My shoes are brown.",
+   "parakeet": "My shoes are brown."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sunday",
+  "expected": "Sunday",
+  "heard": {
+   "whisper": "Sunday",
+   "parakeet": "Sunday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "monday",
+  "expected": "Monday",
+  "heard": {
+   "whisper": "Monday",
+   "parakeet": "Monday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tuesday",
+  "expected": "Tuesday",
+  "heard": {
+   "whisper": "Tuesday",
+   "parakeet": "Tuesday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "wednesday",
+  "expected": "Wednesday",
+  "heard": {
+   "whisper": "Wednesday",
+   "parakeet": "Wednesday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "thursday",
+  "expected": "Thursday",
+  "heard": {
+   "whisper": "Thursday",
+   "parakeet": "Thursday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "friday",
+  "expected": "Friday",
+  "heard": {
+   "whisper": "Friday",
+   "parakeet": "Friday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "saturday",
+  "expected": "Saturday",
+  "heard": {
+   "whisper": "Saturday",
+   "parakeet": "Saturday"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "days_1",
+  "expected": "Today is Sunday.",
+  "heard": {
+   "whisper": "Today is Sunday.",
+   "parakeet": "Today is Sunday."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "days_2",
+  "expected": "I go to school on Monday.",
+  "heard": {
+   "whisper": "I go to school on Monday.",
+   "parakeet": "I go to school on Monday."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "days_3",
+  "expected": "Friday is a happy day.",
+  "heard": {
+   "whisper": "Friday is a happy day.",
+   "parakeet": "Friday is a happy day."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "days_4",
+  "expected": "We play on Saturday.",
+  "heard": {
+   "whisper": "We play on Saturday.",
+   "parakeet": "We play on Saturday."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "days_5",
+  "expected": "Tomorrow is Thursday.",
+  "heard": {
+   "whisper": "Tomorrow is Thursday.",
+   "parakeet": "Tomorrow is Thursday."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mom",
+  "expected": "mom",
+  "heard": {
+   "whisper": "Mom",
+   "parakeet": "Mom"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "dad",
+  "expected": "dad",
+  "heard": {
+   "whisper": "dad",
+   "parakeet": "Dad"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sister",
+  "expected": "sister",
+  "heard": {
+   "whisper": "Sister",
+   "parakeet": "Sister"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "brother",
+  "expected": "brother",
+  "heard": {
+   "whisper": "brother",
+   "parakeet": "Brother"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "baby",
+  "expected": "baby",
+  "heard": {
+   "whisper": "Baby",
+   "parakeet": "Baby."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "grandma",
+  "expected": "grandma",
+  "heard": {
+   "whisper": "Grandma",
+   "parakeet": "Grandma"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "grandpa",
+  "expected": "grandpa",
+  "heard": {
+   "whisper": "Grandpa",
+   "parakeet": "Grandpa"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "family",
+  "expected": "family",
+  "heard": {
+   "whisper": "Family",
+   "parakeet": "Family"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_1",
+  "expected": "I love my mom.",
+  "heard": {
+   "whisper": "I love my mom.",
+   "parakeet": "I love my mom."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_2",
+  "expected": "My dad is tall.",
+  "heard": {
+   "whisper": "My dad is tall.",
+   "parakeet": "My dad is tall."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_3",
+  "expected": "This is my sister.",
+  "heard": {
+   "whisper": "This is my sister.",
+   "parakeet": "This is my sister."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_4",
+  "expected": "My brother is funny.",
+  "heard": {
+   "whisper": "My brother is funny.",
+   "parakeet": "My brother is funny."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_5",
+  "expected": "The baby is sleeping.",
+  "heard": {
+   "whisper": "The baby is sleeping.",
+   "parakeet": "The baby is sleeping."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_6",
+  "expected": "I visit my grandma.",
+  "heard": {
+   "whisper": "I visit my grandma.",
+   "parakeet": "I visit my grandma."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_7",
+  "expected": "My grandpa tells stories.",
+  "heard": {
+   "whisper": "My Grandpa tells stories",
+   "parakeet": "My Grandpa tells stories."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "family_8",
+  "expected": "I love my family.",
+  "heard": {
+   "whisper": "I love my family.",
+   "parakeet": "I love my family."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "happy",
+  "expected": "happy",
+  "heard": {
+   "whisper": "Happy",
+   "parakeet": "Happy"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sad",
+  "expected": "sad",
+  "heard": {
+   "whisper": "sad",
+   "parakeet": "Sad"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "angry",
+  "expected": "angry",
+  "heard": {
+   "whisper": "Angry",
+   "parakeet": "Angry."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "scared",
+  "expected": "scared",
+  "heard": {
+   "whisper": "scared",
+   "parakeet": "Scared"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "surprised",
+  "expected": "surprised",
+  "heard": {
+   "whisper": "Surprised",
+   "parakeet": "Surprised."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tired",
+  "expected": "tired",
+  "heard": {
+   "whisper": "Tired",
+   "parakeet": "Tired"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sick",
+  "expected": "sick",
+  "heard": {
+   "whisper": "sick",
+   "parakeet": "Sick."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "silly",
+  "expected": "silly",
+  "heard": {
+   "whisper": "Silly",
+   "parakeet": "Silly."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "calm",
+  "expected": "calm",
+  "heard": {
+   "whisper": "calm",
+   "parakeet": "Calm"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hot",
+  "expected": "hot",
+  "heard": {
+   "whisper": "hot",
+   "parakeet": "Hot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cold",
+  "expected": "cold",
+  "heard": {
+   "whisper": "Cold",
+   "parakeet": "Cold"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_1",
+  "expected": "I am happy.",
+  "heard": {
+   "whisper": "I am happy.",
+   "parakeet": "I am happy."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_2",
+  "expected": "He is sad.",
+  "heard": {
+   "whisper": "He is sad.",
+   "parakeet": "He is sad."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_3",
+  "expected": "She is angry.",
+  "heard": {
+   "whisper": "She is angry.",
+   "parakeet": "She is angry."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_4",
+  "expected": "I am tired.",
+  "heard": {
+   "whisper": "I am tired.",
+   "parakeet": "I am tired."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_5",
+  "expected": "Are you scared?",
+  "heard": {
+   "whisper": "Are you scared?",
+   "parakeet": "Are you scared?"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_6",
+  "expected": "I feel sick.",
+  "heard": {
+   "whisper": "I feel sick.",
+   "parakeet": "I feel sick."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_7",
+  "expected": "I am hot.",
+  "heard": {
+   "whisper": "I am hot.",
+   "parakeet": "I am hot."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "feelings_8",
+  "expected": "I am cold.",
+  "heard": {
+   "whisper": "I am cold.",
+   "parakeet": "I am cold."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bread",
+  "expected": "bread",
+  "heard": {
+   "whisper": "Bread",
+   "parakeet": "Bread"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rice",
+  "expected": "rice",
+  "heard": {
+   "whisper": "Rice",
+   "parakeet": "Rice"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "egg",
+  "expected": "egg",
+  "heard": {
+   "whisper": "egg",
+   "parakeet": "Egg"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cheese",
+  "expected": "cheese",
+  "heard": {
+   "whisper": "cheese",
+   "parakeet": "Cheese"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "milk",
+  "expected": "milk",
+  "heard": {
+   "whisper": "milk",
+   "parakeet": "Milk"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "water",
+  "expected": "water",
+  "heard": {
+   "whisper": "Water",
+   "parakeet": "Water"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "juice",
+  "expected": "juice",
+  "heard": {
+   "whisper": "juice",
+   "parakeet": "Juice"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "honey",
+  "expected": "honey",
+  "heard": {
+   "whisper": "Honey",
+   "parakeet": "Honey"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cake",
+  "expected": "cake",
+  "heard": {
+   "whisper": "Cake",
+   "parakeet": "Cake"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cookie",
+  "expected": "cookie",
+  "heard": {
+   "whisper": "Cookie",
+   "parakeet": "Cookie"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "meat",
+  "expected": "meat",
+  "heard": {
+   "whisper": "meat",
+   "parakeet": "Meet"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "soup",
+  "expected": "soup",
+  "heard": {
+   "whisper": "soup",
+   "parakeet": "Soup"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pizza",
+  "expected": "pizza",
+  "heard": {
+   "whisper": "Pizza",
+   "parakeet": "Pizza"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sandwich",
+  "expected": "sandwich",
+  "heard": {
+   "whisper": "sandwich",
+   "parakeet": "Sandwich"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ice_cream",
+  "expected": "ice cream",
+  "heard": {
+   "whisper": "Ice cream",
+   "parakeet": "Ice cream"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "candy",
+  "expected": "candy",
+  "heard": {
+   "whisper": "candy",
+   "parakeet": "Candy"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "chocolate",
+  "expected": "chocolate",
+  "heard": {
+   "whisper": "chocolate",
+   "parakeet": "Chocolate"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tea",
+  "expected": "tea",
+  "heard": {
+   "whisper": "T",
+   "parakeet": "T"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "salad",
+  "expected": "salad",
+  "heard": {
+   "whisper": "Salad",
+   "parakeet": "Salad"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "popcorn",
+  "expected": "popcorn",
+  "heard": {
+   "whisper": "popcorn",
+   "parakeet": "Popcorn"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pancakes",
+  "expected": "pancakes",
+  "heard": {
+   "whisper": "pancakes",
+   "parakeet": "Pancakes"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "butter",
+  "expected": "butter",
+  "heard": {
+   "whisper": "butter",
+   "parakeet": "Butter"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "salt",
+  "expected": "salt",
+  "heard": {
+   "whisper": "Salt",
+   "parakeet": "Salt"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "fries",
+  "expected": "fries",
+  "heard": {
+   "whisper": "Fries",
+   "parakeet": "Fries"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "burger",
+  "expected": "burger",
+  "heard": {
+   "whisper": "Burger",
+   "parakeet": "Burger"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "noodles",
+  "expected": "noodles",
+  "heard": {
+   "whisper": "noodles",
+   "parakeet": "Noodles"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "falafel",
+  "expected": "falafel",
+  "heard": {
+   "whisper": "falafel",
+   "parakeet": "Falafel"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "croissant",
+  "expected": "croissant",
+  "heard": {
+   "whisper": "croissant",
+   "parakeet": "Croissant"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "donut",
+  "expected": "donut",
+  "heard": {
+   "whisper": "Donut",
+   "parakeet": "Donut"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cupcake",
+  "expected": "cupcake",
+  "heard": {
+   "whisper": "Cupcake",
+   "parakeet": "Cupcake"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lollipop",
+  "expected": "lollipop",
+  "heard": {
+   "whisper": "Lollipop",
+   "parakeet": "Lollipop"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "peanuts",
+  "expected": "peanuts",
+  "heard": {
+   "whisper": "peanuts",
+   "parakeet": "Peanuts"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "olive",
+  "expected": "olive",
+  "heard": {
+   "whisper": "Olive",
+   "parakeet": "Olive"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_1",
+  "expected": "I drink milk.",
+  "heard": {
+   "whisper": "I drink milk.",
+   "parakeet": "I drink milk."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_2",
+  "expected": "I eat bread and cheese.",
+  "heard": {
+   "whisper": "I eat bread and cheese.",
+   "parakeet": "I eat bread and cheese."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_3",
+  "expected": "Water is good for you.",
+  "heard": {
+   "whisper": "Water is good for you.",
+   "parakeet": "Water is good for you."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_4",
+  "expected": "I like rice.",
+  "heard": {
+   "whisper": "I like rice.",
+   "parakeet": "I like rice."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_5",
+  "expected": "The soup is hot.",
+  "heard": {
+   "whisper": "The soup is hot.",
+   "parakeet": "The soup is hot."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_6",
+  "expected": "Can I have some juice?",
+  "heard": {
+   "whisper": "Can I have some juice?",
+   "parakeet": "Can I have some juice?"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_7",
+  "expected": "The cake is sweet.",
+  "heard": {
+   "whisper": "The cake is sweet.",
+   "parakeet": "The cake is sweet."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "food_8",
+  "expected": "I want an egg, please.",
+  "heard": {
+   "whisper": "I want an egg, please.",
+   "parakeet": "I want an egg, please."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "apple",
+  "expected": "apple",
+  "heard": {
+   "whisper": "apple",
+   "parakeet": "Apple"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "banana",
+  "expected": "banana",
+  "heard": {
+   "whisper": "Banana",
+   "parakeet": "Banana"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "grapes",
+  "expected": "grapes",
+  "heard": {
+   "whisper": "Grapes",
+   "parakeet": "Grapes"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "orange",
+  "expected": "orange",
+  "heard": {
+   "whisper": "Orange",
+   "parakeet": "Orange"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "strawberry",
+  "expected": "strawberry",
+  "heard": {
+   "whisper": "Strawberry",
+   "parakeet": "Strawberry"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "watermelon",
+  "expected": "watermelon",
+  "heard": {
+   "whisper": "Watermelon",
+   "parakeet": "Watermelon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lemon",
+  "expected": "lemon",
+  "heard": {
+   "whisper": "Lemon",
+   "parakeet": "Lemon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pear",
+  "expected": "pear",
+  "heard": {
+   "whisper": "pair",
+   "parakeet": "Pair"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cherries",
+  "expected": "cherries",
+  "heard": {
+   "whisper": "cherries",
+   "parakeet": "Cherries"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "peach",
+  "expected": "peach",
+  "heard": {
+   "whisper": "Peach.",
+   "parakeet": "Peach"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pineapple",
+  "expected": "pineapple",
+  "heard": {
+   "whisper": "pineapple",
+   "parakeet": "Pineapple"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mango",
+  "expected": "mango",
+  "heard": {
+   "whisper": "Mango",
+   "parakeet": "Mango"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "kiwi",
+  "expected": "kiwi",
+  "heard": {
+   "whisper": "Kiwi",
+   "parakeet": "Kiwi"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "coconut",
+  "expected": "coconut",
+  "heard": {
+   "whisper": "coconut",
+   "parakeet": "Coconut"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "melon",
+  "expected": "melon",
+  "heard": {
+   "whisper": "melon",
+   "parakeet": "Melon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "blueberries",
+  "expected": "blueberries",
+  "heard": {
+   "whisper": "Blueberries",
+   "parakeet": "Blueberries"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "avocado",
+  "expected": "avocado",
+  "heard": {
+   "whisper": "Avocado",
+   "parakeet": "Avocado"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_1",
+  "expected": "I like apples.",
+  "heard": {
+   "whisper": "I like apples.",
+   "parakeet": "I like apples."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_2",
+  "expected": "The banana is yellow.",
+  "heard": {
+   "whisper": "The banana is yellow.",
+   "parakeet": "The banana is yellow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_3",
+  "expected": "The grapes are purple.",
+  "heard": {
+   "whisper": "The grapes are purple.",
+   "parakeet": "The grapes are purple."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_4",
+  "expected": "I eat an orange.",
+  "heard": {
+   "whisper": "I eat an orange.",
+   "parakeet": "I eat an orange."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_5",
+  "expected": "The strawberry is red.",
+  "heard": {
+   "whisper": "The strawberry is red.",
+   "parakeet": "The strawberry is red."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_6",
+  "expected": "The watermelon is big.",
+  "heard": {
+   "whisper": "The watermelon is big.",
+   "parakeet": "The watermelon is big."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_7",
+  "expected": "The lemon is sour.",
+  "heard": {
+   "whisper": "The lemon is sour.",
+   "parakeet": "The lemon is sour."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "fruits_8",
+  "expected": "I want a mango, please.",
+  "heard": {
+   "whisper": "I want a mango, please.",
+   "parakeet": "I want a mango, please."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "house",
+  "expected": "house",
+  "heard": {
+   "whisper": "house",
+   "parakeet": "House"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "door",
+  "expected": "door",
+  "heard": {
+   "whisper": "door",
+   "parakeet": "Door"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "window",
+  "expected": "window",
+  "heard": {
+   "whisper": "Window",
+   "parakeet": "Window"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bed",
+  "expected": "bed",
+  "heard": {
+   "whisper": "bed",
+   "parakeet": "Bed"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "chair",
+  "expected": "chair",
+  "heard": {
+   "whisper": "chair",
+   "parakeet": "Chair"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sofa",
+  "expected": "sofa",
+  "heard": {
+   "whisper": "Sofa",
+   "parakeet": "Sofa"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "clock",
+  "expected": "clock",
+  "heard": {
+   "whisper": "clock",
+   "parakeet": "Clock"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "key",
+  "expected": "key",
+  "heard": {
+   "whisper": "q",
+   "parakeet": "Key"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bathtub",
+  "expected": "bathtub",
+  "heard": {
+   "whisper": "Bathtub",
+   "parakeet": "Bathtub"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "shower",
+  "expected": "shower",
+  "heard": {
+   "whisper": "shower",
+   "parakeet": "Shower"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mirror",
+  "expected": "mirror",
+  "heard": {
+   "whisper": "mirror",
+   "parakeet": "Mirror"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tv",
+  "expected": "TV",
+  "heard": {
+   "whisper": "TV",
+   "parakeet": "T V"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "phone",
+  "expected": "phone",
+  "heard": {
+   "whisper": "phone",
+   "parakeet": "Phone"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "computer",
+  "expected": "computer",
+  "heard": {
+   "whisper": "computer",
+   "parakeet": "Computer"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cup",
+  "expected": "cup",
+  "heard": {
+   "whisper": "cup",
+   "parakeet": "Cup"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "plate",
+  "expected": "plate",
+  "heard": {
+   "whisper": "plate",
+   "parakeet": "Plate"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "spoon",
+  "expected": "spoon",
+  "heard": {
+   "whisper": "Spoon",
+   "parakeet": "Spoon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bowl",
+  "expected": "bowl",
+  "heard": {
+   "whisper": "bowl",
+   "parakeet": "Bowl"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "broom",
+  "expected": "broom",
+  "heard": {
+   "whisper": "Broom",
+   "parakeet": "Broom"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "soap",
+  "expected": "soap",
+  "heard": {
+   "whisper": "Soap",
+   "parakeet": "Soap"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "toothbrush",
+  "expected": "toothbrush",
+  "heard": {
+   "whisper": "Toothbrush",
+   "parakeet": "Toothbrush"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lamp",
+  "expected": "lamp",
+  "heard": {
+   "whisper": "lamp",
+   "parakeet": "Lamp"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_1",
+  "expected": "This is my house.",
+  "heard": {
+   "whisper": "This is my house.",
+   "parakeet": "This is my house."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_2",
+  "expected": "Open the door, please.",
+  "heard": {
+   "whisper": "Open the door, please.",
+   "parakeet": "Open the door, please."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_3",
+  "expected": "I sleep in my bed.",
+  "heard": {
+   "whisper": "I sleep in my bed.",
+   "parakeet": "I sleep in my bed."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_4",
+  "expected": "Sit on the chair.",
+  "heard": {
+   "whisper": "Sit on the chair.",
+   "parakeet": "Sit on the chair."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_5",
+  "expected": "Look at the clock.",
+  "heard": {
+   "whisper": "Look at the clock.",
+   "parakeet": "Look at the clock."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_6",
+  "expected": "I wash my hands with soap.",
+  "heard": {
+   "whisper": "I wash my hands with soap.",
+   "parakeet": "I wash my hands with soap."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_7",
+  "expected": "I eat soup with a spoon.",
+  "heard": {
+   "whisper": "I eat soup with a spoon.",
+   "parakeet": "I eat soup with a spoon."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "house_8",
+  "expected": "Close the window.",
+  "heard": {
+   "whisper": "Close the window.",
+   "parakeet": "Close the window."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ant",
+  "expected": "ant",
+  "heard": {
+   "whisper": "ant",
+   "parakeet": "Ant"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "spider",
+  "expected": "spider",
+  "heard": {
+   "whisper": "spider",
+   "parakeet": "Spider"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ladybug",
+  "expected": "ladybug",
+  "heard": {
+   "whisper": "Ladybug",
+   "parakeet": "Ladybug"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "snail",
+  "expected": "snail",
+  "heard": {
+   "whisper": "snail",
+   "parakeet": "Snail"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "worm",
+  "expected": "worm",
+  "heard": {
+   "whisper": "worm",
+   "parakeet": "Worm"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mosquito",
+  "expected": "mosquito",
+  "heard": {
+   "whisper": "Mosquito",
+   "parakeet": "Mosquito"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "beetle",
+  "expected": "beetle",
+  "heard": {
+   "whisper": "Beatle",
+   "parakeet": "Beetle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cricket",
+  "expected": "cricket",
+  "heard": {
+   "whisper": "cricket",
+   "parakeet": "Cricket"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "caterpillar",
+  "expected": "caterpillar",
+  "heard": {
+   "whisper": "Caterpillar",
+   "parakeet": "Caterpillar"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "fly",
+  "expected": "fly",
+  "heard": {
+   "whisper": "Fly",
+   "parakeet": "Fly"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "insects_1",
+  "expected": "The ant is small.",
+  "heard": {
+   "whisper": "The ant is small.",
+   "parakeet": "The ant is small."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "insects_2",
+  "expected": "The spider makes a web.",
+  "heard": {
+   "whisper": "The spider makes a web.",
+   "parakeet": "The spider makes a web."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "insects_3",
+  "expected": "The ladybug is red and black.",
+  "heard": {
+   "whisper": "The ladybug is red and black.",
+   "parakeet": "The Ladybug is red and black."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "insects_4",
+  "expected": "The snail is slow.",
+  "heard": {
+   "whisper": "The snail is slow.",
+   "parakeet": "The snail is slow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "insects_5",
+  "expected": "The worm lives in the ground.",
+  "heard": {
+   "whisper": "The worm lives in the ground.",
+   "parakeet": "The worm lives in the ground."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "doctor",
+  "expected": "doctor",
+  "heard": {
+   "whisper": "doctor",
+   "parakeet": "Doctor"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "nurse",
+  "expected": "nurse",
+  "heard": {
+   "whisper": "nurse",
+   "parakeet": "Nurse"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pilot",
+  "expected": "pilot",
+  "heard": {
+   "whisper": "Pilot",
+   "parakeet": "Pilot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "firefighter",
+  "expected": "firefighter",
+  "heard": {
+   "whisper": "Firefighter",
+   "parakeet": "Firefighter"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "police_officer",
+  "expected": "police officer",
+  "heard": {
+   "whisper": "Police officer",
+   "parakeet": "Police officer"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "farmer",
+  "expected": "farmer",
+  "heard": {
+   "whisper": "Farmer",
+   "parakeet": "Farmer"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "chef",
+  "expected": "chef",
+  "heard": {
+   "whisper": "Chef",
+   "parakeet": "Chef"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "astronaut",
+  "expected": "astronaut",
+  "heard": {
+   "whisper": "Astronaut",
+   "parakeet": "Astronaut"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "scientist",
+  "expected": "scientist",
+  "heard": {
+   "whisper": "scientist",
+   "parakeet": "Scientist"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "artist",
+  "expected": "artist",
+  "heard": {
+   "whisper": "artist",
+   "parakeet": "Artist"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mechanic",
+  "expected": "mechanic",
+  "heard": {
+   "whisper": "mechanic",
+   "parakeet": "Mechanic"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "builder",
+  "expected": "builder",
+  "heard": {
+   "whisper": "builder",
+   "parakeet": "Builder"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "jobs_1",
+  "expected": "The doctor helps sick people.",
+  "heard": {
+   "whisper": "The doctor helps sick people.",
+   "parakeet": "The doctor helps sick people."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "jobs_2",
+  "expected": "The pilot flies the airplane.",
+  "heard": {
+   "whisper": "The pilot flies the airplane.",
+   "parakeet": "The pilot flies the airplane."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "jobs_3",
+  "expected": "The farmer grows food.",
+  "heard": {
+   "whisper": "The farmer grows food.",
+   "parakeet": "The farmer grows food."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "jobs_4",
+  "expected": "The chef cooks food.",
+  "heard": {
+   "whisper": "The chef cooks food.",
+   "parakeet": "The chef cooks food."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "jobs_5",
+  "expected": "I want to be an astronaut.",
+  "heard": {
+   "whisper": "I want to be an astronaut.",
+   "parakeet": "I want to be an astronaut."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "jobs_6",
+  "expected": "The firefighter is brave.",
+  "heard": {
+   "whisper": "The firefighter is brave.",
+   "parakeet": "The firefighter is brave."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "january",
+  "expected": "January",
+  "heard": {
+   "whisper": "January",
+   "parakeet": "January"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "february",
+  "expected": "February",
+  "heard": {
+   "whisper": "February",
+   "parakeet": "February"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "march",
+  "expected": "March",
+  "heard": {
+   "whisper": "March",
+   "parakeet": "March"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "april",
+  "expected": "April",
+  "heard": {
+   "whisper": "April",
+   "parakeet": "April"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "may",
+  "expected": "May",
+  "heard": {
+   "whisper": "May",
+   "parakeet": "May"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "june",
+  "expected": "June",
+  "heard": {
+   "whisper": "June",
+   "parakeet": "June"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "july",
+  "expected": "July",
+  "heard": {
+   "whisper": "July",
+   "parakeet": "July"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "august",
+  "expected": "August",
+  "heard": {
+   "whisper": "August",
+   "parakeet": "August"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "september",
+  "expected": "September",
+  "heard": {
+   "whisper": "September",
+   "parakeet": "September"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "october",
+  "expected": "October",
+  "heard": {
+   "whisper": "October",
+   "parakeet": "October"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "november",
+  "expected": "November",
+  "heard": {
+   "whisper": "November",
+   "parakeet": "November"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "december",
+  "expected": "December",
+  "heard": {
+   "whisper": "December",
+   "parakeet": "December"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "months_1",
+  "expected": "My birthday is in May.",
+  "heard": {
+   "whisper": "My birthday is in May.",
+   "parakeet": "My birthday is in May."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "months_2",
+  "expected": "January is the first month.",
+  "heard": {
+   "whisper": "January is the first month.",
+   "parakeet": "January is the first month."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "months_3",
+  "expected": "It is hot in August.",
+  "heard": {
+   "whisper": "It is hot in August.",
+   "parakeet": "It is hot in August."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "months_4",
+  "expected": "December is the last month.",
+  "heard": {
+   "whisper": "December is the last month.",
+   "parakeet": "December is the last month."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "months_5",
+  "expected": "School starts in September.",
+  "heard": {
+   "whisper": "School starts in September.",
+   "parakeet": "School starts in September."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_1",
+  "expected": "one",
+  "heard": {
+   "whisper": "1",
+   "parakeet": "One"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_2",
+  "expected": "two",
+  "heard": {
+   "whisper": "to",
+   "parakeet": "Two"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_3",
+  "expected": "three",
+  "heard": {
+   "whisper": "3",
+   "parakeet": "Three"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_4",
+  "expected": "four",
+  "heard": {
+   "whisper": "4",
+   "parakeet": "Four"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_5",
+  "expected": "five",
+  "heard": {
+   "whisper": "5",
+   "parakeet": "Five"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_6",
+  "expected": "six",
+  "heard": {
+   "whisper": "6.",
+   "parakeet": "Six"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_7",
+  "expected": "seven",
+  "heard": {
+   "whisper": "7.",
+   "parakeet": "7"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_8",
+  "expected": "eight",
+  "heard": {
+   "whisper": "8",
+   "parakeet": "Eight"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_9",
+  "expected": "nine",
+  "heard": {
+   "whisper": "9",
+   "parakeet": "Nine"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_10",
+  "expected": "ten",
+  "heard": {
+   "whisper": "10",
+   "parakeet": "Ten"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_11",
+  "expected": "eleven",
+  "heard": {
+   "whisper": "11",
+   "parakeet": "11"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_12",
+  "expected": "twelve",
+  "heard": {
+   "whisper": "12",
+   "parakeet": "12"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_13",
+  "expected": "thirteen",
+  "heard": {
+   "whisper": "13",
+   "parakeet": "Thirteen"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_14",
+  "expected": "fourteen",
+  "heard": {
+   "whisper": "14.",
+   "parakeet": "Fourteen"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_15",
+  "expected": "fifteen",
+  "heard": {
+   "whisper": "15",
+   "parakeet": "15"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_16",
+  "expected": "sixteen",
+  "heard": {
+   "whisper": "16",
+   "parakeet": "16."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_17",
+  "expected": "seventeen",
+  "heard": {
+   "whisper": "17.",
+   "parakeet": "17"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_18",
+  "expected": "eighteen",
+  "heard": {
+   "whisper": "18.",
+   "parakeet": "eighteen"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_19",
+  "expected": "nineteen",
+  "heard": {
+   "whisper": "19",
+   "parakeet": "19."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "number_20",
+  "expected": "twenty",
+  "heard": {
+   "whisper": "20",
+   "parakeet": "20"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_1",
+  "expected": "I have two hands.",
+  "heard": {
+   "whisper": "I have two hands.",
+   "parakeet": "I have two hands."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_2",
+  "expected": "I am six years old.",
+  "heard": {
+   "whisper": "I am six years old.",
+   "parakeet": "I am six years old."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_3",
+  "expected": "I have ten fingers.",
+  "heard": {
+   "whisper": "I have ten fingers.",
+   "parakeet": "I have ten fingers."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_4",
+  "expected": "I see three birds.",
+  "heard": {
+   "whisper": "I see three birds.",
+   "parakeet": "I see three birds."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_5",
+  "expected": "One, two, three, go!",
+  "heard": {
+   "whisper": "1 2 3 go",
+   "parakeet": "1 2 3 go"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_6",
+  "expected": "A spider has eight legs.",
+  "heard": {
+   "whisper": "A spider has eight legs.",
+   "parakeet": "A spider has eight legs."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_7",
+  "expected": "I have one nose.",
+  "heard": {
+   "whisper": "I have one nose.",
+   "parakeet": "I have one nose."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "numbers_8",
+  "expected": "There are seven days in a week.",
+  "heard": {
+   "whisper": "There are seven days in a week.",
+   "parakeet": "There are seven days in a week."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hello",
+  "expected": "hello",
+  "heard": {
+   "whisper": "Hello",
+   "parakeet": "Hello"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "goodbye",
+  "expected": "goodbye",
+  "heard": {
+   "whisper": "Goodbye.",
+   "parakeet": "Goodbye"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "please",
+  "expected": "please",
+  "heard": {
+   "whisper": "Please",
+   "parakeet": "Please"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "thank_you",
+  "expected": "thank you",
+  "heard": {
+   "whisper": "Thank you.",
+   "parakeet": "Thank you."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sorry",
+  "expected": "sorry",
+  "heard": {
+   "whisper": "Sorry",
+   "parakeet": "Sorry."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "yes",
+  "expected": "yes",
+  "heard": {
+   "whisper": "Yes",
+   "parakeet": "Yes."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "no",
+  "expected": "no",
+  "heard": {
+   "whisper": "No.",
+   "parakeet": "No."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "good_morning",
+  "expected": "good morning",
+  "heard": {
+   "whisper": "Good morning.",
+   "parakeet": "Good morning."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "good_night",
+  "expected": "good night",
+  "heard": {
+   "whisper": "Good night.",
+   "parakeet": "Good night."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "how_are_you",
+  "expected": "how are you",
+  "heard": {
+   "whisper": "How are you?",
+   "parakeet": "How are you?"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "i_am_fine",
+  "expected": "I am fine",
+  "heard": {
+   "whisper": "I am fine.",
+   "parakeet": "I am fine."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "welcome",
+  "expected": "welcome",
+  "heard": {
+   "whisper": "Welcome",
+   "parakeet": "Welcome."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "excuse_me",
+  "expected": "excuse me",
+  "heard": {
+   "whisper": "Excuse me.",
+   "parakeet": "Excuse me."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_1",
+  "expected": "Hello, my name is Sara.",
+  "heard": {
+   "whisper": "Hello, my name is Sarah.",
+   "parakeet": "Hello, my name is Sarah."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_2",
+  "expected": "Good morning, teacher.",
+  "heard": {
+   "whisper": "Good morning, teacher.",
+   "parakeet": "Good morning, teacher."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_3",
+  "expected": "Thank you very much.",
+  "heard": {
+   "whisper": "Thank you very much.",
+   "parakeet": "Thank you very much."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_4",
+  "expected": "Please sit down.",
+  "heard": {
+   "whisper": "Please sit down.",
+   "parakeet": "Please sit down."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_5",
+  "expected": "How are you today?",
+  "heard": {
+   "whisper": "How are you today?",
+   "parakeet": "How are you today?"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_6",
+  "expected": "I am fine, thank you.",
+  "heard": {
+   "whisper": "I am fine, thank you.",
+   "parakeet": "I am fine, thank you."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_7",
+  "expected": "Goodbye, see you tomorrow.",
+  "heard": {
+   "whisper": "Goodbye, see you tomorrow.",
+   "parakeet": "Goodbye, see you tomorrow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "phrases_8",
+  "expected": "Good night, Mom.",
+  "heard": {
+   "whisper": "Good night, Mom.",
+   "parakeet": "Good night, mom."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "hospital",
+  "expected": "hospital",
+  "heard": {
+   "whisper": "Hospital",
+   "parakeet": "Hospital"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "beach",
+  "expected": "beach",
+  "heard": {
+   "whisper": "Beach",
+   "parakeet": "Beach"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "desert",
+  "expected": "desert",
+  "heard": {
+   "whisper": "Desert",
+   "parakeet": "Desert"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "city",
+  "expected": "city",
+  "heard": {
+   "whisper": "City",
+   "parakeet": "City"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "island",
+  "expected": "island",
+  "heard": {
+   "whisper": "Island",
+   "parakeet": "Island"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "park",
+  "expected": "park",
+  "heard": {
+   "whisper": "park",
+   "parakeet": "Park"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "store",
+  "expected": "store",
+  "heard": {
+   "whisper": "store",
+   "parakeet": "Store"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "airport",
+  "expected": "airport",
+  "heard": {
+   "whisper": "Airport",
+   "parakeet": "Airport"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tent",
+  "expected": "tent",
+  "heard": {
+   "whisper": "Tent",
+   "parakeet": "Tent"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bridge",
+  "expected": "bridge",
+  "heard": {
+   "whisper": "bridge",
+   "parakeet": "Bridge"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "places_1",
+  "expected": "We play at the beach.",
+  "heard": {
+   "whisper": "We play at the beach.",
+   "parakeet": "We play at the beach."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "places_2",
+  "expected": "The desert is hot.",
+  "heard": {
+   "whisper": "The desert is hot.",
+   "parakeet": "The desert is hot."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "places_3",
+  "expected": "We go to the park.",
+  "heard": {
+   "whisper": "We go to the park.",
+   "parakeet": "We go to the park."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "places_4",
+  "expected": "The doctor works at the hospital.",
+  "heard": {
+   "whisper": "The doctor works at the hospital.",
+   "parakeet": "The doctor works at the hospital."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "places_5",
+  "expected": "We sleep in a tent.",
+  "heard": {
+   "whisper": "We sleep in a tent.",
+   "parakeet": "We sleep in a tent."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "book",
+  "expected": "book",
+  "heard": {
+   "whisper": "book",
+   "parakeet": "Book"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pencil",
+  "expected": "pencil",
+  "heard": {
+   "whisper": "Pencil",
+   "parakeet": "Pencil"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pen",
+  "expected": "pen",
+  "heard": {
+   "whisper": "pen",
+   "parakeet": "Pen"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "crayon",
+  "expected": "crayon",
+  "heard": {
+   "whisper": "Crayon",
+   "parakeet": "Crayon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "notebook",
+  "expected": "notebook",
+  "heard": {
+   "whisper": "Notebook",
+   "parakeet": "Notebook"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "backpack",
+  "expected": "backpack",
+  "heard": {
+   "whisper": "backpack",
+   "parakeet": "Backpack"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "scissors",
+  "expected": "scissors",
+  "heard": {
+   "whisper": "scissors",
+   "parakeet": "Scissors"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ruler",
+  "expected": "ruler",
+  "heard": {
+   "whisper": "ruler",
+   "parakeet": "Ruler"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "paintbrush",
+  "expected": "paintbrush",
+  "heard": {
+   "whisper": "Paintbrush",
+   "parakeet": "Paintbrush"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "school",
+  "expected": "school",
+  "heard": {
+   "whisper": "school",
+   "parakeet": "School"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "teacher",
+  "expected": "teacher",
+  "heard": {
+   "whisper": "teacher",
+   "parakeet": "Teacher"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "student",
+  "expected": "student",
+  "heard": {
+   "whisper": "student",
+   "parakeet": "Student"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "paper",
+  "expected": "paper",
+  "heard": {
+   "whisper": "paper",
+   "parakeet": "Paper"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "globe",
+  "expected": "globe",
+  "heard": {
+   "whisper": "globe",
+   "parakeet": "Globe"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_1",
+  "expected": "I read a book.",
+  "heard": {
+   "whisper": "I read a book.",
+   "parakeet": "I read a book."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_2",
+  "expected": "I write with a pencil.",
+  "heard": {
+   "whisper": "I write with a pencil.",
+   "parakeet": "I write with a pencil."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_3",
+  "expected": "I draw with crayons.",
+  "heard": {
+   "whisper": "I draw with crayons.",
+   "parakeet": "I draw with crayons."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_4",
+  "expected": "My backpack is heavy.",
+  "heard": {
+   "whisper": "My backpack is heavy.",
+   "parakeet": "My backpack is heavy."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_5",
+  "expected": "I love my school.",
+  "heard": {
+   "whisper": "I love my school.",
+   "parakeet": "I love my school."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_6",
+  "expected": "My teacher is kind.",
+  "heard": {
+   "whisper": "My teacher is kind.",
+   "parakeet": "My teacher is kind."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "school_7",
+  "expected": "Cut the paper with scissors.",
+  "heard": {
+   "whisper": "Cut the paper with scissors.",
+   "parakeet": "Cut the paper with scissors."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "circle",
+  "expected": "circle",
+  "heard": {
+   "whisper": "Circle",
+   "parakeet": "Circle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "square",
+  "expected": "square",
+  "heard": {
+   "whisper": "Square",
+   "parakeet": "Square"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "triangle",
+  "expected": "triangle",
+  "heard": {
+   "whisper": "triangle",
+   "parakeet": "Triangle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rectangle",
+  "expected": "rectangle",
+  "heard": {
+   "whisper": "Rectangle",
+   "parakeet": "Rectangle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "star",
+  "expected": "star",
+  "heard": {
+   "whisper": "star",
+   "parakeet": "Star"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "heart",
+  "expected": "heart",
+  "heard": {
+   "whisper": "heart",
+   "parakeet": "Heart"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "oval",
+  "expected": "oval",
+  "heard": {
+   "whisper": "Oval",
+   "parakeet": "Oval"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "diamond",
+  "expected": "diamond",
+  "heard": {
+   "whisper": "Diamond",
+   "parakeet": "Diamond"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_1",
+  "expected": "The ball is a circle.",
+  "heard": {
+   "whisper": "The ball is a circle.",
+   "parakeet": "The ball is a circle."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_2",
+  "expected": "I can draw a square.",
+  "heard": {
+   "whisper": "I can draw a square.",
+   "parakeet": "I can draw a square."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_3",
+  "expected": "A triangle has three sides.",
+  "heard": {
+   "whisper": "A triangle has three sides.",
+   "parakeet": "A triangle has three sides."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_4",
+  "expected": "The door is a rectangle.",
+  "heard": {
+   "whisper": "The door is a rectangle.",
+   "parakeet": "The door is a rectangle."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_5",
+  "expected": "I see a star in the sky.",
+  "heard": {
+   "whisper": "I see a star in the sky.",
+   "parakeet": "I see a star in the sky."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_6",
+  "expected": "I draw a red heart.",
+  "heard": {
+   "whisper": "I draw a red heart.",
+   "parakeet": "I draw a red heart."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "shapes_7",
+  "expected": "An egg is an oval.",
+  "heard": {
+   "whisper": "An egg is an oval.",
+   "parakeet": "An egg is an oval."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "football",
+  "expected": "football",
+  "heard": {
+   "whisper": "Football",
+   "parakeet": "Football"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "basketball",
+  "expected": "basketball",
+  "heard": {
+   "whisper": "basketball",
+   "parakeet": "Basketball"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "volleyball",
+  "expected": "volleyball",
+  "heard": {
+   "whisper": "volleyball",
+   "parakeet": "Volleyball"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tennis",
+  "expected": "tennis",
+  "heard": {
+   "whisper": "Tennis",
+   "parakeet": "Tennis"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "badminton",
+  "expected": "badminton",
+  "heard": {
+   "whisper": "badminton",
+   "parakeet": "Badminton"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bowling",
+  "expected": "bowling",
+  "heard": {
+   "whisper": "bowling",
+   "parakeet": "Bowling"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "karate",
+  "expected": "karate",
+  "heard": {
+   "whisper": "Karate",
+   "parakeet": "Karate"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "skating",
+  "expected": "skating",
+  "heard": {
+   "whisper": "Skating",
+   "parakeet": "Skating"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "swimming",
+  "expected": "swimming",
+  "heard": {
+   "whisper": "swimming",
+   "parakeet": "Swimming"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "running",
+  "expected": "running",
+  "heard": {
+   "whisper": "Running",
+   "parakeet": "Running"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "sports_1",
+  "expected": "I play football.",
+  "heard": {
+   "whisper": "I play football.",
+   "parakeet": "I play football."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "sports_2",
+  "expected": "I like basketball.",
+  "heard": {
+   "whisper": "I like basketball.",
+   "parakeet": "I like basketball."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "sports_3",
+  "expected": "We play tennis.",
+  "heard": {
+   "whisper": "We play tennis.",
+   "parakeet": "We play tennis."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "sports_4",
+  "expected": "Swimming is fun.",
+  "heard": {
+   "whisper": "Swimming is fun.",
+   "parakeet": "Swimming is fun."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "sports_5",
+  "expected": "Running makes me strong.",
+  "heard": {
+   "whisper": "Running makes me strong.",
+   "parakeet": "Running makes me strong."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ball",
+  "expected": "ball",
+  "heard": {
+   "whisper": "ball",
+   "parakeet": "Ball"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "teddy_bear",
+  "expected": "teddy bear",
+  "heard": {
+   "whisper": "Teddy bear",
+   "parakeet": "Teddy Bear"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "kite",
+  "expected": "kite",
+  "heard": {
+   "whisper": "Kite",
+   "parakeet": "Kite"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "balloon",
+  "expected": "balloon",
+  "heard": {
+   "whisper": "balloon",
+   "parakeet": "Balloon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "puzzle",
+  "expected": "puzzle",
+  "heard": {
+   "whisper": "Puzzle",
+   "parakeet": "Puzzle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "yo_yo",
+  "expected": "yo-yo",
+  "heard": {
+   "whisper": "yo-yo",
+   "parakeet": "Yo-Yo"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "robot",
+  "expected": "robot",
+  "heard": {
+   "whisper": "Robot",
+   "parakeet": "Robot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "skateboard",
+  "expected": "skateboard",
+  "heard": {
+   "whisper": "Skateboard",
+   "parakeet": "Skateboard"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "slide",
+  "expected": "slide",
+  "heard": {
+   "whisper": "Slide",
+   "parakeet": "Slide"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bubbles",
+  "expected": "bubbles",
+  "heard": {
+   "whisper": "Bubbles",
+   "parakeet": "Bubbles"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "blocks",
+  "expected": "blocks",
+  "heard": {
+   "whisper": "blocks",
+   "parakeet": "Blocks"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_1",
+  "expected": "I play with my ball.",
+  "heard": {
+   "whisper": "I play with my ball.",
+   "parakeet": "I play with my ball."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_2",
+  "expected": "I love my teddy bear.",
+  "heard": {
+   "whisper": "I love my teddy bear.",
+   "parakeet": "I love my teddy bear."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_3",
+  "expected": "The kite is in the sky.",
+  "heard": {
+   "whisper": "The kite is in the sky.",
+   "parakeet": "The kite is in the sky."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_4",
+  "expected": "The balloon is red.",
+  "heard": {
+   "whisper": "The balloon is red.",
+   "parakeet": "The balloon is red."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_5",
+  "expected": "Let's play together.",
+  "heard": {
+   "whisper": "Let's play together.",
+   "parakeet": "Let's play together."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_6",
+  "expected": "The robot can walk.",
+  "heard": {
+   "whisper": "The robot can walk.",
+   "parakeet": "The robot can walk."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "toys_7",
+  "expected": "I build with blocks.",
+  "heard": {
+   "whisper": "I build with blocks.",
+   "parakeet": "I build with blocks."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "car",
+  "expected": "car",
+  "heard": {
+   "whisper": "car",
+   "parakeet": "Car"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bus",
+  "expected": "bus",
+  "heard": {
+   "whisper": "bus",
+   "parakeet": "Bus"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "train",
+  "expected": "train",
+  "heard": {
+   "whisper": "train",
+   "parakeet": "Train"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "airplane",
+  "expected": "airplane",
+  "heard": {
+   "whisper": "airplane",
+   "parakeet": "Airplane"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ship",
+  "expected": "ship",
+  "heard": {
+   "whisper": "ship",
+   "parakeet": "Ship"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "boat",
+  "expected": "boat",
+  "heard": {
+   "whisper": "boat",
+   "parakeet": "Boat"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "bicycle",
+  "expected": "bicycle",
+  "heard": {
+   "whisper": "bicycle",
+   "parakeet": "Bicycle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "motorcycle",
+  "expected": "motorcycle",
+  "heard": {
+   "whisper": "Motorcycle",
+   "parakeet": "Motorcycle"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "truck",
+  "expected": "truck",
+  "heard": {
+   "whisper": "truck",
+   "parakeet": "Truck"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "taxi",
+  "expected": "taxi",
+  "heard": {
+   "whisper": "Taxi",
+   "parakeet": "Taxi"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ambulance",
+  "expected": "ambulance",
+  "heard": {
+   "whisper": "Ambulance",
+   "parakeet": "Ambulance"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "fire_truck",
+  "expected": "fire truck",
+  "heard": {
+   "whisper": "Fire truck",
+   "parakeet": "Firetruck"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "police_car",
+  "expected": "police car",
+  "heard": {
+   "whisper": "Police car",
+   "parakeet": "Police car"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "helicopter",
+  "expected": "helicopter",
+  "heard": {
+   "whisper": "helicopter",
+   "parakeet": "Helicopter"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rocket",
+  "expected": "rocket",
+  "heard": {
+   "whisper": "Rocket",
+   "parakeet": "Rocket"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tractor",
+  "expected": "tractor",
+  "heard": {
+   "whisper": "tractor",
+   "parakeet": "Tractor"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "scooter",
+  "expected": "scooter",
+  "heard": {
+   "whisper": "Scooter",
+   "parakeet": "Scooter"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "van",
+  "expected": "van",
+  "heard": {
+   "whisper": "Van",
+   "parakeet": "Van"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "subway",
+  "expected": "subway",
+  "heard": {
+   "whisper": "Subway",
+   "parakeet": "Subway"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_1",
+  "expected": "We go to school by bus.",
+  "heard": {
+   "whisper": "We go to school by bus.",
+   "parakeet": "We go to school by bus."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_2",
+  "expected": "The car is fast.",
+  "heard": {
+   "whisper": "The car is fast.",
+   "parakeet": "The car is fast."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_3",
+  "expected": "The airplane can fly.",
+  "heard": {
+   "whisper": "The airplane can fly.",
+   "parakeet": "The airplane can fly."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_4",
+  "expected": "I ride my bicycle.",
+  "heard": {
+   "whisper": "I ride my bicycle.",
+   "parakeet": "I ride my bicycle."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_5",
+  "expected": "The train is long.",
+  "heard": {
+   "whisper": "The train is long.",
+   "parakeet": "The train is long."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_6",
+  "expected": "The boat is on the water.",
+  "heard": {
+   "whisper": "The boat is on the water.",
+   "parakeet": "The boat is on the water."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_7",
+  "expected": "The fire truck is red.",
+  "heard": {
+   "whisper": "The fire truck is red.",
+   "parakeet": "The fire truck is red."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "transport_8",
+  "expected": "The rocket goes to the moon.",
+  "heard": {
+   "whisper": "The rocket goes to the moon.",
+   "parakeet": "The rocket goes to the moon."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "carrot",
+  "expected": "carrot",
+  "heard": {
+   "whisper": "carrot",
+   "parakeet": "Carrot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tomato",
+  "expected": "tomato",
+  "heard": {
+   "whisper": "tomato",
+   "parakeet": "Tomato"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "potato",
+  "expected": "potato",
+  "heard": {
+   "whisper": "Potato",
+   "parakeet": "Potato"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "corn",
+  "expected": "corn",
+  "heard": {
+   "whisper": "corn",
+   "parakeet": "Corn"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cucumber",
+  "expected": "cucumber",
+  "heard": {
+   "whisper": "Cucumber",
+   "parakeet": "Cucumber"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "broccoli",
+  "expected": "broccoli",
+  "heard": {
+   "whisper": "Broccoli",
+   "parakeet": "Broccoli"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "onion",
+  "expected": "onion",
+  "heard": {
+   "whisper": "onion",
+   "parakeet": "Onion"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "garlic",
+  "expected": "garlic",
+  "heard": {
+   "whisper": "Garlic",
+   "parakeet": "Garlic"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "eggplant",
+  "expected": "eggplant",
+  "heard": {
+   "whisper": "eggplant",
+   "parakeet": "Eggplant"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "pepper",
+  "expected": "pepper",
+  "heard": {
+   "whisper": "Pepper",
+   "parakeet": "Pepper"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lettuce",
+  "expected": "lettuce",
+  "heard": {
+   "whisper": "Lettuce",
+   "parakeet": "Lettuce"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mushroom",
+  "expected": "mushroom",
+  "heard": {
+   "whisper": "mushroom",
+   "parakeet": "Mushroom"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "peas",
+  "expected": "peas",
+  "heard": {
+   "whisper": "Peas",
+   "parakeet": "P's"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_1",
+  "expected": "The carrot is orange.",
+  "heard": {
+   "whisper": "The carrot is orange.",
+   "parakeet": "The carrot is orange."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_2",
+  "expected": "The tomato is red.",
+  "heard": {
+   "whisper": "The tomato is red.",
+   "parakeet": "The tomato is red."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_3",
+  "expected": "I like potatoes.",
+  "heard": {
+   "whisper": "I like potatoes.",
+   "parakeet": "I like potatoes."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_4",
+  "expected": "The cucumber is green.",
+  "heard": {
+   "whisper": "The cucumber is green.",
+   "parakeet": "The cucumber is green."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_5",
+  "expected": "Corn is yellow.",
+  "heard": {
+   "whisper": "Corn is yellow.",
+   "parakeet": "Corn is yellow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_6",
+  "expected": "I eat my vegetables.",
+  "heard": {
+   "whisper": "I eat my vegetables.",
+   "parakeet": "I eat my vegetables."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_7",
+  "expected": "The onion is round.",
+  "heard": {
+   "whisper": "The onion is round.",
+   "parakeet": "The onion is round."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "vegetables_8",
+  "expected": "Broccoli is good for you.",
+  "heard": {
+   "whisper": "Broccoli is good for you.",
+   "parakeet": "Broccoli is good for you."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "run",
+  "expected": "run",
+  "heard": {
+   "whisper": "Run",
+   "parakeet": "Run"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "walk",
+  "expected": "walk",
+  "heard": {
+   "whisper": "walk",
+   "parakeet": "Walk."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "swim",
+  "expected": "swim",
+  "heard": {
+   "whisper": "Swim",
+   "parakeet": "Swim"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "climb",
+  "expected": "climb",
+  "heard": {
+   "whisper": "Climb",
+   "parakeet": "Climb"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "ride",
+  "expected": "ride",
+  "heard": {
+   "whisper": "Ride",
+   "parakeet": "Ride"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sleep",
+  "expected": "sleep",
+  "heard": {
+   "whisper": "sleep",
+   "parakeet": "Sleep."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "eat",
+  "expected": "eat",
+  "heard": {
+   "whisper": "eat",
+   "parakeet": "Eat"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "drink",
+  "expected": "drink",
+  "heard": {
+   "whisper": "drink",
+   "parakeet": "Drink"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "read",
+  "expected": "read",
+  "heard": {
+   "whisper": "Read",
+   "parakeet": "Read"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "write",
+  "expected": "write",
+  "heard": {
+   "whisper": "Right",
+   "parakeet": "Right."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cook",
+  "expected": "cook",
+  "heard": {
+   "whisper": "cook",
+   "parakeet": "Cook"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "clap",
+  "expected": "clap",
+  "heard": {
+   "whisper": "Clap",
+   "parakeet": "Clap."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cry",
+  "expected": "cry",
+  "heard": {
+   "whisper": "Cry",
+   "parakeet": "Cry"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "laugh",
+  "expected": "laugh",
+  "heard": {
+   "whisper": "laugh",
+   "parakeet": "Laugh."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "think",
+  "expected": "think",
+  "heard": {
+   "whisper": "Think",
+   "parakeet": "Think."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "kick",
+  "expected": "kick",
+  "heard": {
+   "whisper": "kick",
+   "parakeet": "Kick"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_1",
+  "expected": "I can run fast.",
+  "heard": {
+   "whisper": "I can run fast.",
+   "parakeet": "I can run fast."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_2",
+  "expected": "Fish swim in the sea.",
+  "heard": {
+   "whisper": "Fish swim in the sea.",
+   "parakeet": "Fish swim in the sea."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_3",
+  "expected": "I sleep at night.",
+  "heard": {
+   "whisper": "I sleep at night.",
+   "parakeet": "I sleep at night."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_4",
+  "expected": "I eat my lunch.",
+  "heard": {
+   "whisper": "I eat my lunch.",
+   "parakeet": "I eat my lunch."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_5",
+  "expected": "I drink water.",
+  "heard": {
+   "whisper": "I drink water.",
+   "parakeet": "I drink water."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_6",
+  "expected": "I read every day.",
+  "heard": {
+   "whisper": "I read every day.",
+   "parakeet": "I read every day."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_7",
+  "expected": "Clap your hands!",
+  "heard": {
+   "whisper": "Clap your hands.",
+   "parakeet": "Clap your hands."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "verbs_8",
+  "expected": "Mom cooks dinner.",
+  "heard": {
+   "whisper": "Mom cooks dinner.",
+   "parakeet": "Mom cooks dinner."
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sun",
+  "expected": "sun",
+  "heard": {
+   "whisper": "Sun",
+   "parakeet": "Son"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "moon",
+  "expected": "moon",
+  "heard": {
+   "whisper": "Moon",
+   "parakeet": "Moon"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "star_sky",
+  "expected": "star",
+  "heard": {
+   "whisper": "star",
+   "parakeet": "Star"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cloud",
+  "expected": "cloud",
+  "heard": {
+   "whisper": "Cloud",
+   "parakeet": "Cloud"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rain",
+  "expected": "rain",
+  "heard": {
+   "whisper": "Rain",
+   "parakeet": "Rain"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "snow",
+  "expected": "snow",
+  "heard": {
+   "whisper": "snow",
+   "parakeet": "Snow"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "wind",
+  "expected": "wind",
+  "heard": {
+   "whisper": "Wind",
+   "parakeet": "Wind"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rainbow",
+  "expected": "rainbow",
+  "heard": {
+   "whisper": "Rainbow",
+   "parakeet": "Rainbow"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "lightning",
+  "expected": "lightning",
+  "heard": {
+   "whisper": "Lightning",
+   "parakeet": "Lightning"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "tree",
+  "expected": "tree",
+  "heard": {
+   "whisper": "tree",
+   "parakeet": "Tree"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "flower",
+  "expected": "flower",
+  "heard": {
+   "whisper": "Flower",
+   "parakeet": "Flower"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "leaf",
+  "expected": "leaf",
+  "heard": {
+   "whisper": "leaf",
+   "parakeet": "Leaf"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "mountain",
+  "expected": "mountain",
+  "heard": {
+   "whisper": "mountain",
+   "parakeet": "Mountain"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "sea",
+  "expected": "sea",
+  "heard": {
+   "whisper": "C.",
+   "parakeet": "C"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "spring",
+  "expected": "spring",
+  "heard": {
+   "whisper": "spring",
+   "parakeet": "Spring"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "summer",
+  "expected": "summer",
+  "heard": {
+   "whisper": "Summer",
+   "parakeet": "Summer"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "autumn",
+  "expected": "autumn",
+  "heard": {
+   "whisper": "Autumn",
+   "parakeet": "Autumn"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "winter",
+  "expected": "winter",
+  "heard": {
+   "whisper": "winter",
+   "parakeet": "Winter"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "umbrella",
+  "expected": "umbrella",
+  "heard": {
+   "whisper": "Umbrella",
+   "parakeet": "Umbrella"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "fog",
+  "expected": "fog",
+  "heard": {
+   "whisper": "fog",
+   "parakeet": "Fog"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "palm_tree",
+  "expected": "palm tree",
+  "heard": {
+   "whisper": "Palm tree",
+   "parakeet": "Palm tree"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "cactus",
+  "expected": "cactus",
+  "heard": {
+   "whisper": "cactus",
+   "parakeet": "Cactus"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "volcano",
+  "expected": "volcano",
+  "heard": {
+   "whisper": "Volcano",
+   "parakeet": "Volcano"
+  },
+  "ok": true
+ },
+ {
+  "kind": "word",
+  "id": "rock",
+  "expected": "rock",
+  "heard": {
+   "whisper": "rock",
+   "parakeet": "Rock"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_1",
+  "expected": "The sun is hot.",
+  "heard": {
+   "whisper": "The sun is hot.",
+   "parakeet": "The sun is hot"
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_2",
+  "expected": "It is raining.",
+  "heard": {
+   "whisper": "It is raining.",
+   "parakeet": "It is raining."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_3",
+  "expected": "I see a rainbow.",
+  "heard": {
+   "whisper": "I see a rainbow.",
+   "parakeet": "I see a rainbow."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_4",
+  "expected": "The moon is bright.",
+  "heard": {
+   "whisper": "The moon is bright.",
+   "parakeet": "The moon is bright."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_5",
+  "expected": "The tree is tall.",
+  "heard": {
+   "whisper": "The tree is tall.",
+   "parakeet": "The tree is tall."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_6",
+  "expected": "The flower smells nice.",
+  "heard": {
+   "whisper": "The flower smells nice.",
+   "parakeet": "The flower smells nice."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_7",
+  "expected": "It is cold in winter.",
+  "heard": {
+   "whisper": "It is cold in winter.",
+   "parakeet": "It is cold in winter."
+  },
+  "ok": true
+ },
+ {
+  "kind": "sentence",
+  "id": "weather_8",
+  "expected": "It is hot in summer.",
+  "heard": {
+   "whisper": "It is hot in summer.",
+   "parakeet": "It is hot in summer."
+  },
+  "ok": true
+ }
+]
