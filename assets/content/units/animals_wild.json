@@ -1,0 +1,196 @@
+{
+  "id": "animals_wild",
+  "words": [
+    {
+      "id": "lion",
+      "en": "lion",
+      "ar": "أسد"
+    },
+    {
+      "id": "tiger",
+      "en": "tiger",
+      "ar": "نمر"
+    },
+    {
+      "id": "elephant",
+      "en": "elephant",
+      "ar": "فيل"
+    },
+    {
+      "id": "giraffe",
+      "en": "giraffe",
+      "ar": "زرافة"
+    },
+    {
+      "id": "monkey",
+      "en": "monkey",
+      "ar": "قرد"
+    },
+    {
+      "id": "zebra",
+      "en": "zebra",
+      "ar": "حمار وحشي"
+    },
+    {
+      "id": "bear",
+      "en": "bear",
+      "ar": "دب"
+    },
+    {
+      "id": "fox",
+      "en": "fox",
+      "ar": "ثعلب"
+    },
+    {
+      "id": "wolf",
+      "en": "wolf",
+      "ar": "ذئب"
+    },
+    {
+      "id": "deer",
+      "en": "deer",
+      "ar": "غزال"
+    },
+    {
+      "id": "kangaroo",
+      "en": "kangaroo",
+      "ar": "كنغر"
+    },
+    {
+      "id": "snake",
+      "en": "snake",
+      "ar": "ثعبان"
+    },
+    {
+      "id": "crocodile",
+      "en": "crocodile",
+      "ar": "تمساح"
+    },
+    {
+      "id": "hippo",
+      "en": "hippo",
+      "ar": "فرس النهر"
+    },
+    {
+      "id": "rhino",
+      "en": "rhino",
+      "ar": "وحيد القرن"
+    },
+    {
+      "id": "gorilla",
+      "en": "gorilla",
+      "ar": "غوريلا"
+    },
+    {
+      "id": "panda",
+      "en": "panda",
+      "ar": "باندا"
+    },
+    {
+      "id": "koala",
+      "en": "koala",
+      "ar": "كوالا"
+    },
+    {
+      "id": "frog",
+      "en": "frog",
+      "ar": "ضفدع"
+    },
+    {
+      "id": "butterfly",
+      "en": "butterfly",
+      "ar": "فراشة"
+    },
+    {
+      "id": "eagle",
+      "en": "eagle",
+      "ar": "نسر"
+    },
+    {
+      "id": "penguin",
+      "en": "penguin",
+      "ar": "بطريق"
+    },
+    {
+      "id": "leopard",
+      "en": "leopard",
+      "ar": "نمر مرقط"
+    },
+    {
+      "id": "hedgehog",
+      "en": "hedgehog",
+      "ar": "قنفذ"
+    },
+    {
+      "id": "squirrel",
+      "en": "squirrel",
+      "ar": "سنجاب"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "animals_wild_1",
+      "en": "The lion is strong.",
+      "ar": "الأسد قوي.",
+      "words": [
+        "lion"
+      ]
+    },
+    {
+      "id": "animals_wild_2",
+      "en": "The elephant is big.",
+      "ar": "الفيل كبير.",
+      "words": [
+        "elephant"
+      ]
+    },
+    {
+      "id": "animals_wild_3",
+      "en": "The giraffe has a long neck.",
+      "ar": "للزرافة رقبة طويلة.",
+      "words": [
+        "giraffe"
+      ]
+    },
+    {
+      "id": "animals_wild_4",
+      "en": "The monkey likes bananas.",
+      "ar": "القرد يحب الموز.",
+      "words": [
+        "monkey"
+      ]
+    },
+    {
+      "id": "animals_wild_5",
+      "en": "The zebra has stripes.",
+      "ar": "للحمار الوحشي خطوط.",
+      "words": [
+        "zebra"
+      ]
+    },
+    {
+      "id": "animals_wild_6",
+      "en": "The frog can jump.",
+      "ar": "الضفدع يستطيع أن يقفز.",
+      "words": [
+        "frog"
+      ]
+    },
+    {
+      "id": "animals_wild_7",
+      "en": "The butterfly is pretty.",
+      "ar": "الفراشة جميلة.",
+      "words": [
+        "butterfly"
+      ]
+    },
+    {
+      "id": "animals_wild_8",
+      "en": "The penguin lives in the cold.",
+      "ar": "البطريق يعيش في البرد.",
+      "words": [
+        "penguin"
+      ]
+    }
+  ]
+}

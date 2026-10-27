@@ -1,0 +1,173 @@
+{
+  "id": "numbers",
+  "words": [
+    {
+      "id": "number_1",
+      "en": "one",
+      "ar": "واحد"
+    },
+    {
+      "id": "number_2",
+      "en": "two",
+      "ar": "اثنان"
+    },
+    {
+      "id": "number_3",
+      "en": "three",
+      "ar": "ثلاثة"
+    },
+    {
+      "id": "number_4",
+      "en": "four",
+      "ar": "أربعة"
+    },
+    {
+      "id": "number_5",
+      "en": "five",
+      "ar": "خمسة"
+    },
+    {
+      "id": "number_6",
+      "en": "six",
+      "ar": "ستة"
+    },
+    {
+      "id": "number_7",
+      "en": "seven",
+      "ar": "سبعة"
+    },
+    {
+      "id": "number_8",
+      "en": "eight",
+      "ar": "ثمانية"
+    },
+    {
+      "id": "number_9",
+      "en": "nine",
+      "ar": "تسعة"
+    },
+    {
+      "id": "number_10",
+      "en": "ten",
+      "ar": "عشرة"
+    },
+    {
+      "id": "number_11",
+      "en": "eleven",
+      "ar": "أحد عشر"
+    },
+    {
+      "id": "number_12",
+      "en": "twelve",
+      "ar": "اثنا عشر"
+    },
+    {
+      "id": "number_13",
+      "en": "thirteen",
+      "ar": "ثلاثة عشر"
+    },
+    {
+      "id": "number_14",
+      "en": "fourteen",
+      "ar": "أربعة عشر"
+    },
+    {
+      "id": "number_15",
+      "en": "fifteen",
+      "ar": "خمسة عشر"
+    },
+    {
+      "id": "number_16",
+      "en": "sixteen",
+      "ar": "ستة عشر"
+    },
+    {
+      "id": "number_17",
+      "en": "seventeen",
+      "ar": "سبعة عشر"
+    },
+    {
+      "id": "number_18",
+      "en": "eighteen",
+      "ar": "ثمانية عشر"
+    },
+    {
+      "id": "number_19",
+      "en": "nineteen",
+      "ar": "تسعة عشر"
+    },
+    {
+      "id": "number_20",
+      "en": "twenty",
+      "ar": "عشرون"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "numbers_1",
+      "en": "I have two hands.",
+      "ar": "عندي يدان.",
+      "words": [
+        "number_2"
+      ]
+    },
+    {
+      "id": "numbers_2",
+      "en": "I am six years old.",
+      "ar": "عمري ست سنوات.",
+      "words": [
+        "number_6"
+      ]
+    },
+    {
+      "id": "numbers_3",
+      "en": "I have ten fingers.",
+      "ar": "عندي عشرة أصابع.",
+      "words": [
+        "number_10"
+      ]
+    },
+    {
+      "id": "numbers_4",
+      "en": "I see three birds.",
+      "ar": "أرى ثلاثة عصافير.",
+      "words": [
+        "number_3"
+      ]
+    },
+    {
+      "id": "numbers_5",
+      "en": "One, two, three, go!",
+      "ar": "واحد، اثنان، ثلاثة، انطلق!",
+      "words": [
+        "number_1",
+        "number_2",
+        "number_3"
+      ]
+    },
+    {
+      "id": "numbers_6",
+      "en": "A spider has eight legs.",
+      "ar": "للعنكبوت ثماني أرجل.",
+      "words": [
+        "number_8"
+      ]
+    },
+    {
+      "id": "numbers_7",
+      "en": "I have one nose.",
+      "ar": "عندي أنف واحد.",
+      "words": [
+        "number_1"
+      ]
+    },
+    {
+      "id": "numbers_8",
+      "en": "There are seven days in a week.",
+      "ar": "في الأسبوع سبعة أيام.",
+      "words": [
+        "number_7"
+      ]
+    }
+  ]
+}

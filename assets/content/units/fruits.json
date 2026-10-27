@@ -1,13 +1,156 @@
 {
   "id": "fruits",
   "words": [
-    { "id": "apple",      "en": "apple",      "ar": "تفاحة" },
-    { "id": "banana",     "en": "banana",     "ar": "موزة" },
-    { "id": "grapes",     "en": "grapes",     "ar": "عنب" },
-    { "id": "orange",     "en": "orange",     "ar": "برتقالة" },
-    { "id": "strawberry", "en": "strawberry", "ar": "فراولة" },
-    { "id": "watermelon", "en": "watermelon", "ar": "بطيخة" },
-    { "id": "lemon",      "en": "lemon",      "ar": "ليمونة" },
-    { "id": "pear",       "en": "pear",       "ar": "كمثرى" }
+    {
+      "id": "apple",
+      "en": "apple",
+      "ar": "تفاحة"
+    },
+    {
+      "id": "banana",
+      "en": "banana",
+      "ar": "موزة"
+    },
+    {
+      "id": "grapes",
+      "en": "grapes",
+      "ar": "عنب"
+    },
+    {
+      "id": "orange",
+      "en": "orange",
+      "ar": "برتقالة"
+    },
+    {
+      "id": "strawberry",
+      "en": "strawberry",
+      "ar": "فراولة"
+    },
+    {
+      "id": "watermelon",
+      "en": "watermelon",
+      "ar": "بطيخة"
+    },
+    {
+      "id": "lemon",
+      "en": "lemon",
+      "ar": "ليمونة"
+    },
+    {
+      "id": "pear",
+      "en": "pear",
+      "ar": "كمثرى"
+    },
+    {
+      "id": "cherries",
+      "en": "cherries",
+      "ar": "كرز"
+    },
+    {
+      "id": "peach",
+      "en": "peach",
+      "ar": "خوخة"
+    },
+    {
+      "id": "pineapple",
+      "en": "pineapple",
+      "ar": "أناناس"
+    },
+    {
+      "id": "mango",
+      "en": "mango",
+      "ar": "مانجو"
+    },
+    {
+      "id": "kiwi",
+      "en": "kiwi",
+      "ar": "كيوي"
+    },
+    {
+      "id": "coconut",
+      "en": "coconut",
+      "ar": "جوز الهند"
+    },
+    {
+      "id": "melon",
+      "en": "melon",
+      "ar": "شمام"
+    },
+    {
+      "id": "blueberries",
+      "en": "blueberries",
+      "ar": "توت أزرق"
+    },
+    {
+      "id": "avocado",
+      "en": "avocado",
+      "ar": "أفوكادو"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "fruits_1",
+      "en": "I like apples.",
+      "ar": "أحب التفاح.",
+      "words": [
+        "apple"
+      ]
+    },
+    {
+      "id": "fruits_2",
+      "en": "The banana is yellow.",
+      "ar": "الموزة صفراء.",
+      "words": [
+        "banana"
+      ]
+    },
+    {
+      "id": "fruits_3",
+      "en": "The grapes are purple.",
+      "ar": "العنب بنفسجي.",
+      "words": [
+        "grapes"
+      ]
+    },
+    {
+      "id": "fruits_4",
+      "en": "I eat an orange.",
+      "ar": "آكل برتقالة.",
+      "words": [
+        "orange"
+      ]
+    },
+    {
+      "id": "fruits_5",
+      "en": "The strawberry is red.",
+      "ar": "الفراولة حمراء.",
+      "words": [
+        "strawberry"
+      ]
+    },
+    {
+      "id": "fruits_6",
+      "en": "The watermelon is big.",
+      "ar": "البطيخة كبيرة.",
+      "words": [
+        "watermelon"
+      ]
+    },
+    {
+      "id": "fruits_7",
+      "en": "The lemon is sour.",
+      "ar": "الليمونة حامضة.",
+      "words": [
+        "lemon"
+      ]
+    },
+    {
+      "id": "fruits_8",
+      "en": "I want a mango, please.",
+      "ar": "أريد مانجو، من فضلك.",
+      "words": [
+        "mango"
+      ]
+    }
   ]
 }

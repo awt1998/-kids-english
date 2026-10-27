@@ -1,0 +1,166 @@
+{
+  "id": "transport",
+  "words": [
+    {
+      "id": "car",
+      "en": "car",
+      "ar": "سيارة"
+    },
+    {
+      "id": "bus",
+      "en": "bus",
+      "ar": "حافلة"
+    },
+    {
+      "id": "train",
+      "en": "train",
+      "ar": "قطار"
+    },
+    {
+      "id": "airplane",
+      "en": "airplane",
+      "ar": "طائرة"
+    },
+    {
+      "id": "ship",
+      "en": "ship",
+      "ar": "سفينة"
+    },
+    {
+      "id": "boat",
+      "en": "boat",
+      "ar": "قارب"
+    },
+    {
+      "id": "bicycle",
+      "en": "bicycle",
+      "ar": "دراجة"
+    },
+    {
+      "id": "motorcycle",
+      "en": "motorcycle",
+      "ar": "دراجة نارية"
+    },
+    {
+      "id": "truck",
+      "en": "truck",
+      "ar": "شاحنة"
+    },
+    {
+      "id": "taxi",
+      "en": "taxi",
+      "ar": "سيارة أجرة"
+    },
+    {
+      "id": "ambulance",
+      "en": "ambulance",
+      "ar": "سيارة إسعاف"
+    },
+    {
+      "id": "fire_truck",
+      "en": "fire truck",
+      "ar": "سيارة إطفاء"
+    },
+    {
+      "id": "police_car",
+      "en": "police car",
+      "ar": "سيارة شرطة"
+    },
+    {
+      "id": "helicopter",
+      "en": "helicopter",
+      "ar": "طائرة مروحية"
+    },
+    {
+      "id": "rocket",
+      "en": "rocket",
+      "ar": "صاروخ"
+    },
+    {
+      "id": "tractor",
+      "en": "tractor",
+      "ar": "جرار"
+    },
+    {
+      "id": "scooter",
+      "en": "scooter",
+      "ar": "سكوتر"
+    },
+    {
+      "id": "van",
+      "en": "van",
+      "ar": "شاحنة صغيرة"
+    },
+    {
+      "id": "subway",
+      "en": "subway",
+      "ar": "مترو"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "transport_1",
+      "en": "We go to school by bus.",
+      "ar": "نذهب إلى المدرسة بالحافلة.",
+      "words": [
+        "bus"
+      ]
+    },
+    {
+      "id": "transport_2",
+      "en": "The car is fast.",
+      "ar": "السيارة سريعة.",
+      "words": [
+        "car"
+      ]
+    },
+    {
+      "id": "transport_3",
+      "en": "The airplane can fly.",
+      "ar": "الطائرة تستطيع أن تطير.",
+      "words": [
+        "airplane"
+      ]
+    },
+    {
+      "id": "transport_4",
+      "en": "I ride my bicycle.",
+      "ar": "أركب دراجتي.",
+      "words": [
+        "bicycle"
+      ]
+    },
+    {
+      "id": "transport_5",
+      "en": "The train is long.",
+      "ar": "القطار طويل.",
+      "words": [
+        "train"
+      ]
+    },
+    {
+      "id": "transport_6",
+      "en": "The boat is on the water.",
+      "ar": "القارب على الماء.",
+      "words": [
+        "boat"
+      ]
+    },
+    {
+      "id": "transport_7",
+      "en": "The fire truck is red.",
+      "ar": "سيارة الإطفاء حمراء.",
+      "words": [
+        "fire_truck"
+      ]
+    },
+    {
+      "id": "transport_8",
+      "en": "The rocket goes to the moon.",
+      "ar": "الصاروخ يذهب إلى القمر.",
+      "words": [
+        "rocket"
+      ]
+    }
+  ]
+}

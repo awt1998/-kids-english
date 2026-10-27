@@ -30,7 +30,7 @@ class MapScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final store = context.watch<ProfilesStore>();
     final child = store.current!;
-    final units = context.read<ContentRepository>().units;
+    final units = context.read<ContentRepository>().unitsFor(child.level);
     final next = nextLesson(child, units);
 
     return Scaffold(

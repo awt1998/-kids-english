@@ -33,6 +33,7 @@ flutter:
     - assets/images/avatars/
     - assets/images/ui/
     - assets/audio/en/words/
+    - assets/audio/en/sentences/
     - assets/audio/sfx/
 
   # Both fonts are variable-weight TTFs under the SIL Open Font License

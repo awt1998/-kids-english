@@ -1,0 +1,126 @@
+{
+  "id": "feelings",
+  "words": [
+    {
+      "id": "happy",
+      "en": "happy",
+      "ar": "سعيد"
+    },
+    {
+      "id": "sad",
+      "en": "sad",
+      "ar": "حزين"
+    },
+    {
+      "id": "angry",
+      "en": "angry",
+      "ar": "غاضب"
+    },
+    {
+      "id": "scared",
+      "en": "scared",
+      "ar": "خائف"
+    },
+    {
+      "id": "surprised",
+      "en": "surprised",
+      "ar": "مندهش"
+    },
+    {
+      "id": "tired",
+      "en": "tired",
+      "ar": "متعب"
+    },
+    {
+      "id": "sick",
+      "en": "sick",
+      "ar": "مريض"
+    },
+    {
+      "id": "silly",
+      "en": "silly",
+      "ar": "مضحك"
+    },
+    {
+      "id": "calm",
+      "en": "calm",
+      "ar": "هادئ"
+    },
+    {
+      "id": "hot",
+      "en": "hot",
+      "ar": "حران"
+    },
+    {
+      "id": "cold",
+      "en": "cold",
+      "ar": "بردان"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "feelings_1",
+      "en": "I am happy.",
+      "ar": "أنا سعيد.",
+      "words": [
+        "happy"
+      ]
+    },
+    {
+      "id": "feelings_2",
+      "en": "He is sad.",
+      "ar": "هو حزين.",
+      "words": [
+        "sad"
+      ]
+    },
+    {
+      "id": "feelings_3",
+      "en": "She is angry.",
+      "ar": "هي غاضبة.",
+      "words": [
+        "angry"
+      ]
+    },
+    {
+      "id": "feelings_4",
+      "en": "I am tired.",
+      "ar": "أنا متعب.",
+      "words": [
+        "tired"
+      ]
+    },
+    {
+      "id": "feelings_5",
+      "en": "Are you scared?",
+      "ar": "هل أنت خائف؟",
+      "words": [
+        "scared"
+      ]
+    },
+    {
+      "id": "feelings_6",
+      "en": "I feel sick.",
+      "ar": "أشعر أنني مريض.",
+      "words": [
+        "sick"
+      ]
+    },
+    {
+      "id": "feelings_7",
+      "en": "I am hot.",
+      "ar": "أنا حران.",
+      "words": [
+        "hot"
+      ]
+    },
+    {
+      "id": "feelings_8",
+      "en": "I am cold.",
+      "ar": "أنا بردان.",
+      "words": [
+        "cold"
+      ]
+    }
+  ]
+}

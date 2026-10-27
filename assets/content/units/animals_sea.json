@@ -1,0 +1,115 @@
+{
+  "id": "animals_sea",
+  "words": [
+    {
+      "id": "fish",
+      "en": "fish",
+      "ar": "سمكة"
+    },
+    {
+      "id": "whale",
+      "en": "whale",
+      "ar": "حوت"
+    },
+    {
+      "id": "dolphin",
+      "en": "dolphin",
+      "ar": "دلفين"
+    },
+    {
+      "id": "shark",
+      "en": "shark",
+      "ar": "سمك القرش"
+    },
+    {
+      "id": "octopus",
+      "en": "octopus",
+      "ar": "أخطبوط"
+    },
+    {
+      "id": "crab",
+      "en": "crab",
+      "ar": "سلطعون"
+    },
+    {
+      "id": "shrimp",
+      "en": "shrimp",
+      "ar": "روبيان"
+    },
+    {
+      "id": "lobster",
+      "en": "lobster",
+      "ar": "كركند"
+    },
+    {
+      "id": "jellyfish",
+      "en": "jellyfish",
+      "ar": "قنديل البحر"
+    },
+    {
+      "id": "seal",
+      "en": "seal",
+      "ar": "فقمة"
+    },
+    {
+      "id": "shell",
+      "en": "shell",
+      "ar": "صدفة"
+    },
+    {
+      "id": "coral",
+      "en": "coral",
+      "ar": "مرجان"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "animals_sea_1",
+      "en": "The fish can swim.",
+      "ar": "السمكة تستطيع أن تسبح.",
+      "words": [
+        "fish"
+      ]
+    },
+    {
+      "id": "animals_sea_2",
+      "en": "The whale is very big.",
+      "ar": "الحوت كبير جداً.",
+      "words": [
+        "whale"
+      ]
+    },
+    {
+      "id": "animals_sea_3",
+      "en": "The dolphin can jump.",
+      "ar": "الدلفين يستطيع أن يقفز.",
+      "words": [
+        "dolphin"
+      ]
+    },
+    {
+      "id": "animals_sea_4",
+      "en": "The octopus has eight arms.",
+      "ar": "للأخطبوط ثماني أذرع.",
+      "words": [
+        "octopus"
+      ]
+    },
+    {
+      "id": "animals_sea_5",
+      "en": "The crab is red.",
+      "ar": "السلطعون أحمر.",
+      "words": [
+        "crab"
+      ]
+    },
+    {
+      "id": "animals_sea_6",
+      "en": "I found a shell on the beach.",
+      "ar": "وجدت صدفة على الشاطئ.",
+      "words": [
+        "shell"
+      ]
+    }
+  ]
+}

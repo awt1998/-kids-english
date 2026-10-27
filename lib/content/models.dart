@@ -40,6 +40,30 @@ class Word {
   int get hashCode => id.hashCode;
 }
 
+/// A short sentence that uses some of the unit's words, e.g. "I like apples."
+class Sentence {
+  const Sentence({
+    required this.id,
+    required this.en,
+    required this.ar,
+    this.wordIds = const [],
+  });
+
+  factory Sentence.fromJson(Map<String, dynamic> json) => Sentence(
+    id: json['id'] as String,
+    en: json['en'] as String,
+    ar: json['ar'] as String,
+    wordIds: (json['words'] as List? ?? const []).cast<String>(),
+  );
+
+  final String id;
+  final String en;
+  final String ar;
+  final List<String> wordIds;
+
+  String get audioPath => 'audio/en/sentences/$id.mp3';
+}
+
 class Unit {
   const Unit({
     required this.id,
@@ -48,6 +72,8 @@ class Unit {
     required this.icon,
     required this.color,
     this.words = const [],
+    this.sentences = const [],
+    this.levels = const {...AgeLevel.values},
   });
 
   final String id;
@@ -58,6 +84,10 @@ class Unit {
 
   /// Empty while the unit is still "coming soon".
   final List<Word> words;
+  final List<Sentence> sentences;
+
+  /// Age groups that see this unit on their map.
+  final Set<AgeLevel> levels;
 
   bool get isAvailable => words.isNotEmpty;
   String get iconPath => 'assets/images/ui/$icon.svg';

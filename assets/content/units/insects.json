@@ -1,0 +1,97 @@
+{
+  "id": "insects",
+  "words": [
+    {
+      "id": "ant",
+      "en": "ant",
+      "ar": "نملة"
+    },
+    {
+      "id": "spider",
+      "en": "spider",
+      "ar": "عنكبوت"
+    },
+    {
+      "id": "ladybug",
+      "en": "ladybug",
+      "ar": "دعسوقة"
+    },
+    {
+      "id": "snail",
+      "en": "snail",
+      "ar": "حلزون"
+    },
+    {
+      "id": "worm",
+      "en": "worm",
+      "ar": "دودة"
+    },
+    {
+      "id": "mosquito",
+      "en": "mosquito",
+      "ar": "بعوضة"
+    },
+    {
+      "id": "beetle",
+      "en": "beetle",
+      "ar": "خنفساء"
+    },
+    {
+      "id": "cricket",
+      "en": "cricket",
+      "ar": "صرصور الليل"
+    },
+    {
+      "id": "caterpillar",
+      "en": "caterpillar",
+      "ar": "يرقة"
+    },
+    {
+      "id": "fly",
+      "en": "fly",
+      "ar": "ذبابة"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "insects_1",
+      "en": "The ant is small.",
+      "ar": "النملة صغيرة.",
+      "words": [
+        "ant"
+      ]
+    },
+    {
+      "id": "insects_2",
+      "en": "The spider makes a web.",
+      "ar": "العنكبوت يصنع شبكة.",
+      "words": [
+        "spider"
+      ]
+    },
+    {
+      "id": "insects_3",
+      "en": "The ladybug is red and black.",
+      "ar": "الدعسوقة حمراء وسوداء.",
+      "words": [
+        "ladybug"
+      ]
+    },
+    {
+      "id": "insects_4",
+      "en": "The snail is slow.",
+      "ar": "الحلزون بطيء.",
+      "words": [
+        "snail"
+      ]
+    },
+    {
+      "id": "insects_5",
+      "en": "The worm lives in the ground.",
+      "ar": "الدودة تعيش في التراب.",
+      "words": [
+        "worm"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "clothes",
+  "words": [
+    {
+      "id": "shirt",
+      "en": "shirt",
+      "ar": "قميص"
+    },
+    {
+      "id": "pants",
+      "en": "pants",
+      "ar": "بنطال"
+    },
+    {
+      "id": "dress",
+      "en": "dress",
+      "ar": "فستان"
+    },
+    {
+      "id": "shoes",
+      "en": "shoes",
+      "ar": "حذاء"
+    },
+    {
+      "id": "socks",
+      "en": "socks",
+      "ar": "جوارب"
+    },
+    {
+      "id": "cap",
+      "en": "cap",
+      "ar": "قبعة"
+    },
+    {
+      "id": "coat",
+      "en": "coat",
+      "ar": "معطف"
+    },
+    {
+      "id": "scarf",
+      "en": "scarf",
+      "ar": "وشاح"
+    },
+    {
+      "id": "gloves",
+      "en": "gloves",
+      "ar": "قفازات"
+    },
+    {
+      "id": "glasses",
+      "en": "glasses",
+      "ar": "نظارة"
+    },
+    {
+      "id": "boots",
+      "en": "boots",
+      "ar": "جزمة"
+    },
+    {
+      "id": "shorts",
+      "en": "shorts",
+      "ar": "شورت"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "clothes_1",
+      "en": "I wear a shirt.",
+      "ar": "ألبس قميصاً.",
+      "words": [
+        "shirt"
+      ]
+    },
+    {
+      "id": "clothes_2",
+      "en": "My shoes are new.",
+      "ar": "حذائي جديد.",
+      "words": [
+        "shoes"
+      ]
+    },
+    {
+      "id": "clothes_3",
+      "en": "Put on your socks.",
+      "ar": "البس جواربك.",
+      "words": [
+        "socks"
+      ]
+    },
+    {
+      "id": "clothes_4",
+      "en": "I wear a coat in winter.",
+      "ar": "ألبس معطفاً في الشتاء.",
+      "words": [
+        "coat"
+      ]
+    },
+    {
+      "id": "clothes_5",
+      "en": "My cap is blue.",
+      "ar": "قبعتي زرقاء.",
+      "words": [
+        "cap"
+      ]
+    },
+    {
+      "id": "clothes_6",
+      "en": "My dad wears glasses.",
+      "ar": "أبي يلبس نظارة.",
+      "words": [
+        "glasses"
+      ]
+    },
+    {
+      "id": "clothes_7",
+      "en": "The scarf is warm.",
+      "ar": "الوشاح دافئ.",
+      "words": [
+        "scarf"
+      ]
+    }
+  ]
+}

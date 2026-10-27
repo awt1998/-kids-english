@@ -1,0 +1,181 @@
+{
+  "id": "house",
+  "words": [
+    {
+      "id": "house",
+      "en": "house",
+      "ar": "بيت"
+    },
+    {
+      "id": "door",
+      "en": "door",
+      "ar": "باب"
+    },
+    {
+      "id": "window",
+      "en": "window",
+      "ar": "نافذة"
+    },
+    {
+      "id": "bed",
+      "en": "bed",
+      "ar": "سرير"
+    },
+    {
+      "id": "chair",
+      "en": "chair",
+      "ar": "كرسي"
+    },
+    {
+      "id": "sofa",
+      "en": "sofa",
+      "ar": "كنبة"
+    },
+    {
+      "id": "clock",
+      "en": "clock",
+      "ar": "ساعة"
+    },
+    {
+      "id": "key",
+      "en": "key",
+      "ar": "مفتاح"
+    },
+    {
+      "id": "bathtub",
+      "en": "bathtub",
+      "ar": "حوض الاستحمام"
+    },
+    {
+      "id": "shower",
+      "en": "shower",
+      "ar": "دش"
+    },
+    {
+      "id": "mirror",
+      "en": "mirror",
+      "ar": "مرآة"
+    },
+    {
+      "id": "tv",
+      "en": "TV",
+      "ar": "تلفاز"
+    },
+    {
+      "id": "phone",
+      "en": "phone",
+      "ar": "هاتف"
+    },
+    {
+      "id": "computer",
+      "en": "computer",
+      "ar": "حاسوب"
+    },
+    {
+      "id": "cup",
+      "en": "cup",
+      "ar": "كوب"
+    },
+    {
+      "id": "plate",
+      "en": "plate",
+      "ar": "صحن"
+    },
+    {
+      "id": "spoon",
+      "en": "spoon",
+      "ar": "ملعقة"
+    },
+    {
+      "id": "bowl",
+      "en": "bowl",
+      "ar": "وعاء"
+    },
+    {
+      "id": "broom",
+      "en": "broom",
+      "ar": "مكنسة"
+    },
+    {
+      "id": "soap",
+      "en": "soap",
+      "ar": "صابون"
+    },
+    {
+      "id": "toothbrush",
+      "en": "toothbrush",
+      "ar": "فرشاة أسنان"
+    },
+    {
+      "id": "lamp",
+      "en": "lamp",
+      "ar": "مصباح"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "house_1",
+      "en": "This is my house.",
+      "ar": "هذا بيتي.",
+      "words": [
+        "house"
+      ]
+    },
+    {
+      "id": "house_2",
+      "en": "Open the door, please.",
+      "ar": "افتح الباب، من فضلك.",
+      "words": [
+        "door"
+      ]
+    },
+    {
+      "id": "house_3",
+      "en": "I sleep in my bed.",
+      "ar": "أنام في سريري.",
+      "words": [
+        "bed"
+      ]
+    },
+    {
+      "id": "house_4",
+      "en": "Sit on the chair.",
+      "ar": "اجلس على الكرسي.",
+      "words": [
+        "chair"
+      ]
+    },
+    {
+      "id": "house_5",
+      "en": "Look at the clock.",
+      "ar": "انظر إلى الساعة.",
+      "words": [
+        "clock"
+      ]
+    },
+    {
+      "id": "house_6",
+      "en": "I wash my hands with soap.",
+      "ar": "أغسل يدي بالصابون.",
+      "words": [
+        "soap"
+      ]
+    },
+    {
+      "id": "house_7",
+      "en": "I eat soup with a spoon.",
+      "ar": "آكل الشوربة بالملعقة.",
+      "words": [
+        "spoon"
+      ]
+    },
+    {
+      "id": "house_8",
+      "en": "Close the window.",
+      "ar": "أغلق النافذة.",
+      "words": [
+        "window"
+      ]
+    }
+  ]
+}

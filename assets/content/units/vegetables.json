@@ -1,0 +1,137 @@
+{
+  "id": "vegetables",
+  "words": [
+    {
+      "id": "carrot",
+      "en": "carrot",
+      "ar": "جزرة"
+    },
+    {
+      "id": "tomato",
+      "en": "tomato",
+      "ar": "طماطم"
+    },
+    {
+      "id": "potato",
+      "en": "potato",
+      "ar": "بطاطس"
+    },
+    {
+      "id": "corn",
+      "en": "corn",
+      "ar": "ذرة"
+    },
+    {
+      "id": "cucumber",
+      "en": "cucumber",
+      "ar": "خيار"
+    },
+    {
+      "id": "broccoli",
+      "en": "broccoli",
+      "ar": "بروكلي"
+    },
+    {
+      "id": "onion",
+      "en": "onion",
+      "ar": "بصل"
+    },
+    {
+      "id": "garlic",
+      "en": "garlic",
+      "ar": "ثوم"
+    },
+    {
+      "id": "eggplant",
+      "en": "eggplant",
+      "ar": "باذنجان"
+    },
+    {
+      "id": "pepper",
+      "en": "pepper",
+      "ar": "فلفل"
+    },
+    {
+      "id": "lettuce",
+      "en": "lettuce",
+      "ar": "خس"
+    },
+    {
+      "id": "mushroom",
+      "en": "mushroom",
+      "ar": "فطر"
+    },
+    {
+      "id": "peas",
+      "en": "peas",
+      "ar": "بازلاء"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "vegetables_1",
+      "en": "The carrot is orange.",
+      "ar": "الجزرة برتقالية.",
+      "words": [
+        "carrot"
+      ]
+    },
+    {
+      "id": "vegetables_2",
+      "en": "The tomato is red.",
+      "ar": "الطماطم حمراء.",
+      "words": [
+        "tomato"
+      ]
+    },
+    {
+      "id": "vegetables_3",
+      "en": "I like potatoes.",
+      "ar": "أحب البطاطس.",
+      "words": [
+        "potato"
+      ]
+    },
+    {
+      "id": "vegetables_4",
+      "en": "The cucumber is green.",
+      "ar": "الخيار أخضر.",
+      "words": [
+        "cucumber"
+      ]
+    },
+    {
+      "id": "vegetables_5",
+      "en": "Corn is yellow.",
+      "ar": "الذرة صفراء.",
+      "words": [
+        "corn"
+      ]
+    },
+    {
+      "id": "vegetables_6",
+      "en": "I eat my vegetables.",
+      "ar": "آكل خضاري.",
+      "words": [
+        "carrot",
+        "peas"
+      ]
+    },
+    {
+      "id": "vegetables_7",
+      "en": "The onion is round.",
+      "ar": "البصلة مستديرة.",
+      "words": [
+        "onion"
+      ]
+    },
+    {
+      "id": "vegetables_8",
+      "en": "Broccoli is good for you.",
+      "ar": "البروكلي مفيد لك.",
+      "words": [
+        "broccoli"
+      ]
+    }
+  ]
+}

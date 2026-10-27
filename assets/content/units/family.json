@@ -1,0 +1,111 @@
+{
+  "id": "family",
+  "words": [
+    {
+      "id": "mom",
+      "en": "mom",
+      "ar": "أمي"
+    },
+    {
+      "id": "dad",
+      "en": "dad",
+      "ar": "أبي"
+    },
+    {
+      "id": "sister",
+      "en": "sister",
+      "ar": "أختي"
+    },
+    {
+      "id": "brother",
+      "en": "brother",
+      "ar": "أخي"
+    },
+    {
+      "id": "baby",
+      "en": "baby",
+      "ar": "رضيع"
+    },
+    {
+      "id": "grandma",
+      "en": "grandma",
+      "ar": "جدتي"
+    },
+    {
+      "id": "grandpa",
+      "en": "grandpa",
+      "ar": "جدي"
+    },
+    {
+      "id": "family",
+      "en": "family",
+      "ar": "عائلة"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "family_1",
+      "en": "I love my mom.",
+      "ar": "أحب أمي.",
+      "words": [
+        "mom"
+      ]
+    },
+    {
+      "id": "family_2",
+      "en": "My dad is tall.",
+      "ar": "أبي طويل.",
+      "words": [
+        "dad"
+      ]
+    },
+    {
+      "id": "family_3",
+      "en": "This is my sister.",
+      "ar": "هذه أختي.",
+      "words": [
+        "sister"
+      ]
+    },
+    {
+      "id": "family_4",
+      "en": "My brother is funny.",
+      "ar": "أخي مضحك.",
+      "words": [
+        "brother"
+      ]
+    },
+    {
+      "id": "family_5",
+      "en": "The baby is sleeping.",
+      "ar": "الرضيع نائم.",
+      "words": [
+        "baby"
+      ]
+    },
+    {
+      "id": "family_6",
+      "en": "I visit my grandma.",
+      "ar": "أزور جدتي.",
+      "words": [
+        "grandma"
+      ]
+    },
+    {
+      "id": "family_7",
+      "en": "My grandpa tells stories.",
+      "ar": "جدي يحكي القصص.",
+      "words": [
+        "grandpa"
+      ]
+    },
+    {
+      "id": "family_8",
+      "en": "I love my family.",
+      "ar": "أحب عائلتي.",
+      "words": [
+        "family"
+      ]
+    }
+  ]
+}

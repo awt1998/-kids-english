@@ -1,0 +1,97 @@
+{
+  "id": "sports",
+  "words": [
+    {
+      "id": "football",
+      "en": "football",
+      "ar": "كرة القدم"
+    },
+    {
+      "id": "basketball",
+      "en": "basketball",
+      "ar": "كرة السلة"
+    },
+    {
+      "id": "volleyball",
+      "en": "volleyball",
+      "ar": "الكرة الطائرة"
+    },
+    {
+      "id": "tennis",
+      "en": "tennis",
+      "ar": "التنس"
+    },
+    {
+      "id": "badminton",
+      "en": "badminton",
+      "ar": "الريشة الطائرة"
+    },
+    {
+      "id": "bowling",
+      "en": "bowling",
+      "ar": "البولينج"
+    },
+    {
+      "id": "karate",
+      "en": "karate",
+      "ar": "الكاراتيه"
+    },
+    {
+      "id": "skating",
+      "en": "skating",
+      "ar": "التزلج"
+    },
+    {
+      "id": "swimming",
+      "en": "swimming",
+      "ar": "السباحة"
+    },
+    {
+      "id": "running",
+      "en": "running",
+      "ar": "الجري"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "sports_1",
+      "en": "I play football.",
+      "ar": "ألعب كرة القدم.",
+      "words": [
+        "football"
+      ]
+    },
+    {
+      "id": "sports_2",
+      "en": "I like basketball.",
+      "ar": "أحب كرة السلة.",
+      "words": [
+        "basketball"
+      ]
+    },
+    {
+      "id": "sports_3",
+      "en": "We play tennis.",
+      "ar": "نلعب التنس.",
+      "words": [
+        "tennis"
+      ]
+    },
+    {
+      "id": "sports_4",
+      "en": "Swimming is fun.",
+      "ar": "السباحة ممتعة.",
+      "words": [
+        "swimming"
+      ]
+    },
+    {
+      "id": "sports_5",
+      "en": "Running makes me strong.",
+      "ar": "الجري يجعلني قوياً.",
+      "words": [
+        "running"
+      ]
+    }
+  ]
+}

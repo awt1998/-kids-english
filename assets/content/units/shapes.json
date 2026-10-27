@@ -1,0 +1,103 @@
+{
+  "id": "shapes",
+  "words": [
+    {
+      "id": "circle",
+      "en": "circle",
+      "ar": "دائرة"
+    },
+    {
+      "id": "square",
+      "en": "square",
+      "ar": "مربع"
+    },
+    {
+      "id": "triangle",
+      "en": "triangle",
+      "ar": "مثلث"
+    },
+    {
+      "id": "rectangle",
+      "en": "rectangle",
+      "ar": "مستطيل"
+    },
+    {
+      "id": "star",
+      "en": "star",
+      "ar": "نجمة"
+    },
+    {
+      "id": "heart",
+      "en": "heart",
+      "ar": "قلب"
+    },
+    {
+      "id": "oval",
+      "en": "oval",
+      "ar": "شكل بيضوي"
+    },
+    {
+      "id": "diamond",
+      "en": "diamond",
+      "ar": "معين"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "shapes_1",
+      "en": "The ball is a circle.",
+      "ar": "الكرة دائرة.",
+      "words": [
+        "circle"
+      ]
+    },
+    {
+      "id": "shapes_2",
+      "en": "I can draw a square.",
+      "ar": "أستطيع أن أرسم مربعاً.",
+      "words": [
+        "square"
+      ]
+    },
+    {
+      "id": "shapes_3",
+      "en": "A triangle has three sides.",
+      "ar": "للمثلث ثلاثة أضلاع.",
+      "words": [
+        "triangle"
+      ]
+    },
+    {
+      "id": "shapes_4",
+      "en": "The door is a rectangle.",
+      "ar": "الباب مستطيل.",
+      "words": [
+        "rectangle"
+      ]
+    },
+    {
+      "id": "shapes_5",
+      "en": "I see a star in the sky.",
+      "ar": "أرى نجمة في السماء.",
+      "words": [
+        "star"
+      ]
+    },
+    {
+      "id": "shapes_6",
+      "en": "I draw a red heart.",
+      "ar": "أرسم قلباً أحمر.",
+      "words": [
+        "heart"
+      ]
+    },
+    {
+      "id": "shapes_7",
+      "en": "An egg is an oval.",
+      "ar": "البيضة شكل بيضوي.",
+      "words": [
+        "oval"
+      ]
+    }
+  ]
+}

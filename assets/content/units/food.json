@@ -1,0 +1,237 @@
+{
+  "id": "food",
+  "words": [
+    {
+      "id": "bread",
+      "en": "bread",
+      "ar": "خبز"
+    },
+    {
+      "id": "rice",
+      "en": "rice",
+      "ar": "أرز"
+    },
+    {
+      "id": "egg",
+      "en": "egg",
+      "ar": "بيضة"
+    },
+    {
+      "id": "cheese",
+      "en": "cheese",
+      "ar": "جبن"
+    },
+    {
+      "id": "milk",
+      "en": "milk",
+      "ar": "حليب"
+    },
+    {
+      "id": "water",
+      "en": "water",
+      "ar": "ماء"
+    },
+    {
+      "id": "juice",
+      "en": "juice",
+      "ar": "عصير"
+    },
+    {
+      "id": "honey",
+      "en": "honey",
+      "ar": "عسل"
+    },
+    {
+      "id": "cake",
+      "en": "cake",
+      "ar": "كعكة"
+    },
+    {
+      "id": "cookie",
+      "en": "cookie",
+      "ar": "بسكويت"
+    },
+    {
+      "id": "meat",
+      "en": "meat",
+      "ar": "لحم"
+    },
+    {
+      "id": "soup",
+      "en": "soup",
+      "ar": "شوربة"
+    },
+    {
+      "id": "pizza",
+      "en": "pizza",
+      "ar": "بيتزا"
+    },
+    {
+      "id": "sandwich",
+      "en": "sandwich",
+      "ar": "شطيرة"
+    },
+    {
+      "id": "ice_cream",
+      "en": "ice cream",
+      "ar": "آيس كريم"
+    },
+    {
+      "id": "candy",
+      "en": "candy",
+      "ar": "حلوى"
+    },
+    {
+      "id": "chocolate",
+      "en": "chocolate",
+      "ar": "شوكولاتة"
+    },
+    {
+      "id": "tea",
+      "en": "tea",
+      "ar": "شاي"
+    },
+    {
+      "id": "salad",
+      "en": "salad",
+      "ar": "سلطة"
+    },
+    {
+      "id": "popcorn",
+      "en": "popcorn",
+      "ar": "فشار"
+    },
+    {
+      "id": "pancakes",
+      "en": "pancakes",
+      "ar": "فطائر"
+    },
+    {
+      "id": "butter",
+      "en": "butter",
+      "ar": "زبدة"
+    },
+    {
+      "id": "salt",
+      "en": "salt",
+      "ar": "ملح"
+    },
+    {
+      "id": "fries",
+      "en": "fries",
+      "ar": "بطاطس مقلية"
+    },
+    {
+      "id": "burger",
+      "en": "burger",
+      "ar": "برغر"
+    },
+    {
+      "id": "noodles",
+      "en": "noodles",
+      "ar": "معكرونة"
+    },
+    {
+      "id": "falafel",
+      "en": "falafel",
+      "ar": "فلافل"
+    },
+    {
+      "id": "croissant",
+      "en": "croissant",
+      "ar": "كرواسون"
+    },
+    {
+      "id": "donut",
+      "en": "donut",
+      "ar": "دونات"
+    },
+    {
+      "id": "cupcake",
+      "en": "cupcake",
+      "ar": "كب كيك"
+    },
+    {
+      "id": "lollipop",
+      "en": "lollipop",
+      "ar": "مصاصة"
+    },
+    {
+      "id": "peanuts",
+      "en": "peanuts",
+      "ar": "فول سوداني"
+    },
+    {
+      "id": "olive",
+      "en": "olive",
+      "ar": "زيتون"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "food_1",
+      "en": "I drink milk.",
+      "ar": "أشرب الحليب.",
+      "words": [
+        "milk"
+      ]
+    },
+    {
+      "id": "food_2",
+      "en": "I eat bread and cheese.",
+      "ar": "آكل الخبز والجبن.",
+      "words": [
+        "bread",
+        "cheese"
+      ]
+    },
+    {
+      "id": "food_3",
+      "en": "Water is good for you.",
+      "ar": "الماء مفيد لك.",
+      "words": [
+        "water"
+      ]
+    },
+    {
+      "id": "food_4",
+      "en": "I like rice.",
+      "ar": "أحب الأرز.",
+      "words": [
+        "rice"
+      ]
+    },
+    {
+      "id": "food_5",
+      "en": "The soup is hot.",
+      "ar": "الشوربة ساخنة.",
+      "words": [
+        "soup"
+      ]
+    },
+    {
+      "id": "food_6",
+      "en": "Can I have some juice?",
+      "ar": "هل يمكنني أن آخذ بعض العصير؟",
+      "words": [
+        "juice"
+      ]
+    },
+    {
+      "id": "food_7",
+      "en": "The cake is sweet.",
+      "ar": "الكعكة حلوة.",
+      "words": [
+        "cake"
+      ]
+    },
+    {
+      "id": "food_8",
+      "en": "I want an egg, please.",
+      "ar": "أريد بيضة، من فضلك.",
+      "words": [
+        "egg"
+      ]
+    }
+  ]
+}

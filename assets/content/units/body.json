@@ -1,0 +1,131 @@
+{
+  "id": "body",
+  "words": [
+    {
+      "id": "eye",
+      "en": "eye",
+      "ar": "عين"
+    },
+    {
+      "id": "ear",
+      "en": "ear",
+      "ar": "أذن"
+    },
+    {
+      "id": "nose",
+      "en": "nose",
+      "ar": "أنف"
+    },
+    {
+      "id": "mouth",
+      "en": "mouth",
+      "ar": "فم"
+    },
+    {
+      "id": "tooth",
+      "en": "tooth",
+      "ar": "سن"
+    },
+    {
+      "id": "tongue",
+      "en": "tongue",
+      "ar": "لسان"
+    },
+    {
+      "id": "hand",
+      "en": "hand",
+      "ar": "يد"
+    },
+    {
+      "id": "foot",
+      "en": "foot",
+      "ar": "قدم"
+    },
+    {
+      "id": "leg",
+      "en": "leg",
+      "ar": "رجل"
+    },
+    {
+      "id": "arm",
+      "en": "arm",
+      "ar": "ذراع"
+    },
+    {
+      "id": "face",
+      "en": "face",
+      "ar": "وجه"
+    },
+    {
+      "id": "finger",
+      "en": "finger",
+      "ar": "إصبع"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "body_1",
+      "en": "I see with my eyes.",
+      "ar": "أرى بعيني.",
+      "words": [
+        "eye"
+      ]
+    },
+    {
+      "id": "body_2",
+      "en": "I hear with my ears.",
+      "ar": "أسمع بأذني.",
+      "words": [
+        "ear"
+      ]
+    },
+    {
+      "id": "body_3",
+      "en": "I smell with my nose.",
+      "ar": "أشم بأنفي.",
+      "words": [
+        "nose"
+      ]
+    },
+    {
+      "id": "body_4",
+      "en": "I eat with my mouth.",
+      "ar": "آكل بفمي.",
+      "words": [
+        "mouth"
+      ]
+    },
+    {
+      "id": "body_5",
+      "en": "I brush my teeth.",
+      "ar": "أنظف أسناني بالفرشاة.",
+      "words": [
+        "tooth"
+      ]
+    },
+    {
+      "id": "body_6",
+      "en": "I wash my hands.",
+      "ar": "أغسل يدي.",
+      "words": [
+        "hand"
+      ]
+    },
+    {
+      "id": "body_7",
+      "en": "I walk with my feet.",
+      "ar": "أمشي بقدمي.",
+      "words": [
+        "foot"
+      ]
+    },
+    {
+      "id": "body_8",
+      "en": "Touch your nose!",
+      "ar": "المس أنفك!",
+      "words": [
+        "nose"
+      ]
+    }
+  ]
+}
