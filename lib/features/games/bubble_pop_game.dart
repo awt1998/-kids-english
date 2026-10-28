@@ -21,6 +21,7 @@ import 'game_common.dart';
 class BubblePopGame extends StatefulWidget {
   const BubblePopGame({
     super.key,
+    this.introduce = true,
     required this.target,
     required this.options,
     required this.onDone,
@@ -32,12 +33,15 @@ class BubblePopGame extends StatefulWidget {
   final bool showText;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<BubblePopGame> createState() => _BubblePopGameState();
 }
 
 class _BubblePopGameState extends State<BubblePopGame>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, GameVoice<BubblePopGame> {
   static const _colors = [
     AppColors.sky,
     AppColors.mint,
@@ -64,9 +68,7 @@ class _BubblePopGameState extends State<BubblePopGame>
       widget.options.length,
       (i) => i / widget.options.length + rnd.nextDouble() * 0.08,
     );
-    final audio = context.read<AudioService>();
-    audio.playPrompt(Prompt.popBubbles);
-    _timer = Timer(const Duration(milliseconds: 1600), _say);
+    intro(Prompt.popBubbles, introduce: widget.introduce, then: _say);
   }
 
   @override
@@ -86,7 +88,8 @@ class _BubblePopGameState extends State<BubblePopGame>
       setState(() => _popped = w.id);
       _drift.stop();
       _timer?.cancel();
-      _timer = Timer(const Duration(milliseconds: 1100), () {
+      praiseIfRecovered();
+      _timer = Timer(Duration(milliseconds: recovered ? 1900 : 1100), () {
         widget.onDone(GameResult(mistakesByWord: {widget.target.id: _wrong}));
       });
     } else {
@@ -96,7 +99,7 @@ class _BubblePopGameState extends State<BubblePopGame>
         _shakes[w.id] = (_shakes[w.id] ?? 0) + 1;
       });
       _timer?.cancel();
-      _timer = Timer(const Duration(milliseconds: 600), _say);
+      encourage(then: _say);
     }
   }
 

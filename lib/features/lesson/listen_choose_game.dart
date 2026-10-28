@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 
 import '../../audio/audio_service.dart';
 import '../../content/models.dart';
+import '../games/game_common.dart';
 import '../../core/strings_ar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
@@ -21,6 +22,7 @@ import '../../core/widgets/shake.dart';
 class ListenChooseGame extends StatefulWidget {
   const ListenChooseGame({
     super.key,
+    this.introduce = true,
     required this.target,
     required this.options,
     required this.onDone,
@@ -32,11 +34,15 @@ class ListenChooseGame extends StatefulWidget {
   /// Called once the right picture is tapped, with the number of wrong taps before it.
   final ValueChanged<int> onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<ListenChooseGame> createState() => _ListenChooseGameState();
 }
 
-class _ListenChooseGameState extends State<ListenChooseGame> {
+class _ListenChooseGameState extends State<ListenChooseGame>
+    with GameVoice<ListenChooseGame> {
   final _wrong = <String>{};
   final _shakes = <String, int>{};
   bool _solved = false;
@@ -46,7 +52,7 @@ class _ListenChooseGameState extends State<ListenChooseGame> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer(const Duration(milliseconds: 400), _say);
+    intro(Prompt.listenAndChoose, introduce: widget.introduce, then: _say);
   }
 
   @override
@@ -64,8 +70,9 @@ class _ListenChooseGameState extends State<ListenChooseGame> {
       audio.playSfx(Sfx.correct);
       setState(() => _solved = true);
       _timer?.cancel();
+      praiseIfRecovered();
       _timer = Timer(
-        const Duration(milliseconds: 1200),
+        Duration(milliseconds: recovered ? 1900 : 1200),
         () => widget.onDone(_wrong.length),
       );
     } else {
@@ -76,7 +83,7 @@ class _ListenChooseGameState extends State<ListenChooseGame> {
         _hint = true;
       });
       _timer?.cancel();
-      _timer = Timer(const Duration(milliseconds: 700), _say);
+      encourage(then: _say);
     }
   }
 

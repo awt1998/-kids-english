@@ -11,12 +11,14 @@ import '../../core/strings_ar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_text.dart';
+import '../../core/widgets/prompt_on_open.dart';
 import '../../core/widgets/kid_button.dart';
 import '../../core/widgets/mascot.dart';
 import '../../core/widgets/shake.dart';
 import '../../progress/child_profile.dart';
 import '../../progress/profiles_store.dart';
 import '../../progress/progress_rules.dart';
+import '../../progress/srs.dart';
 import '../lesson/lesson_screen.dart';
 import '../rewards/album_screen.dart';
 import '../rewards/garden_screen.dart';
@@ -36,77 +38,90 @@ class MapScreen extends StatelessWidget {
     final units = context.read<ContentRepository>().unitsFor(child.level);
     final next = nextLesson(child, units);
 
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            _TopBar(child: child),
-            Expanded(
-              child: LayoutBuilder(
-                builder: (context, box) {
-                  final layout = _layout(units, box.maxWidth);
-                  return SingleChildScrollView(
-                    padding: const EdgeInsets.only(bottom: AppSpacing.xxl),
-                    child: SizedBox(
-                      height: layout.height,
-                      width: box.maxWidth,
-                      child: Stack(
-                        children: [
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: _PathPainter(
-                                layout.stops.map((s) => s.center).toList(),
-                              ),
-                            ),
-                          ),
-                          for (final h in layout.headers)
-                            Positioned(
-                              top: h.top,
-                              left: 0,
-                              right: 0,
-                              child: Center(
-                                child: _UnitHeader(
-                                  unit: h.unit,
-                                  open: isUnitOpen(child, units, h.unit),
+    return PromptOnOpen(
+      prompts: [_greeting(child, context.read<ProfilesStore>().now())],
+      child: Scaffold(
+        body: SafeArea(
+          child: Column(
+            children: [
+              _TopBar(child: child),
+              Expanded(
+                child: LayoutBuilder(
+                  builder: (context, box) {
+                    final layout = _layout(units, box.maxWidth);
+                    return SingleChildScrollView(
+                      padding: const EdgeInsets.only(bottom: AppSpacing.xxl),
+                      child: SizedBox(
+                        height: layout.height,
+                        width: box.maxWidth,
+                        child: Stack(
+                          children: [
+                            Positioned.fill(
+                              child: CustomPaint(
+                                painter: _PathPainter(
+                                  layout.stops.map((s) => s.center).toList(),
                                 ),
                               ),
                             ),
-                          for (final s in layout.stops)
-                            Positioned(
-                              left: s.center.dx - _stopSize / 2,
-                              top: s.center.dy - _stopSize / 2,
-                              child: _LessonStop(
-                                lesson: s.lesson,
-                                stars: child.lessonStars[s.lesson.key] ?? 0,
-                                open: isLessonOpen(child, units, s.lesson),
-                                isNext: s.lesson.key == next?.key,
-                              ),
-                            ),
-                          if (next != null)
-                            for (final s in layout.stops.where(
-                              (s) => s.lesson.key == next.key,
-                            ))
+                            for (final h in layout.headers)
                               Positioned(
-                                // The mascot waits beside the next stop, on the roomier side.
-                                left: s.center.dx > box.maxWidth / 2
-                                    ? s.center.dx - _stopSize / 2 - 110
-                                    : s.center.dx + _stopSize / 2 + 6,
-                                top: s.center.dy - 70,
-                                child: const IgnorePointer(
-                                  child: Mascot(size: 104),
+                                top: h.top,
+                                left: 0,
+                                right: 0,
+                                child: Center(
+                                  child: _UnitHeader(
+                                    unit: h.unit,
+                                    open: isUnitOpen(child, units, h.unit),
+                                  ),
                                 ),
                               ),
-                        ],
+                            for (final s in layout.stops)
+                              Positioned(
+                                left: s.center.dx - _stopSize / 2,
+                                top: s.center.dy - _stopSize / 2,
+                                child: _LessonStop(
+                                  lesson: s.lesson,
+                                  stars: child.lessonStars[s.lesson.key] ?? 0,
+                                  open: isLessonOpen(child, units, s.lesson),
+                                  isNext: s.lesson.key == next?.key,
+                                ),
+                              ),
+                            if (next != null)
+                              for (final s in layout.stops.where(
+                                (s) => s.lesson.key == next.key,
+                              ))
+                                Positioned(
+                                  // The mascot waits beside the next stop, on the roomier side.
+                                  left: s.center.dx > box.maxWidth / 2
+                                      ? s.center.dx - _stopSize / 2 - 110
+                                      : s.center.dx + _stopSize / 2 + 6,
+                                  top: s.center.dy - 70,
+                                  child: const IgnorePointer(
+                                    child: Mascot(size: 104),
+                                  ),
+                                ),
+                          ],
+                        ),
                       ),
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  /// "I missed you!" after two or more days away, otherwise "tap the glowing lesson".
+  static Prompt _greeting(ChildProfile child, DateTime now) {
+    final last = child.playDays.isEmpty
+        ? null
+        : child.playDays.reduce((a, b) => a > b ? a : b);
+    return last != null && dayNumber(now) - last >= 2
+        ? Prompt.comeBack
+        : Prompt.pickLesson;
   }
 
   _MapLayout _layout(List<Unit> units, double width) {
@@ -323,7 +338,7 @@ class _LessonStop extends StatelessWidget {
       onTap: () {
         final audio = context.read<AudioService>();
         if (!open) {
-          audio.playSfx(Sfx.tryAgain);
+          audio.playPrompt(Prompt.locked);
           return;
         }
         audio.playSfx(Sfx.tap);

@@ -49,11 +49,22 @@ class _CelebrationScreenState extends State<CelebrationScreen> {
         }),
       );
     }
+    // Spoken news after the stars: new stickers, then today's flower.
+    var nextPromptMs = 1500 + widget.stars * 450;
     if (widget.reward.newStickers.isNotEmpty) {
       _timers.add(
         Timer(
-          Duration(milliseconds: 1500 + widget.stars * 450),
+          Duration(milliseconds: nextPromptMs),
           () => audio.playPrompt(Prompt.newSticker),
+        ),
+      );
+      nextPromptMs += 3600;
+    }
+    if (widget.reward.newFlower) {
+      _timers.add(
+        Timer(
+          Duration(milliseconds: nextPromptMs),
+          () => audio.playPrompt(Prompt.gardenFlower),
         ),
       );
     }

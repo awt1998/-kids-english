@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../../audio/audio_service.dart';
 import '../../content/models.dart';
+import '../games/game_common.dart';
 import '../../core/strings_ar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
@@ -16,17 +17,25 @@ import '../../core/widgets/shake.dart';
 
 /// A big picture card. Tap it: it flips, shows the word and says it.
 class FlashcardGame extends StatefulWidget {
-  const FlashcardGame({super.key, required this.word, required this.onDone});
+  const FlashcardGame({
+    super.key,
+    this.introduce = true,
+    required this.word,
+    required this.onDone,
+  });
 
   final Word word;
   final VoidCallback onDone;
+
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
 
   @override
   State<FlashcardGame> createState() => _FlashcardGameState();
 }
 
 class _FlashcardGameState extends State<FlashcardGame>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, GameVoice<FlashcardGame> {
   late final _flip = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 500),
@@ -36,7 +45,7 @@ class _FlashcardGameState extends State<FlashcardGame>
   @override
   void initState() {
     super.initState();
-    context.read<AudioService>().playPrompt(Prompt.tapToFlip);
+    if (widget.introduce) audio.playPrompt(Prompt.tapToFlip);
   }
 
   @override

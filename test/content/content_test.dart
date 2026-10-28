@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:kids_english/audio/audio_service.dart';
 import 'package:kids_english/content/content_repository.dart';
 import 'package:kids_english/content/models.dart';
 
@@ -119,5 +120,15 @@ void main() {
     expect(lessons.last.kind, LessonKind.review);
     expect(lessons.first.words.length, ContentRepository.wordsPerLesson);
     expect(lessons.last.words.length, fruits.words.length);
+  });
+
+  test('every Arabic instruction has its recording', () {
+    for (final p in Prompt.values) {
+      expect(
+        File('assets/${promptAsset(p)}').existsSync(),
+        isTrue,
+        reason: 'missing recording for ${p.name}',
+      );
+    }
   });
 }

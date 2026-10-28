@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 
+import '../../audio/audio_service.dart';
 import '../../content/models.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
@@ -143,3 +145,38 @@ double fitCardSize(
 
 /// True for single English words made of letters only (games that work letter by letter).
 bool isSpellable(Word w) => RegExp(r'^[a-z]+$').hasMatch(w.en);
+
+/// Spoken guidance shared by all games: the instruction the first time a
+/// game appears in a lesson, "close! try again" after the first mistake, and
+/// a "well done" when the child gets it right after that mistake.
+mixin GameVoice<T extends StatefulWidget> on State<T> {
+  bool _encouraged = false;
+
+  AudioService get audio => context.read<AudioService>();
+
+  /// Plays [prompt] if [introduce], then runs [then] (usually saying the word).
+  Future<void> intro(
+    Prompt prompt, {
+    required bool introduce,
+    VoidCallback? then,
+  }) async {
+    if (introduce) await audio.playPromptAndWait(prompt);
+    if (mounted) then?.call();
+  }
+
+  /// After a wrong answer: encourage once per round, then run [then].
+  Future<void> encourage({VoidCallback? then}) async {
+    if (!_encouraged) {
+      _encouraged = true;
+      await audio.playPromptAndWait(Prompt.tryAgain);
+    }
+    if (mounted) then?.call();
+  }
+
+  /// Whether a "well done" will be said, so callers can wait for it.
+  bool get recovered => _encouraged;
+
+  void praiseIfRecovered() {
+    if (_encouraged) audio.playPrompt(Prompt.correct);
+  }
+}

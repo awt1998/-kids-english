@@ -15,6 +15,7 @@ import 'game_common.dart';
 class MatchGame extends StatefulWidget {
   const MatchGame({
     super.key,
+    this.introduce = true,
     required this.words,
     required this.onDone,
     this.random,
@@ -24,11 +25,14 @@ class MatchGame extends StatefulWidget {
   final math.Random? random;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<MatchGame> createState() => _MatchGameState();
 }
 
-class _MatchGameState extends State<MatchGame> {
+class _MatchGameState extends State<MatchGame> with GameVoice<MatchGame> {
   late final List<Word> _pictures;
   late final List<Word> _labels;
   final _matched = <String>{};
@@ -43,7 +47,7 @@ class _MatchGameState extends State<MatchGame> {
     final rnd = widget.random ?? math.Random();
     _pictures = [...widget.words]..shuffle(rnd);
     _labels = [...widget.words]..shuffle(rnd);
-    context.read<AudioService>().playPrompt(Prompt.matchWord);
+    if (widget.introduce) audio.playPrompt(Prompt.matchWord);
   }
 
   @override
@@ -93,6 +97,7 @@ class _MatchGameState extends State<MatchGame> {
       }
     } else {
       audio.playSfx(Sfx.tryAgain);
+      encourage();
       setState(() {
         _mistakes[picked.id] = (_mistakes[picked.id] ?? 0) + 1;
         _shakes['label-${w.id}'] = (_shakes['label-${w.id}'] ?? 0) + 1;

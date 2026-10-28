@@ -36,6 +36,10 @@ class LessonScreen extends StatefulWidget {
 }
 
 class _LessonScreenState extends State<LessonScreen> {
+  /// Game kinds already explained in this lesson, and per step whether to explain.
+  final _seenKinds = <StepKind>{};
+  final _introduce = <int, bool>{};
+
   late final LessonPlan _plan = widget.plan ?? _makePlan();
 
   LessonPlan _makePlan() {
@@ -89,14 +93,20 @@ class _LessonScreenState extends State<LessonScreen> {
   Widget _game(LessonStep step) {
     final key = ValueKey('step-${_plan.index}');
     final level = _plan.level;
+    final introduce = _introduce.putIfAbsent(
+      _plan.index,
+      () => _seenKinds.add(step.kind),
+    );
     return switch (step.kind) {
       StepKind.flashcard => FlashcardGame(
         key: key,
+        introduce: introduce,
         word: step.word!,
         onDone: () => _next(const GameResult()),
       ),
       StepKind.listenChoose => ListenChooseGame(
         key: key,
+        introduce: introduce,
         target: step.word!,
         options: step.options,
         onDone: (wrong) =>
@@ -104,6 +114,7 @@ class _LessonScreenState extends State<LessonScreen> {
       ),
       StepKind.bubblePop => BubblePopGame(
         key: key,
+        introduce: introduce,
         target: step.word!,
         options: step.options,
         showText:
@@ -112,25 +123,39 @@ class _LessonScreenState extends State<LessonScreen> {
       ),
       StepKind.memory => MemoryGame(
         key: key,
+        introduce: introduce,
         words: step.words,
         withText: level != AgeLevel.little,
         onDone: _next,
       ),
-      StepKind.match => MatchGame(key: key, words: step.words, onDone: _next),
+      StepKind.match => MatchGame(
+        key: key,
+        introduce: introduce,
+        words: step.words,
+        onDone: _next,
+      ),
       StepKind.missingLetter => MissingLetterGame(
         key: key,
+        introduce: introduce,
         word: step.word!,
         onDone: _next,
       ),
-      StepKind.spell => SpellGame(key: key, word: step.word!, onDone: _next),
+      StepKind.spell => SpellGame(
+        key: key,
+        introduce: introduce,
+        word: step.word!,
+        onDone: _next,
+      ),
       StepKind.trace => TraceGame(
         key: key,
+        introduce: introduce,
         letterWord: step.word!,
         lowercase: level != AgeLevel.little,
         onDone: _next,
       ),
       StepKind.orderSentence => OrderSentenceGame(
         key: key,
+        introduce: introduce,
         sentence: step.sentence!,
         onDone: _next,
       ),

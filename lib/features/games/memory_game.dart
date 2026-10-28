@@ -27,6 +27,7 @@ class _MemoryCard {
 class MemoryGame extends StatefulWidget {
   const MemoryGame({
     super.key,
+    this.introduce = true,
     required this.words,
     required this.onDone,
     this.withText = false,
@@ -38,11 +39,14 @@ class MemoryGame extends StatefulWidget {
   final math.Random? random;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<MemoryGame> createState() => _MemoryGameState();
 }
 
-class _MemoryGameState extends State<MemoryGame> {
+class _MemoryGameState extends State<MemoryGame> with GameVoice<MemoryGame> {
   late final List<_MemoryCard> _cards;
   final _open = <_MemoryCard>[];
   bool _busy = false;
@@ -57,7 +61,7 @@ class _MemoryGameState extends State<MemoryGame> {
         _MemoryCard(w, showText: widget.withText),
       ],
     ]..shuffle(widget.random ?? math.Random());
-    context.read<AudioService>().playPrompt(Prompt.memoryGame);
+    if (widget.introduce) audio.playPrompt(Prompt.memoryGame);
   }
 
   @override

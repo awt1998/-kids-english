@@ -117,6 +117,7 @@ class TraceScorer {
 class TraceGame extends StatefulWidget {
   const TraceGame({
     super.key,
+    this.introduce = true,
     required this.letterWord,
     required this.onDone,
     this.lowercase = false,
@@ -127,11 +128,14 @@ class TraceGame extends StatefulWidget {
   final bool lowercase;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<TraceGame> createState() => _TraceGameState();
 }
 
-class _TraceGameState extends State<TraceGame> {
+class _TraceGameState extends State<TraceGame> with GameVoice<TraceGame> {
   LetterShapes? _shapes;
   final _strokes = <List<Offset>>[];
   TraceScorer? _scorer;
@@ -150,10 +154,10 @@ class _TraceGameState extends State<TraceGame> {
       if (mounted) setState(() => _shapes = s);
     });
     final audio = context.read<AudioService>();
-    audio.playPrompt(Prompt.traceLetter);
-    _timer = Timer(
-      const Duration(milliseconds: 1300),
-      () => audio.playWord(widget.letterWord.audioPath),
+    intro(
+      Prompt.traceLetter,
+      introduce: widget.introduce,
+      then: () => audio.playWord(widget.letterWord.audioPath),
     );
   }
 

@@ -91,6 +91,7 @@ double _boxSize(double width, int count) => math
 class MissingLetterGame extends StatefulWidget {
   const MissingLetterGame({
     super.key,
+    this.introduce = true,
     required this.word,
     required this.onDone,
     this.random,
@@ -100,11 +101,15 @@ class MissingLetterGame extends StatefulWidget {
   final math.Random? random;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<MissingLetterGame> createState() => _MissingLetterGameState();
 }
 
-class _MissingLetterGameState extends State<MissingLetterGame> {
+class _MissingLetterGameState extends State<MissingLetterGame>
+    with GameVoice<MissingLetterGame> {
   late final int _gap;
   late final List<String> _choices;
   final _shakes = <String, int>{};
@@ -130,10 +135,10 @@ class _MissingLetterGameState extends State<MissingLetterGame> {
           ..shuffle(rnd);
     _choices = [_answer, ...others.take(2)]..shuffle(rnd);
     final audio = context.read<AudioService>();
-    audio.playPrompt(Prompt.missingLetter);
-    _timer = Timer(
-      const Duration(milliseconds: 1400),
-      () => audio.playWord(widget.word.audioPath),
+    intro(
+      Prompt.missingLetter,
+      introduce: widget.introduce,
+      then: () => audio.playWord(widget.word.audioPath),
     );
   }
 
@@ -161,6 +166,7 @@ class _MissingLetterGameState extends State<MissingLetterGame> {
       });
     } else {
       audio.playSfx(Sfx.tryAgain);
+      encourage();
       setState(() {
         _wrong++;
         _shakes[c] = (_shakes[c] ?? 0) + 1;
@@ -243,6 +249,7 @@ class _MissingLetterGameState extends State<MissingLetterGame> {
 class SpellGame extends StatefulWidget {
   const SpellGame({
     super.key,
+    this.introduce = true,
     required this.word,
     required this.onDone,
     this.random,
@@ -252,11 +259,14 @@ class SpellGame extends StatefulWidget {
   final math.Random? random;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<SpellGame> createState() => _SpellGameState();
 }
 
-class _SpellGameState extends State<SpellGame> {
+class _SpellGameState extends State<SpellGame> with GameVoice<SpellGame> {
   /// Tile letters in their shuffled order; null once used.
   late final List<String?> _tiles;
   final _shakes = <int, int>{};
@@ -278,10 +288,10 @@ class _SpellGameState extends State<SpellGame> {
     } while (letters.length > 1 && letters.join() == _w);
     _tiles = List<String?>.of(letters);
     final audio = context.read<AudioService>();
-    audio.playPrompt(Prompt.spellWord);
-    _timer = Timer(
-      const Duration(milliseconds: 1400),
-      () => audio.playWord(widget.word.audioPath),
+    intro(
+      Prompt.spellWord,
+      introduce: widget.introduce,
+      then: () => audio.playWord(widget.word.audioPath),
     );
   }
 
@@ -317,6 +327,7 @@ class _SpellGameState extends State<SpellGame> {
       }
     } else {
       audio.playSfx(Sfx.tryAgain);
+      encourage();
       setState(() {
         _wrong++;
         _wrongHere++;

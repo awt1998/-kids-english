@@ -2,7 +2,7 @@ name: kids_english
 description: "English for Arab kids: picture + sound learning games."
 publish_to: 'none'
 
-version: 0.3.0+3
+version: 0.3.1+4
 
 environment:
   sdk: ^3.13.7
@@ -38,6 +38,7 @@ flutter:
     - assets/audio/en/sentences/
     - assets/audio/sfx/
     - assets/audio/music/
+    - assets/audio/ar/
 
   # Both fonts are variable-weight TTFs under the SIL Open Font License
   # (see assets/fonts/OFL-*.txt).

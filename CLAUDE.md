@@ -46,9 +46,14 @@ python3 tool/build_review_page.py OUT.html # listen-and-flag page for the owner
   per sentence: `assets/audio/en/sentences/<id>.mp3`. Units may set `"levels"` in index.json
   (`test/content/content_test.dart` fails if either is missing).
 - `screenshots/` — renders screens and every game to PNG for review; not part of `flutter test`.
-- Arabic prompts: texts in `assets/content/prompts_ar.json` (Gulf + MSA). The owner is recording
-  them himself (free, human voice): files `01`…`22` in that file's order → `assets/audio/ar/<id>.mp3`
-  after noise cleanup/trim/loudness. ElevenLabs/Azure were declined (no paid plans for now).
+- Arabic prompts: texts in `assets/content/prompts_ar.json`; recorded by the owner in Gulf dialect
+  (one file, sentences in order) and split/cleaned by `tool/import_recordings_ar.py` into
+  `assets/audio/ar/<id>.mp3` (a sentence with an inner pause needs `--join a,b`; verify the mapping
+  first with the Arabic Whisper model in `/opt/asr/sherpa-onnx-whisper-small`). A new prompt needs a
+  new recording from the owner. Paid TTS (ElevenLabs/Azure) was declined.
+- Prompt rules: a game's instruction plays only the first time that game appears in a lesson
+  (`introduce`); first mistake → "try again" prompt; right after a mistake → "correct" prompt
+  (`GameVoice` mixin). Screens greet via `PromptOnOpen`.
 - In widget tests, assets need real I/O: preload with `tester.runAsync(...)` (e.g. `LetterShapes.load`)
   before pumping, and give route changes one `pump()` before a timed pump.
 

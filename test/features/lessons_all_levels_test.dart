@@ -22,9 +22,11 @@ import '../lesson_driver.dart';
 /// rewards (stars, stickers, today's flower, spaced repetition) are saved.
 void main() {
   late ContentRepository content;
+  late SilentAudioService audio;
 
   Future<ProfilesStore> setUpStore(WidgetTester tester, AgeLevel level) async {
     SharedPreferences.setMockInitialValues({});
+    audio = SilentAudioService();
     content = (await tester.runAsync(ContentRepository.load))!;
     // Asset files load with real I/O, so preload the tracing shapes outside fake time.
     await tester.runAsync(LetterShapes.load);
@@ -47,7 +49,7 @@ void main() {
       MultiProvider(
         providers: [
           Provider.value(value: content),
-          Provider<AudioService>.value(value: SilentAudioService()),
+          Provider<AudioService>.value(value: audio),
           ChangeNotifierProvider.value(value: store),
         ],
         child: MaterialApp(
@@ -95,6 +97,11 @@ void main() {
       await open(tester, store, lesson);
       final seen = await playLesson(tester);
       expect(seen.toSet(), containsAll(expectations[level]!));
+      // Each game's instruction is spoken once per lesson, not before every question.
+      final listen = audio.played
+          .where((p) => p == 'prompt:listenAndChoose')
+          .length;
+      expect(listen, 1);
       expect(find.byType(CelebrationScreen), findsOneWidget);
 
       final child = store.current!;

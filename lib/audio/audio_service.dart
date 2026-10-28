@@ -31,10 +31,18 @@ enum Prompt {
   askParent,
 }
 
+/// Asset path of a prompt's recording, e.g. `audio/ar/who_is_playing.mp3`.
+String promptAsset(Prompt p) =>
+    'audio/ar/${p.name.replaceAllMapped(RegExp('[A-Z]'), (m) => '_${m[0]!.toLowerCase()}')}.mp3';
+
 /// Plays all app sound: word pronunciation, Arabic prompts and effects.
 abstract class AudioService {
   Future<void> playWord(String assetPath);
   Future<void> playPrompt(Prompt prompt);
+
+  /// Plays a prompt and completes when it has finished (or could not play),
+  /// so the next sound does not cut it off.
+  Future<void> playPromptAndWait(Prompt prompt);
   Future<void> playSfx(Sfx sfx);
   Future<void> stopVoice();
 
@@ -69,14 +77,21 @@ class AudioPlayersService implements AudioService {
     _ => 'audio/sfx/${s.name}.mp3',
   };
 
-  static String _promptFile(Prompt p) =>
-      'audio/ar/${p.name.replaceAllMapped(RegExp('[A-Z]'), (m) => '_${m[0]!.toLowerCase()}')}.mp3';
+  static String _promptFile(Prompt p) => promptAsset(p);
 
   @override
   Future<void> playWord(String assetPath) => _play(_voice, assetPath);
 
   @override
   Future<void> playPrompt(Prompt prompt) => _play(_voice, _promptFile(prompt));
+
+  @override
+  Future<void> playPromptAndWait(Prompt prompt) async {
+    final finished = _voice.onPlayerComplete.first;
+    if (!await _play(_voice, _promptFile(prompt))) return;
+    // Never hang a game on audio: no prompt is longer than a few seconds.
+    await finished.timeout(const Duration(seconds: 8), onTimeout: () {});
+  }
 
   @override
   Future<void> playSfx(Sfx sfx) => _play(_sfx[sfx]!, _sfxFile(sfx));
@@ -100,13 +115,15 @@ class AudioPlayersService implements AudioService {
     }
   }
 
-  Future<void> _play(AudioPlayer player, String path) async {
+  /// True when the sound started. Missing or failing sound never breaks a game.
+  Future<bool> _play(AudioPlayer player, String path) async {
     try {
       await player.stop();
       await player.play(AssetSource(path));
+      return true;
     } catch (e) {
-      // Missing or failing sound must never break a game.
       debugPrint('audio: could not play $path: $e');
+      return false;
     }
   }
 
@@ -129,6 +146,8 @@ class SilentAudioService implements AudioService {
   @override
   Future<void> playPrompt(Prompt prompt) async =>
       played.add('prompt:${prompt.name}');
+  @override
+  Future<void> playPromptAndWait(Prompt prompt) => playPrompt(prompt);
   @override
   Future<void> playSfx(Sfx sfx) async => played.add('sfx:${sfx.name}');
   @override

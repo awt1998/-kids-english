@@ -7,6 +7,7 @@ import '../../core/strings_ar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_text.dart';
+import '../../core/widgets/prompt_on_open.dart';
 import '../../core/widgets/mascot.dart';
 import '../../progress/child_profile.dart';
 import '../../progress/profiles_store.dart';
@@ -35,51 +36,54 @@ class ProfileSelectScreen extends StatelessWidget {
       ).push(MaterialPageRoute<void>(builder: (_) => const AddChildScreen()));
     }
 
-    return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(AppSpacing.lg),
-            child: Column(
-              children: [
-                const Mascot(size: 160),
-                Text(
-                  Ar.whoIsPlaying,
-                  style: AppText.display,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: AppSpacing.xl),
-                Wrap(
-                  alignment: WrapAlignment.center,
-                  spacing: AppSpacing.lg,
-                  runSpacing: AppSpacing.lg,
-                  children: [
-                    for (final child in store.children)
-                      _AvatarTile(
-                        key: ValueKey(child.id),
-                        onTap: () => open(child),
-                        label: child.name,
-                        child: SvgPicture.asset(
-                          child.avatarPath,
-                          width: 100,
-                          height: 100,
+    return PromptOnOpen(
+      prompts: const [Prompt.whoIsPlaying],
+      child: Scaffold(
+        body: SafeArea(
+          child: Center(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(AppSpacing.lg),
+              child: Column(
+                children: [
+                  const Mascot(size: 160),
+                  Text(
+                    Ar.whoIsPlaying,
+                    style: AppText.display,
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: AppSpacing.xl),
+                  Wrap(
+                    alignment: WrapAlignment.center,
+                    spacing: AppSpacing.lg,
+                    runSpacing: AppSpacing.lg,
+                    children: [
+                      for (final child in store.children)
+                        _AvatarTile(
+                          key: ValueKey(child.id),
+                          onTap: () => open(child),
+                          label: child.name,
+                          child: SvgPicture.asset(
+                            child.avatarPath,
+                            width: 100,
+                            height: 100,
+                          ),
                         ),
-                      ),
-                    if (store.canAddChild)
-                      _AvatarTile(
-                        key: const ValueKey('add'),
-                        onTap: add,
-                        label: Ar.addChild,
-                        dashed: true,
-                        child: const Icon(
-                          Icons.add_rounded,
-                          size: 72,
-                          color: AppColors.mint,
+                      if (store.canAddChild)
+                        _AvatarTile(
+                          key: const ValueKey('add'),
+                          onTap: add,
+                          label: Ar.addChild,
+                          dashed: true,
+                          child: const Icon(
+                            Icons.add_rounded,
+                            size: 72,
+                            color: AppColors.mint,
+                          ),
                         ),
-                      ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),

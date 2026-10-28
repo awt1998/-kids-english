@@ -19,6 +19,7 @@ import 'game_common.dart';
 class OrderSentenceGame extends StatefulWidget {
   const OrderSentenceGame({
     super.key,
+    this.introduce = true,
     required this.sentence,
     required this.onDone,
     this.random,
@@ -28,11 +29,15 @@ class OrderSentenceGame extends StatefulWidget {
   final math.Random? random;
   final GameDone onDone;
 
+  /// Say the game's instruction (the first time it appears in a lesson).
+  final bool introduce;
+
   @override
   State<OrderSentenceGame> createState() => _OrderSentenceGameState();
 }
 
-class _OrderSentenceGameState extends State<OrderSentenceGame> {
+class _OrderSentenceGameState extends State<OrderSentenceGame>
+    with GameVoice<OrderSentenceGame> {
   late final List<String> _words;
   late final String _ending;
   late final List<String?> _tiles;
@@ -58,9 +63,7 @@ class _OrderSentenceGameState extends State<OrderSentenceGame> {
       shuffled.shuffle(rnd);
     } while (shuffled.length > 1 && shuffled.join(' ') == _words.join(' '));
     _tiles = List<String?>.of(shuffled);
-    final audio = context.read<AudioService>();
-    audio.playPrompt(Prompt.orderSentence);
-    _timer = Timer(const Duration(milliseconds: 1500), _say);
+    intro(Prompt.orderSentence, introduce: widget.introduce, then: _say);
   }
 
   @override
@@ -94,6 +97,7 @@ class _OrderSentenceGameState extends State<OrderSentenceGame> {
       }
     } else {
       audio.playSfx(Sfx.tryAgain);
+      encourage();
       setState(() {
         _wrong++;
         _wrongHere++;
