@@ -110,7 +110,11 @@ class AnswerCard extends StatelessWidget {
               alignment: Alignment.center,
               child: text != null
                   ? FittedBox(child: EnglishText(text!, style: AppText.word))
-                  : SvgPicture.asset(word!.imagePath),
+                  : SvgPicture.asset(
+                      word!.imagePath,
+                      width: double.infinity,
+                      height: double.infinity,
+                    ),
             ),
           ),
         ),

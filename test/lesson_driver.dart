@@ -142,7 +142,10 @@ Future<List<Type>> playLesson(WidgetTester tester, {int maxSteps = 40}) async {
 
 /// Drags a finger over every part of the letter on the tracing pad.
 /// Needs [LetterShapes.load] to have run in `tester.runAsync` beforehand.
-Future<void> traceCurrentLetter(WidgetTester tester) async {
+Future<void> traceCurrentLetter(
+  WidgetTester tester, {
+  double fraction = 1,
+}) async {
   final g = tester.widget<TraceGame>(find.byType(TraceGame));
   final pad = find.byKey(const ValueKey('trace-pad'));
   final rect = tester.getRect(pad);
@@ -154,7 +157,8 @@ Future<void> traceCurrentLetter(WidgetTester tester) async {
   final gesture = await tester.startGesture(
     rect.topLeft + const Offset(8, 8) + _firstInside(path, rect.width - 16),
   );
-  for (var y = 0.0; y < rect.width; y += rect.width / 40) {
+  // Rows top to bottom; `fraction` < 1 stops part-way (for a mid-tracing picture).
+  for (var y = 0.0; y < rect.width * fraction; y += rect.width / 40) {
     for (var x = 0.0; x < rect.width; x += rect.width / 40) {
       final p = Offset(x, y);
       if (path.contains(p)) {

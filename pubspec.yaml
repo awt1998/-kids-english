@@ -2,7 +2,7 @@ name: kids_english
 description: "English for Arab kids: picture + sound learning games."
 publish_to: 'none'
 
-version: 0.2.0+2
+version: 0.3.0+3
 
 environment:
   sdk: ^3.13.7

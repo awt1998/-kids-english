@@ -24,6 +24,9 @@ abstract final class Ar {
   static const missingLetter = 'وش الحرف الناقص؟';
   static const startOver = 'من جديد';
   static const album = 'ألبوم الملصقات';
+
+  /// "3 من 10": reads correctly right-to-left, unlike "3 / 10".
+  static const outOf = 'من';
   static const garden = 'حديقتي';
   static const newStickers = 'ملصقات جديدة!';
   static const newFlower = 'وردة جديدة في حديقتك!';

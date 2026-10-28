@@ -179,7 +179,11 @@ class _MemoryGameState extends State<MemoryGame> {
                     ? FittedBox(
                         child: EnglishText(c.word.en, style: AppText.wordSmall),
                       )
-                    : SvgPicture.asset(c.word.imagePath),
+                    : SvgPicture.asset(
+                        c.word.imagePath,
+                        width: double.infinity,
+                        height: double.infinity,
+                      ),
               ),
             ),
           );

@@ -196,10 +196,13 @@ class _OrderSentenceGameState extends State<OrderSentenceGame> {
                                     ),
                                   ],
                                 ),
-                                alignment: Alignment.center,
-                                child: EnglishText(
-                                  _tiles[i] ?? '',
-                                  style: AppText.wordSmall,
+                                child: Align(
+                                  widthFactor: 1,
+                                  heightFactor: 1,
+                                  child: EnglishText(
+                                    _tiles[i] ?? '',
+                                    style: AppText.wordSmall,
+                                  ),
                                 ),
                               ),
                             ),

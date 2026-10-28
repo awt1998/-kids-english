@@ -48,7 +48,7 @@ class AlbumScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: AppSpacing.md),
                   Expanded(child: Text(Ar.album, style: AppText.title)),
-                  Text('$have / $total', style: AppText.title),
+                  Text('$have ${Ar.outOf} $total', style: AppText.title),
                 ],
               ),
             ),
@@ -80,7 +80,7 @@ class AlbumScreen extends StatelessWidget {
                                 child: Text(unit.titleAr, style: AppText.title),
                               ),
                               Text(
-                                '${unit.words.where((w) => child.stickers.contains(w.id)).length} / ${unit.words.length}',
+                                '${unit.words.where((w) => child.stickers.contains(w.id)).length} ${Ar.outOf} ${unit.words.length}',
                                 style: AppText.caption,
                               ),
                             ],

@@ -195,7 +195,11 @@ class _BubblePopGameState extends State<BubblePopGame>
                       ? FittedBox(
                           child: EnglishText(w.en, style: AppText.wordSmall),
                         )
-                      : SvgPicture.asset(w.imagePath),
+                      : SvgPicture.asset(
+                          w.imagePath,
+                          width: size * 0.6,
+                          height: size * 0.6,
+                        ),
                 ),
               ),
             ),
