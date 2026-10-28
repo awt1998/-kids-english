@@ -8,6 +8,7 @@ import 'package:kids_english/features/games/game_common.dart';
 import 'package:kids_english/features/games/letter_games.dart';
 import 'package:kids_english/features/games/match_game.dart';
 import 'package:kids_english/features/games/trace_game.dart';
+import 'package:kids_english/features/lesson/listen_choose_game.dart';
 import 'package:provider/provider.dart';
 
 const apple = Word(id: 'apple', en: 'apple', ar: 'تفاحة');
@@ -143,6 +144,47 @@ void main() {
         isFalse,
         reason: 'most of the scribble is off the letter',
       );
+    },
+  );
+
+  testWidgets('the instruction finishes first, then the word is asked', (
+    tester,
+  ) async {
+    final audio = await host(
+      tester,
+      ListenChooseGame(
+        target: apple,
+        options: const [apple, pear, lemon],
+        onDone: (_) {},
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(audio.played, ['prompt:listenAndChoose', apple.audioPath]);
+  });
+
+  testWidgets(
+    'if the child acts during the instruction, the word is not said over it',
+    (tester) async {
+      final audio = SilentAudioService()..interruptNextWait = true;
+      tester.view.physicalSize = const Size(1180, 820);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(
+        Provider<AudioService>.value(
+          value: audio,
+          child: MaterialApp(
+            home: Scaffold(
+              body: ListenChooseGame(
+                target: apple,
+                options: const [apple, pear, lemon],
+                onDone: (_) {},
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pump(const Duration(milliseconds: 100));
+      expect(audio.played, ['prompt:listenAndChoose']);
     },
   );
 }

@@ -27,7 +27,7 @@ class _PromptOnOpenState extends State<PromptOnOpen> {
     await Future<void>.delayed(const Duration(milliseconds: 400));
     for (final p in widget.prompts) {
       if (!mounted) return;
-      await audio.playPromptAndWait(p);
+      if (!await audio.playPromptAndWait(p)) return;
     }
   }
 

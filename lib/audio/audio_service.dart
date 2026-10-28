@@ -40,9 +40,13 @@ abstract class AudioService {
   Future<void> playWord(String assetPath);
   Future<void> playPrompt(Prompt prompt);
 
-  /// Plays a prompt and completes when it has finished (or could not play),
-  /// so the next sound does not cut it off.
-  Future<void> playPromptAndWait(Prompt prompt);
+  /// Plays a prompt and completes when it has finished, so the next sound
+  /// (usually the word being asked) never cuts it off.
+  ///
+  /// Returns false if something else started speaking meanwhile (the child
+  /// tapped a card, replayed the word…): the caller then skips what it
+  /// planned to say next. A missing recording returns true at once.
+  Future<bool> playPromptAndWait(Prompt prompt);
   Future<void> playSfx(Sfx sfx);
   Future<void> stopVoice();
 
@@ -64,7 +68,10 @@ class AudioPlayersService implements AudioService {
 
   static const _musicVolume = 0.18;
 
+  // Words and Arabic prompts each have their own player, so starting one
+  // never depends on the state of the other; only one of them speaks at a time.
   final _voice = AudioPlayer();
+  final _prompt = AudioPlayer();
   final _music = AudioPlayer()..setReleaseMode(ReleaseMode.loop);
   bool _musicOn = false;
   final _sfx = {
@@ -72,32 +79,77 @@ class AudioPlayersService implements AudioService {
       s: AudioPlayer()..setPlayerMode(PlayerMode.lowLatency),
   };
 
+  /// Increases with every new speech; a wait whose turn has passed was interrupted.
+  int _speechTurn = 0;
+
   static String _sfxFile(Sfx s) => switch (s) {
     Sfx.tryAgain => 'audio/sfx/try_again.mp3',
     _ => 'audio/sfx/${s.name}.mp3',
   };
 
-  static String _promptFile(Prompt p) => promptAsset(p);
+  @override
+  Future<void> playWord(String assetPath) => _speak(_voice, assetPath);
 
   @override
-  Future<void> playWord(String assetPath) => _play(_voice, assetPath);
+  Future<void> playPrompt(Prompt prompt) =>
+      _speak(_prompt, promptAsset(prompt));
 
   @override
-  Future<void> playPrompt(Prompt prompt) => _play(_voice, _promptFile(prompt));
+  Future<bool> playPromptAndWait(Prompt prompt) =>
+      _speak(_prompt, promptAsset(prompt), wait: true);
 
   @override
-  Future<void> playPromptAndWait(Prompt prompt) async {
-    final finished = _voice.onPlayerComplete.first;
-    if (!await _play(_voice, _promptFile(prompt))) return;
-    // Never hang a game on audio: no prompt is longer than a few seconds.
-    await finished.timeout(const Duration(seconds: 8), onTimeout: () {});
+  Future<void> playSfx(Sfx sfx) async {
+    final player = _sfx[sfx]!;
+    try {
+      await player.stop();
+      await player.play(AssetSource(_sfxFile(sfx)));
+    } catch (e) {
+      debugPrint('audio: could not play $sfx: $e');
+    }
   }
 
   @override
-  Future<void> playSfx(Sfx sfx) => _play(_sfx[sfx]!, _sfxFile(sfx));
+  Future<void> stopVoice() async {
+    _speechTurn++;
+    await Future.wait([_voice.stop(), _prompt.stop()]);
+  }
 
-  @override
-  Future<void> stopVoice() => _voice.stop();
+  /// Speaks one clip after silencing any other speech. With [wait], completes
+  /// when the clip has played to its end: its real length is read from the
+  /// file, so a lost or late "completed" event can never hold up (or rush)
+  /// the next sound. Returns false when interrupted by newer speech.
+  Future<bool> _speak(
+    AudioPlayer player,
+    String path, {
+    bool wait = false,
+  }) async {
+    final turn = ++_speechTurn;
+    try {
+      await Future.wait([_voice.stop(), _prompt.stop()]);
+      await player.setSource(AssetSource(path));
+      final length = await player.getDuration() ?? const Duration(seconds: 4);
+      if (turn != _speechTurn) return false;
+      await player.resume();
+      if (!wait) return true;
+      final clock = Stopwatch()..start();
+      final limit = length + const Duration(milliseconds: 250);
+      while (clock.elapsed < limit) {
+        await Future<void>.delayed(const Duration(milliseconds: 50));
+        if (turn != _speechTurn) return false;
+        // The player says it finished, and enough time has passed for that to be true.
+        if (player.state == PlayerState.completed &&
+            clock.elapsed > length * 0.8) {
+          break;
+        }
+      }
+      return turn == _speechTurn;
+    } catch (e) {
+      // Missing or failing sound never breaks a game.
+      debugPrint('audio: could not play $path: $e');
+      return turn == _speechTurn;
+    }
+  }
 
   @override
   Future<void> setMusicPlaying(bool playing) async {
@@ -115,21 +167,10 @@ class AudioPlayersService implements AudioService {
     }
   }
 
-  /// True when the sound started. Missing or failing sound never breaks a game.
-  Future<bool> _play(AudioPlayer player, String path) async {
-    try {
-      await player.stop();
-      await player.play(AssetSource(path));
-      return true;
-    } catch (e) {
-      debugPrint('audio: could not play $path: $e');
-      return false;
-    }
-  }
-
   @override
   void dispose() {
     _voice.dispose();
+    _prompt.dispose();
     _music.dispose();
     for (final p in _sfx.values) {
       p.dispose();
@@ -147,7 +188,13 @@ class SilentAudioService implements AudioService {
   Future<void> playPrompt(Prompt prompt) async =>
       played.add('prompt:${prompt.name}');
   @override
-  Future<void> playPromptAndWait(Prompt prompt) => playPrompt(prompt);
+  Future<bool> playPromptAndWait(Prompt prompt) async {
+    await playPrompt(prompt);
+    return !interruptNextWait;
+  }
+
+  /// Tests set this to simulate the child tapping while a prompt is spoken.
+  bool interruptNextWait = false;
   @override
   Future<void> playSfx(Sfx sfx) async => played.add('sfx:${sfx.name}');
   @override

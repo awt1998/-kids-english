@@ -154,13 +154,15 @@ mixin GameVoice<T extends StatefulWidget> on State<T> {
 
   AudioService get audio => context.read<AudioService>();
 
-  /// Plays [prompt] if [introduce], then runs [then] (usually saying the word).
+  /// Plays [prompt] if [introduce] and, once it has finished, runs [then]
+  /// (usually saying the word being asked). If the child already acted while
+  /// the prompt played, [then] is skipped.
   Future<void> intro(
     Prompt prompt, {
     required bool introduce,
     VoidCallback? then,
   }) async {
-    if (introduce) await audio.playPromptAndWait(prompt);
+    if (introduce && !await audio.playPromptAndWait(prompt)) return;
     if (mounted) then?.call();
   }
 
@@ -168,7 +170,7 @@ mixin GameVoice<T extends StatefulWidget> on State<T> {
   Future<void> encourage({VoidCallback? then}) async {
     if (!_encouraged) {
       _encouraged = true;
-      await audio.playPromptAndWait(Prompt.tryAgain);
+      if (!await audio.playPromptAndWait(Prompt.tryAgain)) return;
     }
     if (mounted) then?.call();
   }
