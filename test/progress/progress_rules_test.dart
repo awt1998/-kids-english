@@ -60,11 +60,17 @@ void main() {
   test('profile survives a JSON round trip', () {
     final c = child()
       ..lessonStars['a:0'] = 3
-      ..words['1'] = const WordStats(correct: 2, wrong: 1);
+      ..words['1'] = const WordStats(correct: 2, wrong: 1, box: 2, dueDay: 99)
+      ..stickers.add('1')
+      ..playDays.addAll([5, 6]);
     final back = ChildProfile.fromJson(c.toJson());
     expect(back.level, AgeLevel.little);
     expect(back.lessonStars, {'a:0': 3});
     expect(back.words['1']!.wrong, 1);
+    expect(back.words['1']!.box, 2);
+    expect(back.words['1']!.dueDay, 99);
+    expect(back.stickers, {'1'});
+    expect(back.playDays, {5, 6});
     expect(back.totalStars, 3);
   });
 }

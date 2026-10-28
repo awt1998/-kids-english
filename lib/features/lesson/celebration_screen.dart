@@ -11,12 +11,20 @@ import '../../core/theme/app_text.dart';
 import '../../core/widgets/confetti.dart';
 import '../../core/widgets/kid_button.dart';
 import '../../core/widgets/mascot.dart';
+import '../../progress/profiles_store.dart';
+import '../rewards/garden_screen.dart';
+import '../rewards/sticker.dart';
 
 /// End of a lesson: confetti, Labeeb dances and the stars pop in one by one.
 class CelebrationScreen extends StatefulWidget {
-  const CelebrationScreen({super.key, required this.stars});
+  const CelebrationScreen({
+    super.key,
+    required this.stars,
+    this.reward = const LessonReward(),
+  });
 
   final int stars;
+  final LessonReward reward;
 
   @override
   State<CelebrationScreen> createState() => _CelebrationScreenState();
@@ -39,6 +47,14 @@ class _CelebrationScreenState extends State<CelebrationScreen> {
           audio.playSfx(Sfx.star);
           setState(() => _shown = i + 1);
         }),
+      );
+    }
+    if (widget.reward.newStickers.isNotEmpty) {
+      _timers.add(
+        Timer(
+          Duration(milliseconds: 1500 + widget.stars * 450),
+          () => audio.playPrompt(Prompt.newSticker),
+        ),
       );
     }
   }
@@ -88,6 +104,36 @@ class _CelebrationScreenState extends State<CelebrationScreen> {
                           ),
                       ],
                     ),
+                    if (widget.reward.newStickers.isNotEmpty) ...[
+                      const SizedBox(height: AppSpacing.lg),
+                      Text(Ar.newStickers, style: AppText.title),
+                      const SizedBox(height: AppSpacing.sm),
+                      Wrap(
+                        alignment: WrapAlignment.center,
+                        spacing: AppSpacing.sm,
+                        runSpacing: AppSpacing.sm,
+                        children: [
+                          for (final id in widget.reward.newStickers)
+                            Sticker(
+                              imagePath: 'assets/images/words/$id.svg',
+                              size: 76,
+                            ),
+                        ],
+                      ),
+                    ],
+                    if (widget.reward.newFlower) ...[
+                      const SizedBox(height: AppSpacing.md),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          SvgPicture.asset(flowerFor(0), width: 44),
+                          const SizedBox(width: AppSpacing.sm),
+                          Flexible(
+                            child: Text(Ar.newFlower, style: AppText.body),
+                          ),
+                        ],
+                      ),
+                    ],
                     const SizedBox(height: AppSpacing.xl),
                     KidButton(
                       key: const ValueKey('continue'),

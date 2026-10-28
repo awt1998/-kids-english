@@ -11,12 +11,15 @@ import '../../core/strings_ar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_text.dart';
+import '../../core/widgets/kid_button.dart';
 import '../../core/widgets/mascot.dart';
 import '../../core/widgets/shake.dart';
 import '../../progress/child_profile.dart';
 import '../../progress/profiles_store.dart';
 import '../../progress/progress_rules.dart';
 import '../lesson/lesson_screen.dart';
+import '../rewards/album_screen.dart';
+import '../rewards/garden_screen.dart';
 
 /// The adventure map: units as islands, lessons as stops on a winding path.
 class MapScreen extends StatelessWidget {
@@ -174,6 +177,28 @@ class _TopBar extends StatelessWidget {
                 border: Border.all(color: AppColors.outline, width: 4),
               ),
               child: SvgPicture.asset(child.avatarPath),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          KidButton(
+            key: const ValueKey('open-album'),
+            icon: Icons.auto_awesome_rounded,
+            color: AppColors.grape,
+            width: 72,
+            height: 64,
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const AlbumScreen()),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          KidButton(
+            key: const ValueKey('open-garden'),
+            icon: Icons.local_florist_rounded,
+            color: AppColors.leaf,
+            width: 72,
+            height: 64,
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const GardenScreen()),
             ),
           ),
           const Spacer(),

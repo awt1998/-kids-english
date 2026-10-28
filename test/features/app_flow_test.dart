@@ -3,30 +3,38 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:kids_english/app.dart';
 import 'package:kids_english/audio/audio_service.dart';
 import 'package:kids_english/content/content_repository.dart';
+import 'package:kids_english/features/games/trace_game.dart';
 import 'package:kids_english/features/lesson/celebration_screen.dart';
 import 'package:kids_english/features/map/map_screen.dart';
+import 'package:kids_english/features/rewards/album_screen.dart';
+import 'package:kids_english/features/rewards/garden_screen.dart';
+import 'package:kids_english/features/rewards/sticker.dart';
 import 'package:kids_english/progress/profiles_store.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// Plays the first lesson end to end, the way a child would.
+import '../lesson_driver.dart';
+
+/// The whole journey a child takes, on a phone and on a tablet.
 void main() {
   for (final size in const [Size(393, 852), Size(1180, 820)]) {
     testWidgets(
-      'first launch → new child → map → full lesson → stars (${size.width}x${size.height})',
+      'first launch → new child → lesson → stickers and a flower (${size.width.toInt()}w)',
       (tester) async {
         tester.view.physicalSize = size;
         tester.view.devicePixelRatio = 1;
         addTearDown(tester.view.reset);
 
         SharedPreferences.setMockInitialValues({});
-        final content = await tester.runAsync(ContentRepository.load);
-        final profiles = await tester.runAsync(ProfilesStore.load);
+        final content = (await tester.runAsync(ContentRepository.load))!;
+        await tester.runAsync(LetterShapes.load);
+        final profiles = (await tester.runAsync(ProfilesStore.load))!;
         final audio = SilentAudioService();
 
         await tester.pumpWidget(
-          KidsEnglishApp(content: content!, profiles: profiles!, audio: audio),
+          KidsEnglishApp(content: content, profiles: profiles, audio: audio),
         );
         await tester.pump();
+        expect(audio.musicPlaying, isTrue);
 
         // No children yet: the app opens on "create a child".
         await tester.tap(find.byKey(const ValueKey('avatar-lion')));
@@ -39,64 +47,40 @@ void main() {
         expect(find.byType(MapScreen), findsOneWidget);
 
         await tester.tap(find.byKey(const ValueKey('stop-fruits:0')));
-        await tester.pump();
         await tester.pump(const Duration(milliseconds: 500));
-
-        // Four flashcards: flip, then next.
-        for (var i = 0; i < 4; i++) {
-          await tester.tap(find.byKey(const ValueKey('flashcard')));
-          await tester.pump(const Duration(milliseconds: 600));
-          await tester.tap(find.byKey(const ValueKey('next')));
-          await tester.pump(const Duration(milliseconds: 400));
-        }
-
-        // Four listen-and-choose rounds. The first is answered wrong once.
-        for (var round = 0; round < 4; round++) {
-          await tester.pump(
-            const Duration(milliseconds: 500),
-          ); // word is spoken
-          final target = audio.played
-              .lastWhere((p) => p.startsWith('audio/en/words/'))
-              .split('/')
-              .last
-              .split('.')
-              .first;
-          if (round == 0) {
-            final wrong = find.byWidgetPredicate(
-              (w) =>
-                  w.key is ValueKey<String> &&
-                  (w.key! as ValueKey<String>).value.startsWith('choice-') &&
-                  (w.key! as ValueKey<String>).value != 'choice-$target',
-            );
-            await tester.tap(wrong.first);
-            await tester.pump(const Duration(milliseconds: 800));
-            expect(audio.played, contains('sfx:tryAgain'));
-          }
-          await tester.tap(find.byKey(ValueKey('choice-$target')));
-          await tester.pump(const Duration(milliseconds: 1300));
-        }
-
-        // The missed word comes back once more.
-        await tester.pump(const Duration(milliseconds: 500));
-        final again = audio.played
-            .lastWhere((p) => p.startsWith('audio/en/words/'))
-            .split('/')
-            .last
-            .split('.')
-            .first;
-        await tester.tap(find.byKey(ValueKey('choice-$again')));
-        await tester.pump(const Duration(milliseconds: 1300));
-        await tester.pump(const Duration(milliseconds: 500));
+        expect(audio.musicPlaying, isFalse, reason: 'no music while playing');
+        await playLesson(tester);
 
         expect(find.byType(CelebrationScreen), findsOneWidget);
-        expect(profiles.current!.lessonStars['fruits:0'], 2);
-        await tester.pump(const Duration(seconds: 3));
-
+        expect(profiles.current!.lessonStars['fruits:0'], 3);
+        expect(find.byType(Sticker), findsNWidgets(4));
+        await tester.pump(const Duration(seconds: 4));
+        await tester.ensureVisible(find.byKey(const ValueKey('continue')));
         await tester.tap(find.byKey(const ValueKey('continue')));
         await tester.pump();
-        await tester.pump(const Duration(milliseconds: 500));
+        await tester.pump(
+          const Duration(seconds: 1),
+        ); // page transition back to the map
+        expect(find.byType(CelebrationScreen), findsNothing);
         expect(find.byType(MapScreen), findsOneWidget);
-        expect(profiles.current!.totalStars, 2);
+        expect(audio.musicPlaying, isTrue);
+        await tester.tap(find.byKey(const ValueKey('open-album')));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 500));
+        expect(find.byType(AlbumScreen), findsOneWidget);
+        final collected = tester
+            .widgetList<Sticker>(find.byType(Sticker))
+            .where((s) => s.collected);
+        expect(collected, hasLength(4));
+        await tester.tap(find.byKey(const ValueKey('album-back')));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 500));
+
+        await tester.tap(find.byKey(const ValueKey('open-garden')));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 500));
+        expect(find.byType(GardenScreen), findsOneWidget);
+        expect(profiles.current!.playDays, hasLength(1));
       },
     );
   }

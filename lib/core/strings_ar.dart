@@ -15,4 +15,18 @@ abstract final class Ar {
   static const great = 'رائع!';
   static const continueLabel = 'كمّل';
   static const review = 'مراجعة';
+  static const popBubbles = 'فقّع فقاعة الكلمة!';
+  static const memoryGame = 'دوّر على الأزواج!';
+  static const matchWord = 'وصّل الصورة بكلمتها!';
+  static const spellWord = 'رتّب الحروف!';
+  static const traceLetter = 'ارسم الحرف بإصبعك!';
+  static const orderSentence = 'رتّب الكلمات!';
+  static const missingLetter = 'وش الحرف الناقص؟';
+  static const startOver = 'من جديد';
+  static const album = 'ألبوم الملصقات';
+  static const garden = 'حديقتي';
+  static const newStickers = 'ملصقات جديدة!';
+  static const newFlower = 'وردة جديدة في حديقتك!';
+  static const gardenEmpty = 'العب درساً لتزرع أول وردة!';
+  static const gardenHint = 'كل يوم تلعب فيه تطلع وردة جديدة.';
 }

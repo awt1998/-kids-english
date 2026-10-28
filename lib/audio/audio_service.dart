@@ -3,9 +3,33 @@ import 'package:flutter/foundation.dart';
 
 enum Sfx { tap, flip, correct, tryAgain, star, celebrate }
 
-/// Arabic spoken instructions. Recordings arrive in phase 2 under
-/// `assets/audio/ar/<name>.mp3`; until then playing one is a silent no-op.
-enum Prompt { tapToFlip, listenAndChoose, wellDone, tryAgain }
+/// Arabic spoken instructions, recorded in `assets/audio/ar/<snake_case>.mp3`
+/// (texts in `assets/content/prompts_ar.json`). A missing recording is a
+/// silent no-op, so the app works before every recording exists.
+enum Prompt {
+  welcome,
+  whoIsPlaying,
+  pickAvatar,
+  pickLesson,
+  locked,
+  tapToFlip,
+  listenAndChoose,
+  tryAgain,
+  correct,
+  wellDone,
+  newSticker,
+  popBubbles,
+  memoryGame,
+  matchWord,
+  spellWord,
+  traceLetter,
+  orderSentence,
+  missingLetter,
+  timeUp,
+  comeBack,
+  gardenFlower,
+  askParent,
+}
 
 /// Plays all app sound: word pronunciation, Arabic prompts and effects.
 abstract class AudioService {
