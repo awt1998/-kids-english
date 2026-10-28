@@ -32,14 +32,25 @@ python3 tool/build_review_page.py OUT.html # listen-and-flag page for the owner
 - `lib/core/theme/` — design tokens (colours, text, spacing). Read `DESIGN.md` first.
 - `lib/core/widgets/` — shared components (`KidButton`, `Mascot`).
 - `lib/features/<feature>/` — one folder per feature/screen.
-- `lib/content/` — content models + loader. `lib/progress/` — child profiles, stars, unlock rules.
+- `lib/content/` — content models + loader. `lib/progress/` — child profiles, stars, unlock rules,
+  spaced repetition (`srs.dart`: Leitner boxes 1–5, intervals 1/2/4/7/14 days), stickers, play days.
+- `lib/features/games/` — one widget per game; each reports a `GameResult` (mistakes per word).
+  `lib/features/lesson/lesson_plan.dart` decides which games a lesson uses per age group.
+- `lib/features/rewards/` — sticker album and the days garden (never wilts, no streak guilt).
+- `lib/audio/music_controller.dart` — music on menus/map only; routes named `lesson`/`celebration` are quiet.
+- `test/lesson_driver.dart` plays any lesson like a child; reuse it in flow tests.
 - `lib/audio/` — `AudioService` (word audio, Arabic prompts, effects). Tests use `SilentAudioService`.
 - `assets/content/index.json` lists units (order = map order); `assets/content/units/<id>.json`
   holds the words. A unit without a file shows as "coming soon".
 - Per word: `assets/images/words/<id>.svg` and `assets/audio/en/words/<id>.mp3`;
   per sentence: `assets/audio/en/sentences/<id>.mp3`. Units may set `"levels"` in index.json
   (`test/content/content_test.dart` fails if either is missing).
-- `screenshots/` — renders screens to PNG for review; not part of `flutter test`.
+- `screenshots/` — renders screens and every game to PNG for review; not part of `flutter test`.
+- Arabic prompts: texts in `assets/content/prompts_ar.json` (Gulf + MSA). The owner is recording
+  them himself (free, human voice): files `01`…`22` in that file's order → `assets/audio/ar/<id>.mp3`
+  after noise cleanup/trim/loudness. ElevenLabs/Azure were declined (no paid plans for now).
+- In widget tests, assets need real I/O: preload with `tester.runAsync(...)` (e.g. `LetterShapes.load`)
+  before pumping, and give route changes one `pump()` before a timed pump.
 
 ## Decisions already made (do not re-open without the owner)
 
