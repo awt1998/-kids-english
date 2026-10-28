@@ -9,6 +9,7 @@ import 'package:kids_english/features/map/map_screen.dart';
 import 'package:kids_english/features/rewards/album_screen.dart';
 import 'package:kids_english/features/rewards/garden_screen.dart';
 import 'package:kids_english/features/rewards/sticker.dart';
+import 'package:kids_english/progress/app_settings.dart';
 import 'package:kids_english/progress/profiles_store.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -28,10 +29,16 @@ void main() {
         final content = (await tester.runAsync(ContentRepository.load))!;
         await tester.runAsync(LetterShapes.load);
         final profiles = (await tester.runAsync(ProfilesStore.load))!;
+        final settings = (await tester.runAsync(AppSettings.load))!;
         final audio = SilentAudioService();
 
         await tester.pumpWidget(
-          KidsEnglishApp(content: content, profiles: profiles, audio: audio),
+          KidsEnglishApp(
+            content: content,
+            profiles: profiles,
+            audio: audio,
+            settings: settings,
+          ),
         );
         await tester.pump();
         expect(audio.musicPlaying, isTrue);

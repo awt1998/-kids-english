@@ -16,10 +16,12 @@ import '../../core/widgets/kid_button.dart';
 import '../../core/widgets/mascot.dart';
 import '../../core/widgets/shake.dart';
 import '../../progress/child_profile.dart';
+import '../../progress/play_time.dart';
 import '../../progress/profiles_store.dart';
 import '../../progress/progress_rules.dart';
 import '../../progress/srs.dart';
 import '../lesson/lesson_screen.dart';
+import '../parents/time_up_screen.dart';
 import '../rewards/album_screen.dart';
 import '../rewards/garden_screen.dart';
 
@@ -342,6 +344,15 @@ class _LessonStop extends StatelessWidget {
           return;
         }
         audio.playSfx(Sfx.tap);
+        if (context.read<PlayTimeTracker>().limitReached) {
+          Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              settings: const RouteSettings(name: 'timeUp'),
+              builder: (_) => const TimeUpScreen(),
+            ),
+          );
+          return;
+        }
         Navigator.of(context).push(
           MaterialPageRoute<void>(
             settings: const RouteSettings(name: 'lesson'),

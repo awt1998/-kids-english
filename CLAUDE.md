@@ -37,6 +37,13 @@ python3 tool/build_review_page.py OUT.html # listen-and-flag page for the owner
 - `lib/features/games/` — one widget per game; each reports a `GameResult` (mistakes per word).
   `lib/features/lesson/lesson_plan.dart` decides which games a lesson uses per age group.
 - `lib/features/rewards/` — sticker album and the days garden (never wilts, no streak guilt).
+- `lib/features/parents/` — parental gate (multiplication in Arabic words, keypad, wrong answer =
+  new question), Parent Zone (children, settings, privacy), child report (hard words, time, age
+  group, delete with confirm), time-up screen (sleeping Labeeb). Every adult-only action
+  (settings, adding a child, later purchases) goes through `passParentalGate`.
+- `lib/progress/app_settings.dart` (sound effects, music, daily limit) and `play_time.dart`
+  (`PlayTimeTracker`: counts foreground play per child per day; the map shows the time-up
+  screen instead of a new lesson once the limit is reached).
 - `lib/audio/music_controller.dart` — music on menus/map only; routes named `lesson`/`celebration` are quiet.
 - `test/lesson_driver.dart` plays any lesson like a child; reuse it in flow tests.
 - `lib/audio/` — `AudioService` (word audio, Arabic prompts, effects). Tests use `SilentAudioService`.

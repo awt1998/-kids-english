@@ -22,6 +22,13 @@ import 'package:kids_english/features/games/match_game.dart';
 import 'package:kids_english/features/games/memory_game.dart';
 import 'package:kids_english/features/games/order_sentence_game.dart';
 import 'package:kids_english/features/games/trace_game.dart';
+import 'package:kids_english/features/parents/child_report_screen.dart';
+import 'package:kids_english/features/parents/parent_zone_screen.dart';
+import 'package:kids_english/features/parents/parental_gate.dart';
+import 'package:kids_english/features/parents/time_up_screen.dart';
+import 'package:kids_english/progress/app_settings.dart';
+import 'package:kids_english/progress/child_profile.dart';
+import 'package:kids_english/progress/srs.dart';
 import 'package:kids_english/progress/profiles_store.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -89,11 +96,17 @@ void main() {
       final content = (await tester.runAsync(ContentRepository.load))!;
       await tester.runAsync(LetterShapes.load);
       final profiles = (await tester.runAsync(ProfilesStore.load))!;
+      final settings = (await tester.runAsync(AppSettings.load))!;
       final audio = SilentAudioService();
 
       // --- The app: new child, map, a whole lesson, album, garden.
       await tester.pumpWidget(
-        KidsEnglishApp(content: content, profiles: profiles, audio: audio),
+        KidsEnglishApp(
+          content: content,
+          profiles: profiles,
+          audio: audio,
+          settings: settings,
+        ),
       );
       await tapKey('avatar-lion');
       await tapKey('level-little');
@@ -112,6 +125,42 @@ void main() {
       await tapKey('album-back', 800);
       await tapKey('open-garden', 800);
       await shot('07-garden');
+
+      // --- Parent Zone screens, with the progress from the lesson above.
+      final child = profiles.current!;
+      child.words['grapes'] = const WordStats(box: 1, wrong: 3);
+      child.secondsByDay[dayNumber(DateTime.now())] = 17 * 60;
+      Future<void> parentScreen(String scene, Widget screen) async {
+        await tester.pumpWidget(
+          MultiProvider(
+            providers: [
+              Provider.value(value: content),
+              Provider<AudioService>.value(value: audio),
+              ChangeNotifierProvider.value(value: profiles),
+              ChangeNotifierProvider.value(value: settings),
+            ],
+            child: MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: buildAppTheme(),
+              locale: const Locale('ar'),
+              supportedLocales: const [Locale('ar')],
+              localizationsDelegates: GlobalMaterialLocalizations.delegates,
+              home: screen,
+            ),
+          ),
+        );
+        await settle(800);
+        await shot(scene);
+      }
+
+      await parentScreen(
+        '20-parental-gate',
+        ParentalGateScreen(random: Random(7)),
+      );
+      await settings.setDailyLimitMinutes(30);
+      await parentScreen('21-parent-zone', const ParentZoneScreen());
+      await parentScreen('22-child-report', ChildReportScreen(child: child));
+      await parentScreen('23-time-up', const TimeUpScreen());
 
       // --- Each game on its own, with real content.
       Word w(String id) =>

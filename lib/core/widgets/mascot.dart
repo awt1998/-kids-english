@@ -6,7 +6,8 @@ import '../theme/app_spacing.dart';
 
 enum MascotPose {
   idle('labeeb_idle'),
-  cheer('labeeb_cheer');
+  cheer('labeeb_cheer'),
+  sleep('labeeb_sleep');
 
   const MascotPose(this.asset);
   final String asset;

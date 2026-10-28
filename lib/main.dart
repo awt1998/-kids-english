@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'app.dart';
 import 'audio/audio_service.dart';
 import 'content/content_repository.dart';
+import 'progress/app_settings.dart';
 import 'progress/profiles_store.dart';
 
 Future<void> main() async {
@@ -11,11 +12,13 @@ Future<void> main() async {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   final content = await ContentRepository.load();
   final profiles = await ProfilesStore.load();
+  final settings = await AppSettings.load();
   runApp(
     KidsEnglishApp(
       content: content,
       profiles: profiles,
       audio: AudioPlayersService(),
+      settings: settings,
     ),
   );
 }

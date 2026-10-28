@@ -12,6 +12,8 @@ import '../../core/widgets/mascot.dart';
 import '../../progress/child_profile.dart';
 import '../../progress/profiles_store.dart';
 import '../map/map_screen.dart';
+import '../parents/parent_zone_screen.dart';
+import '../parents/parental_gate.dart';
 import 'add_child_screen.dart';
 
 /// "Who is playing today?" — pick a child by their avatar picture.
@@ -29,62 +31,93 @@ class ProfileSelectScreen extends StatelessWidget {
           .push(MaterialPageRoute<void>(builder: (_) => const MapScreen()));
     }
 
-    void add() {
+    Future<void> add() async {
       context.read<AudioService>().playSfx(Sfx.tap);
+      if (!await passParentalGate(context) || !context.mounted) return;
       Navigator.of(
         context,
       ).push(MaterialPageRoute<void>(builder: (_) => const AddChildScreen()));
+    }
+
+    Future<void> parents() async {
+      if (!await passParentalGate(context) || !context.mounted) return;
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          settings: const RouteSettings(name: 'parents'),
+          builder: (_) => const ParentZoneScreen(),
+        ),
+      );
     }
 
     return PromptOnOpen(
       prompts: const [Prompt.whoIsPlaying],
       child: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(AppSpacing.lg),
-              child: Column(
-                children: [
-                  const Mascot(size: 160),
-                  Text(
-                    Ar.whoIsPlaying,
-                    style: AppText.display,
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: AppSpacing.xl),
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: AppSpacing.lg,
-                    runSpacing: AppSpacing.lg,
-                    children: [
-                      for (final child in store.children)
-                        _AvatarTile(
-                          key: ValueKey(child.id),
-                          onTap: () => open(child),
-                          label: child.name,
-                          child: SvgPicture.asset(
-                            child.avatarPath,
-                            width: 100,
-                            height: 100,
-                          ),
+          child: Stack(
+            children: [
+              Positioned.fill(
+                child: Center(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(AppSpacing.lg),
+                    child: Column(
+                      children: [
+                        const Mascot(size: 160),
+                        Text(
+                          Ar.whoIsPlaying,
+                          style: AppText.display,
+                          textAlign: TextAlign.center,
                         ),
-                      if (store.canAddChild)
-                        _AvatarTile(
-                          key: const ValueKey('add'),
-                          onTap: add,
-                          label: Ar.addChild,
-                          dashed: true,
-                          child: const Icon(
-                            Icons.add_rounded,
-                            size: 72,
-                            color: AppColors.mint,
-                          ),
+                        const SizedBox(height: AppSpacing.xl),
+                        Wrap(
+                          alignment: WrapAlignment.center,
+                          spacing: AppSpacing.lg,
+                          runSpacing: AppSpacing.lg,
+                          children: [
+                            for (final child in store.children)
+                              _AvatarTile(
+                                key: ValueKey(child.id),
+                                onTap: () => open(child),
+                                label: child.name,
+                                child: SvgPicture.asset(
+                                  child.avatarPath,
+                                  width: 100,
+                                  height: 100,
+                                ),
+                              ),
+                            if (store.canAddChild)
+                              _AvatarTile(
+                                key: const ValueKey('add'),
+                                onTap: add,
+                                label: Ar.addChild,
+                                dashed: true,
+                                child: const Icon(
+                                  Icons.add_rounded,
+                                  size: 72,
+                                  color: AppColors.mint,
+                                ),
+                              ),
+                          ],
                         ),
-                    ],
+                      ],
+                    ),
                   ),
-                ],
+                ),
               ),
-            ),
+              PositionedDirectional(
+                top: AppSpacing.sm,
+                end: AppSpacing.sm,
+                child: TextButton.icon(
+                  key: const ValueKey('open-parents'),
+                  style: TextButton.styleFrom(minimumSize: const Size(120, 64)),
+                  icon: const Icon(
+                    Icons.lock_rounded,
+                    color: AppColors.inkSoft,
+                  ),
+                  label: Text(Ar.forParents, style: AppText.caption),
+                  onPressed: parents,
+                ),
+              ),
+            ],
           ),
         ),
       ),

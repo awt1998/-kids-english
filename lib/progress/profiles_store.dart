@@ -95,6 +95,36 @@ class ProfilesStore extends ChangeNotifier {
     return LessonReward(newStickers: newStickers, newFlower: newFlower);
   }
 
+  /// Adds active play time to the current child for today. Saved in batches
+  /// by [PlayTimeTracker], not every second.
+  Future<void> addPlayTime(int seconds) async {
+    final child = _current;
+    if (child == null || seconds <= 0) return;
+    final today = dayNumber(now());
+    child.secondsByDay[today] = child.secondsOn(today) + seconds;
+    await _save();
+  }
+
+  /// Parent edits: age group, picture and name.
+  Future<void> updateChild(
+    ChildProfile child, {
+    AgeLevel? level,
+    String? avatar,
+    String? name,
+  }) async {
+    if (level != null) child.level = level;
+    if (avatar != null) child.avatar = avatar;
+    if (name != null) child.name = name.trim();
+    await _save();
+  }
+
+  /// Deletes a child and all their progress from this device.
+  Future<void> removeChild(ChildProfile child) async {
+    _children.removeWhere((c) => c.id == child.id);
+    if (_current?.id == child.id) _current = null;
+    await _save();
+  }
+
   Future<void> _save() async {
     await _prefs.setString(
       _key,

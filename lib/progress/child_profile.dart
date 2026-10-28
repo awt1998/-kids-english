@@ -62,7 +62,9 @@ class ChildProfile {
     Map<String, WordStats>? words,
     Set<String>? stickers,
     Set<int>? playDays,
-  }) : lessonStars = lessonStars ?? {},
+    Map<int, int>? secondsByDay,
+  }) : secondsByDay = secondsByDay ?? {},
+       lessonStars = lessonStars ?? {},
        words = words ?? {},
        stickers = stickers ?? {},
        playDays = playDays ?? {};
@@ -80,6 +82,9 @@ class ChildProfile {
     ),
     stickers: {...(json['stickers'] as List? ?? const []).cast<String>()},
     playDays: {...(json['days'] as List? ?? const []).cast<int>()},
+    secondsByDay: (json['time'] as Map<String, dynamic>? ?? {}).map(
+      (k, v) => MapEntry(int.parse(k), v as int),
+    ),
   );
 
   final String id;
@@ -98,6 +103,36 @@ class ChildProfile {
   /// one flower each in the garden. Missed days are simply not there.
   final Set<int> playDays;
 
+  /// Seconds of active play per day (see [dayNumber]), for the parent report
+  /// and the daily time limit.
+  final Map<int, int> secondsByDay;
+
+  int secondsOn(int day) => secondsByDay[day] ?? 0;
+
+  /// Seconds played over the 7 days ending [today].
+  int secondsThisWeek(int today) =>
+      [for (var d = today - 6; d <= today; d++) secondsOn(d)]
+          .fold(0, (a, b) => a + b);
+
+  /// Words practised at least once.
+  int get wordsLearned => words.values.where((s) => s.box > 0).length;
+
+  /// Words answered right first time on three reviews in a row (box 4+).
+  int get wordsMastered => words.values.where((s) => s.box >= 4).length;
+
+  /// Practised words the child finds hard: most mistakes first.
+  List<String> hardWordIds({int limit = 12}) {
+    final hard =
+        words.entries
+            .where((e) => e.value.wrong > 0 && e.value.box <= 2)
+            .toList()
+          ..sort((a, b) {
+            final byWrong = b.value.wrong.compareTo(a.value.wrong);
+            return byWrong != 0 ? byWrong : a.value.box.compareTo(b.value.box);
+          });
+    return hard.take(limit).map((e) => e.key).toList();
+  }
+
   String get avatarPath => 'assets/images/avatars/$avatar.svg';
   int get totalStars => lessonStars.values.fold(0, (a, b) => a + b);
 
@@ -110,5 +145,11 @@ class ChildProfile {
     'words': words.map((k, v) => MapEntry(k, v.toJson())),
     'stickers': stickers.toList()..sort(),
     'days': playDays.toList()..sort(),
+    // Keep the last 60 days only; older play time is never shown.
+    'time': {
+      for (final e in secondsByDay.entries)
+        if (secondsByDay.keys.reduce((a, b) => a > b ? a : b) - e.key < 60)
+          '${e.key}': e.value,
+    },
   };
 }

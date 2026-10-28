@@ -9,6 +9,8 @@ import 'core/strings_ar.dart';
 import 'core/theme/app_theme.dart';
 import 'features/profiles/add_child_screen.dart';
 import 'features/profiles/profile_select_screen.dart';
+import 'progress/app_settings.dart';
+import 'progress/play_time.dart';
 import 'progress/profiles_store.dart';
 
 class KidsEnglishApp extends StatefulWidget {
@@ -17,11 +19,13 @@ class KidsEnglishApp extends StatefulWidget {
     required this.content,
     required this.profiles,
     required this.audio,
+    required this.settings,
   });
 
   final ContentRepository content;
   final ProfilesStore profiles;
   final AudioService audio;
+  final AppSettings settings;
 
   @override
   State<KidsEnglishApp> createState() => _KidsEnglishAppState();
@@ -29,9 +33,24 @@ class KidsEnglishApp extends StatefulWidget {
 
 class _KidsEnglishAppState extends State<KidsEnglishApp> {
   late final _music = MusicController(widget.audio);
+  late final _playTime = PlayTimeTracker(widget.profiles, widget.settings);
+
+  @override
+  void initState() {
+    super.initState();
+    widget.settings.addListener(_applySettings);
+    _applySettings();
+  }
+
+  void _applySettings() => widget.audio.applySettings(
+    soundEffects: widget.settings.soundEffects,
+    music: widget.settings.music,
+  );
 
   @override
   void dispose() {
+    widget.settings.removeListener(_applySettings);
+    _playTime.dispose();
     _music.dispose();
     super.dispose();
   }
@@ -43,6 +62,8 @@ class _KidsEnglishAppState extends State<KidsEnglishApp> {
         Provider.value(value: widget.content),
         Provider.value(value: widget.audio),
         ChangeNotifierProvider.value(value: widget.profiles),
+        ChangeNotifierProvider.value(value: widget.settings),
+        Provider.value(value: _playTime),
       ],
       child: MaterialApp(
         title: Ar.appName,

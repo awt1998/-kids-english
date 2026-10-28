@@ -52,6 +52,10 @@ abstract class AudioService {
 
   /// Quiet background loop for menus and the map. Never plays during a game.
   Future<void> setMusicPlaying(bool playing);
+
+  /// Parent settings: sound effects and background music can be switched off.
+  /// Words and spoken instructions always play.
+  Future<void> applySettings({required bool soundEffects, required bool music});
   void dispose();
 }
 
@@ -100,6 +104,7 @@ class AudioPlayersService implements AudioService {
 
   @override
   Future<void> playSfx(Sfx sfx) async {
+    if (!_soundEffects) return;
     final player = _sfx[sfx]!;
     try {
       await player.stop();
@@ -151,8 +156,28 @@ class AudioPlayersService implements AudioService {
     }
   }
 
+  bool _soundEffects = true;
+  bool _musicAllowed = true;
+  bool _musicWanted = false;
+
+  @override
+  Future<void> applySettings({
+    required bool soundEffects,
+    required bool music,
+  }) async {
+    _soundEffects = soundEffects;
+    _musicAllowed = music;
+    await _updateMusic();
+  }
+
   @override
   Future<void> setMusicPlaying(bool playing) async {
+    _musicWanted = playing;
+    await _updateMusic();
+  }
+
+  Future<void> _updateMusic() async {
+    final playing = _musicWanted && _musicAllowed;
     if (playing == _musicOn) return;
     _musicOn = playing;
     try {
@@ -196,13 +221,28 @@ class SilentAudioService implements AudioService {
   /// Tests set this to simulate the child tapping while a prompt is spoken.
   bool interruptNextWait = false;
   @override
-  Future<void> playSfx(Sfx sfx) async => played.add('sfx:${sfx.name}');
+  Future<void> playSfx(Sfx sfx) async {
+    if (soundEffects) played.add('sfx:${sfx.name}');
+  }
+
   @override
   Future<void> stopVoice() async {}
 
-  bool musicPlaying = false;
+  bool _musicWanted = false;
+  bool _musicAllowed = true;
+  bool soundEffects = true;
+  bool get musicPlaying => _musicWanted && _musicAllowed;
   @override
-  Future<void> setMusicPlaying(bool playing) async => musicPlaying = playing;
+  Future<void> setMusicPlaying(bool playing) async => _musicWanted = playing;
+  @override
+  Future<void> applySettings({
+    required bool soundEffects,
+    required bool music,
+  }) async {
+    this.soundEffects = soundEffects;
+    _musicAllowed = music;
+  }
+
   @override
   void dispose() {}
 }
