@@ -13,6 +13,9 @@ abstract class AudioService {
   Future<void> playPrompt(Prompt prompt);
   Future<void> playSfx(Sfx sfx);
   Future<void> stopVoice();
+
+  /// Quiet background loop for menus and the map. Never plays during a game.
+  Future<void> setMusicPlaying(bool playing);
   void dispose();
 }
 
@@ -27,7 +30,11 @@ class AudioPlayersService implements AudioService {
     );
   }
 
+  static const _musicVolume = 0.18;
+
   final _voice = AudioPlayer();
+  final _music = AudioPlayer()..setReleaseMode(ReleaseMode.loop);
+  bool _musicOn = false;
   final _sfx = {
     for (final s in Sfx.values)
       s: AudioPlayer()..setPlayerMode(PlayerMode.lowLatency),
@@ -53,6 +60,22 @@ class AudioPlayersService implements AudioService {
   @override
   Future<void> stopVoice() => _voice.stop();
 
+  @override
+  Future<void> setMusicPlaying(bool playing) async {
+    if (playing == _musicOn) return;
+    _musicOn = playing;
+    try {
+      if (playing) {
+        await _music.setVolume(_musicVolume);
+        await _music.play(AssetSource('audio/music/calm_loop.wav'));
+      } else {
+        await _music.pause();
+      }
+    } catch (e) {
+      debugPrint('audio: music failed: $e');
+    }
+  }
+
   Future<void> _play(AudioPlayer player, String path) async {
     try {
       await player.stop();
@@ -66,6 +89,7 @@ class AudioPlayersService implements AudioService {
   @override
   void dispose() {
     _voice.dispose();
+    _music.dispose();
     for (final p in _sfx.values) {
       p.dispose();
     }
@@ -85,6 +109,10 @@ class SilentAudioService implements AudioService {
   Future<void> playSfx(Sfx sfx) async => played.add('sfx:${sfx.name}');
   @override
   Future<void> stopVoice() async {}
+
+  bool musicPlaying = false;
+  @override
+  Future<void> setMusicPlaying(bool playing) async => musicPlaying = playing;
   @override
   void dispose() {}
 }

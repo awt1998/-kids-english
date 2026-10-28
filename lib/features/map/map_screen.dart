@@ -303,7 +303,10 @@ class _LessonStop extends StatelessWidget {
         }
         audio.playSfx(Sfx.tap);
         Navigator.of(context).push(
-          MaterialPageRoute<void>(builder: (_) => LessonScreen(lesson: lesson)),
+          MaterialPageRoute<void>(
+            settings: const RouteSettings(name: 'lesson'),
+            builder: (_) => LessonScreen(lesson: lesson),
+          ),
         );
       },
       child: SizedBox(

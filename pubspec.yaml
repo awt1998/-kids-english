@@ -35,6 +35,7 @@ flutter:
     - assets/audio/en/words/
     - assets/audio/en/sentences/
     - assets/audio/sfx/
+    - assets/audio/music/
 
   # Both fonts are variable-weight TTFs under the SIL Open Font License
   # (see assets/fonts/OFL-*.txt).

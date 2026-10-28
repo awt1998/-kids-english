@@ -47,7 +47,10 @@ class _LessonScreenState extends State<LessonScreen> {
     );
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute<void>(builder: (_) => CelebrationScreen(stars: stars)),
+      MaterialPageRoute<void>(
+        settings: const RouteSettings(name: 'celebration'),
+        builder: (_) => CelebrationScreen(stars: stars),
+      ),
     );
   }
 
