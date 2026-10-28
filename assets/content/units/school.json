@@ -1,0 +1,134 @@
+{
+  "id": "school",
+  "words": [
+    {
+      "id": "book",
+      "en": "book",
+      "ar": "كتاب"
+    },
+    {
+      "id": "pencil",
+      "en": "pencil",
+      "ar": "قلم رصاص"
+    },
+    {
+      "id": "pen",
+      "en": "pen",
+      "ar": "قلم"
+    },
+    {
+      "id": "crayon",
+      "en": "crayon",
+      "ar": "قلم تلوين"
+    },
+    {
+      "id": "notebook",
+      "en": "notebook",
+      "ar": "دفتر"
+    },
+    {
+      "id": "backpack",
+      "en": "backpack",
+      "ar": "حقيبة مدرسية"
+    },
+    {
+      "id": "scissors",
+      "en": "scissors",
+      "ar": "مقص"
+    },
+    {
+      "id": "ruler",
+      "en": "ruler",
+      "ar": "مسطرة"
+    },
+    {
+      "id": "paintbrush",
+      "en": "paintbrush",
+      "ar": "فرشاة رسم"
+    },
+    {
+      "id": "school",
+      "en": "school",
+      "ar": "مدرسة"
+    },
+    {
+      "id": "teacher",
+      "en": "teacher",
+      "ar": "معلم"
+    },
+    {
+      "id": "student",
+      "en": "student",
+      "ar": "طالب"
+    },
+    {
+      "id": "paper",
+      "en": "paper",
+      "ar": "ورقة"
+    },
+    {
+      "id": "globe",
+      "en": "globe",
+      "ar": "كرة أرضية"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "school_1",
+      "en": "I read a book.",
+      "ar": "أقرأ كتاباً.",
+      "words": [
+        "book"
+      ]
+    },
+    {
+      "id": "school_2",
+      "en": "I write with a pencil.",
+      "ar": "أكتب بقلم الرصاص.",
+      "words": [
+        "pencil"
+      ]
+    },
+    {
+      "id": "school_3",
+      "en": "I draw with crayons.",
+      "ar": "أرسم بأقلام التلوين.",
+      "words": [
+        "crayon"
+      ]
+    },
+    {
+      "id": "school_4",
+      "en": "My backpack is heavy.",
+      "ar": "حقيبتي المدرسية ثقيلة.",
+      "words": [
+        "backpack"
+      ]
+    },
+    {
+      "id": "school_5",
+      "en": "I love my school.",
+      "ar": "أحب مدرستي.",
+      "words": [
+        "school"
+      ]
+    },
+    {
+      "id": "school_6",
+      "en": "My teacher is kind.",
+      "ar": "معلمي لطيف.",
+      "words": [
+        "teacher"
+      ]
+    },
+    {
+      "id": "school_7",
+      "en": "Cut the paper with scissors.",
+      "ar": "قص الورقة بالمقص.",
+      "words": [
+        "scissors",
+        "paper"
+      ]
+    }
+  ]
+}

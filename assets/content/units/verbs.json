@@ -1,0 +1,151 @@
+{
+  "id": "verbs",
+  "words": [
+    {
+      "id": "run",
+      "en": "run",
+      "ar": "يركض"
+    },
+    {
+      "id": "walk",
+      "en": "walk",
+      "ar": "يمشي"
+    },
+    {
+      "id": "swim",
+      "en": "swim",
+      "ar": "يسبح"
+    },
+    {
+      "id": "climb",
+      "en": "climb",
+      "ar": "يتسلق"
+    },
+    {
+      "id": "ride",
+      "en": "ride",
+      "ar": "يركب"
+    },
+    {
+      "id": "sleep",
+      "en": "sleep",
+      "ar": "ينام"
+    },
+    {
+      "id": "eat",
+      "en": "eat",
+      "ar": "يأكل"
+    },
+    {
+      "id": "drink",
+      "en": "drink",
+      "ar": "يشرب"
+    },
+    {
+      "id": "read",
+      "en": "read",
+      "ar": "يقرأ"
+    },
+    {
+      "id": "write",
+      "en": "write",
+      "ar": "يكتب"
+    },
+    {
+      "id": "cook",
+      "en": "cook",
+      "ar": "يطبخ"
+    },
+    {
+      "id": "clap",
+      "en": "clap",
+      "ar": "يصفق"
+    },
+    {
+      "id": "cry",
+      "en": "cry",
+      "ar": "يبكي"
+    },
+    {
+      "id": "laugh",
+      "en": "laugh",
+      "ar": "يضحك"
+    },
+    {
+      "id": "think",
+      "en": "think",
+      "ar": "يفكر"
+    },
+    {
+      "id": "kick",
+      "en": "kick",
+      "ar": "يركل"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "verbs_1",
+      "en": "I can run fast.",
+      "ar": "أستطيع أن أركض بسرعة.",
+      "words": [
+        "run"
+      ]
+    },
+    {
+      "id": "verbs_2",
+      "en": "Fish swim in the sea.",
+      "ar": "الأسماك تسبح في البحر.",
+      "words": [
+        "swim"
+      ]
+    },
+    {
+      "id": "verbs_3",
+      "en": "I sleep at night.",
+      "ar": "أنام في الليل.",
+      "words": [
+        "sleep"
+      ]
+    },
+    {
+      "id": "verbs_4",
+      "en": "I eat my lunch.",
+      "ar": "آكل غدائي.",
+      "words": [
+        "eat"
+      ]
+    },
+    {
+      "id": "verbs_5",
+      "en": "I drink water.",
+      "ar": "أشرب الماء.",
+      "words": [
+        "drink"
+      ]
+    },
+    {
+      "id": "verbs_6",
+      "en": "I read every day.",
+      "ar": "أقرأ كل يوم.",
+      "words": [
+        "read"
+      ]
+    },
+    {
+      "id": "verbs_7",
+      "en": "Clap your hands!",
+      "ar": "صفق بيديك!",
+      "words": [
+        "clap"
+      ]
+    },
+    {
+      "id": "verbs_8",
+      "en": "Mom cooks dinner.",
+      "ar": "أمي تطبخ العشاء.",
+      "words": [
+        "cook"
+      ]
+    }
+  ]
+}

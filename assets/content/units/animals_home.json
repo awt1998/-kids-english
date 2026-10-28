@@ -1,0 +1,166 @@
+{
+  "id": "animals_home",
+  "words": [
+    {
+      "id": "cat",
+      "en": "cat",
+      "ar": "قطة"
+    },
+    {
+      "id": "dog",
+      "en": "dog",
+      "ar": "كلب"
+    },
+    {
+      "id": "rabbit",
+      "en": "rabbit",
+      "ar": "أرنب"
+    },
+    {
+      "id": "bird",
+      "en": "bird",
+      "ar": "عصفور"
+    },
+    {
+      "id": "parrot",
+      "en": "parrot",
+      "ar": "ببغاء"
+    },
+    {
+      "id": "hamster",
+      "en": "hamster",
+      "ar": "هامستر"
+    },
+    {
+      "id": "turtle",
+      "en": "turtle",
+      "ar": "سلحفاة"
+    },
+    {
+      "id": "cow",
+      "en": "cow",
+      "ar": "بقرة"
+    },
+    {
+      "id": "horse",
+      "en": "horse",
+      "ar": "حصان"
+    },
+    {
+      "id": "sheep",
+      "en": "sheep",
+      "ar": "خروف"
+    },
+    {
+      "id": "goat",
+      "en": "goat",
+      "ar": "ماعز"
+    },
+    {
+      "id": "chicken",
+      "en": "chicken",
+      "ar": "دجاجة"
+    },
+    {
+      "id": "rooster",
+      "en": "rooster",
+      "ar": "ديك"
+    },
+    {
+      "id": "chick",
+      "en": "chick",
+      "ar": "كتكوت"
+    },
+    {
+      "id": "duck",
+      "en": "duck",
+      "ar": "بطة"
+    },
+    {
+      "id": "donkey",
+      "en": "donkey",
+      "ar": "حمار"
+    },
+    {
+      "id": "camel",
+      "en": "camel",
+      "ar": "جمل"
+    },
+    {
+      "id": "bee",
+      "en": "bee",
+      "ar": "نحلة"
+    },
+    {
+      "id": "mouse",
+      "en": "mouse",
+      "ar": "فأر"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "animals_home_1",
+      "en": "The cat is small.",
+      "ar": "القطة صغيرة.",
+      "words": [
+        "cat"
+      ]
+    },
+    {
+      "id": "animals_home_2",
+      "en": "The dog can run.",
+      "ar": "الكلب يستطيع أن يركض.",
+      "words": [
+        "dog"
+      ]
+    },
+    {
+      "id": "animals_home_3",
+      "en": "The bird can fly.",
+      "ar": "العصفور يستطيع أن يطير.",
+      "words": [
+        "bird"
+      ]
+    },
+    {
+      "id": "animals_home_4",
+      "en": "The cow gives us milk.",
+      "ar": "البقرة تعطينا الحليب.",
+      "words": [
+        "cow"
+      ]
+    },
+    {
+      "id": "animals_home_5",
+      "en": "I can ride a horse.",
+      "ar": "أستطيع أن أركب الحصان.",
+      "words": [
+        "horse"
+      ]
+    },
+    {
+      "id": "animals_home_6",
+      "en": "The duck can swim.",
+      "ar": "البطة تستطيع أن تسبح.",
+      "words": [
+        "duck"
+      ]
+    },
+    {
+      "id": "animals_home_7",
+      "en": "The camel is tall.",
+      "ar": "الجمل طويل.",
+      "words": [
+        "camel"
+      ]
+    },
+    {
+      "id": "animals_home_8",
+      "en": "The turtle is slow.",
+      "ar": "السلحفاة بطيئة.",
+      "words": [
+        "turtle"
+      ]
+    }
+  ]
+}

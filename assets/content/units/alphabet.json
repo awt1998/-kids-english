@@ -1,0 +1,345 @@
+{
+  "id": "alphabet",
+  "words": [
+    {
+      "id": "letter_a",
+      "en": "A",
+      "ar": "حرف A"
+    },
+    {
+      "id": "letter_b",
+      "en": "B",
+      "ar": "حرف B"
+    },
+    {
+      "id": "letter_c",
+      "en": "C",
+      "ar": "حرف C"
+    },
+    {
+      "id": "letter_d",
+      "en": "D",
+      "ar": "حرف D"
+    },
+    {
+      "id": "letter_e",
+      "en": "E",
+      "ar": "حرف E"
+    },
+    {
+      "id": "letter_f",
+      "en": "F",
+      "ar": "حرف F"
+    },
+    {
+      "id": "letter_g",
+      "en": "G",
+      "ar": "حرف G"
+    },
+    {
+      "id": "letter_h",
+      "en": "H",
+      "ar": "حرف H"
+    },
+    {
+      "id": "letter_i",
+      "en": "I",
+      "ar": "حرف I"
+    },
+    {
+      "id": "letter_j",
+      "en": "J",
+      "ar": "حرف J"
+    },
+    {
+      "id": "letter_k",
+      "en": "K",
+      "ar": "حرف K"
+    },
+    {
+      "id": "letter_l",
+      "en": "L",
+      "ar": "حرف L"
+    },
+    {
+      "id": "letter_m",
+      "en": "M",
+      "ar": "حرف M"
+    },
+    {
+      "id": "letter_n",
+      "en": "N",
+      "ar": "حرف N"
+    },
+    {
+      "id": "letter_o",
+      "en": "O",
+      "ar": "حرف O"
+    },
+    {
+      "id": "letter_p",
+      "en": "P",
+      "ar": "حرف P"
+    },
+    {
+      "id": "letter_q",
+      "en": "Q",
+      "ar": "حرف Q"
+    },
+    {
+      "id": "letter_r",
+      "en": "R",
+      "ar": "حرف R"
+    },
+    {
+      "id": "letter_s",
+      "en": "S",
+      "ar": "حرف S"
+    },
+    {
+      "id": "letter_t",
+      "en": "T",
+      "ar": "حرف T"
+    },
+    {
+      "id": "letter_u",
+      "en": "U",
+      "ar": "حرف U"
+    },
+    {
+      "id": "letter_v",
+      "en": "V",
+      "ar": "حرف V"
+    },
+    {
+      "id": "letter_w",
+      "en": "W",
+      "ar": "حرف W"
+    },
+    {
+      "id": "letter_x",
+      "en": "X",
+      "ar": "حرف X"
+    },
+    {
+      "id": "letter_y",
+      "en": "Y",
+      "ar": "حرف Y"
+    },
+    {
+      "id": "letter_z",
+      "en": "Z",
+      "ar": "حرف Z"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "alphabet_1",
+      "en": "A is for apple.",
+      "ar": "حرف A مثل تفاحة.",
+      "words": [
+        "letter_a"
+      ]
+    },
+    {
+      "id": "alphabet_2",
+      "en": "B is for ball.",
+      "ar": "حرف B مثل كرة.",
+      "words": [
+        "letter_b"
+      ]
+    },
+    {
+      "id": "alphabet_3",
+      "en": "C is for cat.",
+      "ar": "حرف C مثل قطة.",
+      "words": [
+        "letter_c"
+      ]
+    },
+    {
+      "id": "alphabet_4",
+      "en": "D is for dog.",
+      "ar": "حرف D مثل كلب.",
+      "words": [
+        "letter_d"
+      ]
+    },
+    {
+      "id": "alphabet_5",
+      "en": "E is for egg.",
+      "ar": "حرف E مثل بيضة.",
+      "words": [
+        "letter_e"
+      ]
+    },
+    {
+      "id": "alphabet_6",
+      "en": "F is for fish.",
+      "ar": "حرف F مثل سمكة.",
+      "words": [
+        "letter_f"
+      ]
+    },
+    {
+      "id": "alphabet_7",
+      "en": "G is for grapes.",
+      "ar": "حرف G مثل عنب.",
+      "words": [
+        "letter_g"
+      ]
+    },
+    {
+      "id": "alphabet_8",
+      "en": "H is for house.",
+      "ar": "حرف H مثل بيت.",
+      "words": [
+        "letter_h"
+      ]
+    },
+    {
+      "id": "alphabet_9",
+      "en": "I is for ice cream.",
+      "ar": "حرف I مثل آيس كريم.",
+      "words": [
+        "letter_i"
+      ]
+    },
+    {
+      "id": "alphabet_10",
+      "en": "J is for juice.",
+      "ar": "حرف J مثل عصير.",
+      "words": [
+        "letter_j"
+      ]
+    },
+    {
+      "id": "alphabet_11",
+      "en": "K is for kite.",
+      "ar": "حرف K مثل طائرة ورقية.",
+      "words": [
+        "letter_k"
+      ]
+    },
+    {
+      "id": "alphabet_12",
+      "en": "L is for lion.",
+      "ar": "حرف L مثل أسد.",
+      "words": [
+        "letter_l"
+      ]
+    },
+    {
+      "id": "alphabet_13",
+      "en": "M is for moon.",
+      "ar": "حرف M مثل قمر.",
+      "words": [
+        "letter_m"
+      ]
+    },
+    {
+      "id": "alphabet_14",
+      "en": "N is for nose.",
+      "ar": "حرف N مثل أنف.",
+      "words": [
+        "letter_n"
+      ]
+    },
+    {
+      "id": "alphabet_15",
+      "en": "O is for orange.",
+      "ar": "حرف O مثل برتقالة.",
+      "words": [
+        "letter_o"
+      ]
+    },
+    {
+      "id": "alphabet_16",
+      "en": "P is for pencil.",
+      "ar": "حرف P مثل قلم رصاص.",
+      "words": [
+        "letter_p"
+      ]
+    },
+    {
+      "id": "alphabet_17",
+      "en": "Q is for queen.",
+      "ar": "حرف Q مثل ملكة.",
+      "words": [
+        "letter_q"
+      ]
+    },
+    {
+      "id": "alphabet_18",
+      "en": "R is for rabbit.",
+      "ar": "حرف R مثل أرنب.",
+      "words": [
+        "letter_r"
+      ]
+    },
+    {
+      "id": "alphabet_19",
+      "en": "S is for sun.",
+      "ar": "حرف S مثل شمس.",
+      "words": [
+        "letter_s"
+      ]
+    },
+    {
+      "id": "alphabet_20",
+      "en": "T is for tiger.",
+      "ar": "حرف T مثل نمر.",
+      "words": [
+        "letter_t"
+      ]
+    },
+    {
+      "id": "alphabet_21",
+      "en": "U is for umbrella.",
+      "ar": "حرف U مثل مظلة.",
+      "words": [
+        "letter_u"
+      ]
+    },
+    {
+      "id": "alphabet_22",
+      "en": "V is for van.",
+      "ar": "حرف V مثل شاحنة صغيرة.",
+      "words": [
+        "letter_v"
+      ]
+    },
+    {
+      "id": "alphabet_23",
+      "en": "W is for watermelon.",
+      "ar": "حرف W مثل بطيخة.",
+      "words": [
+        "letter_w"
+      ]
+    },
+    {
+      "id": "alphabet_24",
+      "en": "X is for x-ray.",
+      "ar": "حرف X مثل أشعة سينية.",
+      "words": [
+        "letter_x"
+      ]
+    },
+    {
+      "id": "alphabet_25",
+      "en": "Y is for yo-yo.",
+      "ar": "حرف Y مثل يويو.",
+      "words": [
+        "letter_y"
+      ]
+    },
+    {
+      "id": "alphabet_26",
+      "en": "Z is for zebra.",
+      "ar": "حرف Z مثل حمار وحشي.",
+      "words": [
+        "letter_z"
+      ]
+    }
+  ]
+}

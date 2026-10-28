@@ -1,0 +1,115 @@
+{
+  "id": "jobs",
+  "words": [
+    {
+      "id": "doctor",
+      "en": "doctor",
+      "ar": "طبيب"
+    },
+    {
+      "id": "nurse",
+      "en": "nurse",
+      "ar": "ممرضة"
+    },
+    {
+      "id": "pilot",
+      "en": "pilot",
+      "ar": "طيار"
+    },
+    {
+      "id": "firefighter",
+      "en": "firefighter",
+      "ar": "رجل إطفاء"
+    },
+    {
+      "id": "police_officer",
+      "en": "police officer",
+      "ar": "شرطي"
+    },
+    {
+      "id": "farmer",
+      "en": "farmer",
+      "ar": "مزارع"
+    },
+    {
+      "id": "chef",
+      "en": "chef",
+      "ar": "طاهٍ"
+    },
+    {
+      "id": "astronaut",
+      "en": "astronaut",
+      "ar": "رائد فضاء"
+    },
+    {
+      "id": "scientist",
+      "en": "scientist",
+      "ar": "عالم"
+    },
+    {
+      "id": "artist",
+      "en": "artist",
+      "ar": "رسام"
+    },
+    {
+      "id": "mechanic",
+      "en": "mechanic",
+      "ar": "ميكانيكي"
+    },
+    {
+      "id": "builder",
+      "en": "builder",
+      "ar": "عامل بناء"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "jobs_1",
+      "en": "The doctor helps sick people.",
+      "ar": "الطبيب يساعد المرضى.",
+      "words": [
+        "doctor"
+      ]
+    },
+    {
+      "id": "jobs_2",
+      "en": "The pilot flies the airplane.",
+      "ar": "الطيار يقود الطائرة.",
+      "words": [
+        "pilot"
+      ]
+    },
+    {
+      "id": "jobs_3",
+      "en": "The farmer grows food.",
+      "ar": "المزارع يزرع الطعام.",
+      "words": [
+        "farmer"
+      ]
+    },
+    {
+      "id": "jobs_4",
+      "en": "The chef cooks food.",
+      "ar": "الطاهي يطبخ الطعام.",
+      "words": [
+        "chef"
+      ]
+    },
+    {
+      "id": "jobs_5",
+      "en": "I want to be an astronaut.",
+      "ar": "أريد أن أكون رائد فضاء.",
+      "words": [
+        "astronaut"
+      ]
+    },
+    {
+      "id": "jobs_6",
+      "en": "The firefighter is brave.",
+      "ar": "رجل الإطفاء شجاع.",
+      "words": [
+        "firefighter"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "weather",
+  "words": [
+    {
+      "id": "sun",
+      "en": "sun",
+      "ar": "شمس"
+    },
+    {
+      "id": "moon",
+      "en": "moon",
+      "ar": "قمر"
+    },
+    {
+      "id": "star_sky",
+      "en": "star",
+      "ar": "نجمة"
+    },
+    {
+      "id": "cloud",
+      "en": "cloud",
+      "ar": "سحابة"
+    },
+    {
+      "id": "rain",
+      "en": "rain",
+      "ar": "مطر"
+    },
+    {
+      "id": "snow",
+      "en": "snow",
+      "ar": "ثلج"
+    },
+    {
+      "id": "wind",
+      "en": "wind",
+      "ar": "رياح"
+    },
+    {
+      "id": "rainbow",
+      "en": "rainbow",
+      "ar": "قوس قزح"
+    },
+    {
+      "id": "lightning",
+      "en": "lightning",
+      "ar": "برق"
+    },
+    {
+      "id": "tree",
+      "en": "tree",
+      "ar": "شجرة"
+    },
+    {
+      "id": "flower",
+      "en": "flower",
+      "ar": "زهرة"
+    },
+    {
+      "id": "leaf",
+      "en": "leaf",
+      "ar": "ورقة شجر"
+    },
+    {
+      "id": "mountain",
+      "en": "mountain",
+      "ar": "جبل"
+    },
+    {
+      "id": "sea",
+      "en": "sea",
+      "ar": "بحر"
+    },
+    {
+      "id": "spring",
+      "en": "spring",
+      "ar": "الربيع"
+    },
+    {
+      "id": "summer",
+      "en": "summer",
+      "ar": "الصيف"
+    },
+    {
+      "id": "autumn",
+      "en": "autumn",
+      "ar": "الخريف"
+    },
+    {
+      "id": "winter",
+      "en": "winter",
+      "ar": "الشتاء"
+    },
+    {
+      "id": "umbrella",
+      "en": "umbrella",
+      "ar": "مظلة"
+    },
+    {
+      "id": "fog",
+      "en": "fog",
+      "ar": "ضباب"
+    },
+    {
+      "id": "palm_tree",
+      "en": "palm tree",
+      "ar": "نخلة"
+    },
+    {
+      "id": "cactus",
+      "en": "cactus",
+      "ar": "صبار"
+    },
+    {
+      "id": "volcano",
+      "en": "volcano",
+      "ar": "بركان"
+    },
+    {
+      "id": "rock",
+      "en": "rock",
+      "ar": "صخرة"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "weather_1",
+      "en": "The sun is hot.",
+      "ar": "الشمس حارة.",
+      "words": [
+        "sun"
+      ]
+    },
+    {
+      "id": "weather_2",
+      "en": "It is raining.",
+      "ar": "إنها تمطر.",
+      "words": [
+        "rain"
+      ]
+    },
+    {
+      "id": "weather_3",
+      "en": "I see a rainbow.",
+      "ar": "أرى قوس قزح.",
+      "words": [
+        "rainbow"
+      ]
+    },
+    {
+      "id": "weather_4",
+      "en": "The moon is bright.",
+      "ar": "القمر مضيء.",
+      "words": [
+        "moon"
+      ]
+    },
+    {
+      "id": "weather_5",
+      "en": "The tree is tall.",
+      "ar": "الشجرة طويلة.",
+      "words": [
+        "tree"
+      ]
+    },
+    {
+      "id": "weather_6",
+      "en": "The flower smells nice.",
+      "ar": "رائحة الزهرة جميلة.",
+      "words": [
+        "flower"
+      ]
+    },
+    {
+      "id": "weather_7",
+      "en": "It is cold in winter.",
+      "ar": "الجو بارد في الشتاء.",
+      "words": [
+        "winter"
+      ]
+    },
+    {
+      "id": "weather_8",
+      "en": "It is hot in summer.",
+      "ar": "الجو حار في الصيف.",
+      "words": [
+        "summer"
+      ]
+    }
+  ]
+}

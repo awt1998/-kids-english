@@ -1,0 +1,97 @@
+{
+  "id": "places",
+  "words": [
+    {
+      "id": "hospital",
+      "en": "hospital",
+      "ar": "مستشفى"
+    },
+    {
+      "id": "beach",
+      "en": "beach",
+      "ar": "شاطئ"
+    },
+    {
+      "id": "desert",
+      "en": "desert",
+      "ar": "صحراء"
+    },
+    {
+      "id": "city",
+      "en": "city",
+      "ar": "مدينة"
+    },
+    {
+      "id": "island",
+      "en": "island",
+      "ar": "جزيرة"
+    },
+    {
+      "id": "park",
+      "en": "park",
+      "ar": "حديقة"
+    },
+    {
+      "id": "store",
+      "en": "store",
+      "ar": "متجر"
+    },
+    {
+      "id": "airport",
+      "en": "airport",
+      "ar": "مطار"
+    },
+    {
+      "id": "tent",
+      "en": "tent",
+      "ar": "خيمة"
+    },
+    {
+      "id": "bridge",
+      "en": "bridge",
+      "ar": "جسر"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "places_1",
+      "en": "We play at the beach.",
+      "ar": "نلعب على الشاطئ.",
+      "words": [
+        "beach"
+      ]
+    },
+    {
+      "id": "places_2",
+      "en": "The desert is hot.",
+      "ar": "الصحراء حارة.",
+      "words": [
+        "desert"
+      ]
+    },
+    {
+      "id": "places_3",
+      "en": "We go to the park.",
+      "ar": "نذهب إلى الحديقة.",
+      "words": [
+        "park"
+      ]
+    },
+    {
+      "id": "places_4",
+      "en": "The doctor works at the hospital.",
+      "ar": "الطبيب يعمل في المستشفى.",
+      "words": [
+        "hospital"
+      ]
+    },
+    {
+      "id": "places_5",
+      "en": "We sleep in a tent.",
+      "ar": "ننام في خيمة.",
+      "words": [
+        "tent"
+      ]
+    }
+  ]
+}

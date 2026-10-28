@@ -1,0 +1,82 @@
+{
+  "id": "days",
+  "words": [
+    {
+      "id": "sunday",
+      "en": "Sunday",
+      "ar": "الأحد"
+    },
+    {
+      "id": "monday",
+      "en": "Monday",
+      "ar": "الاثنين"
+    },
+    {
+      "id": "tuesday",
+      "en": "Tuesday",
+      "ar": "الثلاثاء"
+    },
+    {
+      "id": "wednesday",
+      "en": "Wednesday",
+      "ar": "الأربعاء"
+    },
+    {
+      "id": "thursday",
+      "en": "Thursday",
+      "ar": "الخميس"
+    },
+    {
+      "id": "friday",
+      "en": "Friday",
+      "ar": "الجمعة"
+    },
+    {
+      "id": "saturday",
+      "en": "Saturday",
+      "ar": "السبت"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "days_1",
+      "en": "Today is Sunday.",
+      "ar": "اليوم هو الأحد.",
+      "words": [
+        "sunday"
+      ]
+    },
+    {
+      "id": "days_2",
+      "en": "I go to school on Monday.",
+      "ar": "أذهب إلى المدرسة يوم الاثنين.",
+      "words": [
+        "monday"
+      ]
+    },
+    {
+      "id": "days_3",
+      "en": "Friday is a happy day.",
+      "ar": "الجمعة يوم سعيد.",
+      "words": [
+        "friday"
+      ]
+    },
+    {
+      "id": "days_4",
+      "en": "We play on Saturday.",
+      "ar": "نلعب يوم السبت.",
+      "words": [
+        "saturday"
+      ]
+    },
+    {
+      "id": "days_5",
+      "en": "Tomorrow is Thursday.",
+      "ar": "غداً هو الخميس.",
+      "words": [
+        "thursday"
+      ]
+    }
+  ]
+}

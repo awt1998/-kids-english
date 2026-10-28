@@ -1,0 +1,303 @@
+{
+ "letter_a": {
+  "ipa": "ˈeɪ",
+  "accept": [
+   "a",
+   "eh",
+   "hey"
+  ]
+ },
+ "letter_b": {
+  "ipa": "bˈiː",
+  "accept": [
+   "b",
+   "be",
+   "bee"
+  ]
+ },
+ "letter_c": {
+  "ipa": "sˈiː",
+  "accept": [
+   "c",
+   "see",
+   "sea"
+  ]
+ },
+ "letter_d": {
+  "ipa": "dˈiː",
+  "accept": [
+   "d",
+   "dee"
+  ]
+ },
+ "letter_e": {
+  "ipa": "ˈiː",
+  "accept": [
+   "e"
+  ],
+  "voice": "af_heart",
+  "speed": 1.05,
+  "form": "{W}!"
+ },
+ "letter_f": {
+  "ipa": "ˈɛːf",
+  "accept": [
+   "f",
+   "eff"
+  ],
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "letter_g": {
+  "ipa": "dʒˈiː",
+  "accept": [
+   "g",
+   "gee"
+  ]
+ },
+ "letter_h": {
+  "ipa": "ˈeɪtʃ",
+  "accept": [
+   "h",
+   "aitch",
+   "age"
+  ]
+ },
+ "letter_i": {
+  "ipa": "ˈaɪ",
+  "accept": [
+   "i",
+   "eye",
+   "aye"
+  ]
+ },
+ "letter_j": {
+  "ipa": "dʒˈeɪ",
+  "accept": [
+   "j",
+   "jay"
+  ]
+ },
+ "letter_k": {
+  "ipa": "kˈeɪ",
+  "accept": [
+   "k",
+   "kay",
+   "okay"
+  ]
+ },
+ "letter_l": {
+  "ipa": "ˈɛl",
+  "accept": [
+   "l",
+   "el",
+   "elle"
+  ]
+ },
+ "letter_m": {
+  "ipa": "ˈɛm",
+  "accept": [
+   "m",
+   "em"
+  ]
+ },
+ "letter_n": {
+  "ipa": "ˈɛn",
+  "accept": [
+   "n",
+   "en"
+  ]
+ },
+ "letter_o": {
+  "ipa": "ˈoʊ",
+  "accept": [
+   "o",
+   "oh",
+   "owe"
+  ]
+ },
+ "letter_p": {
+  "ipa": "pˈiː",
+  "accept": [
+   "p",
+   "pee",
+   "pea"
+  ]
+ },
+ "letter_q": {
+  "ipa": "kjˈuː",
+  "accept": [
+   "q",
+   "queue",
+   "cue"
+  ]
+ },
+ "letter_r": {
+  "ipa": "ˈɑːɹ",
+  "accept": [
+   "r",
+   "are",
+   "our"
+  ]
+ },
+ "letter_s": {
+  "ipa": "ˈɛs",
+  "accept": [
+   "s",
+   "ess"
+  ]
+ },
+ "letter_t": {
+  "ipa": "tˈiː",
+  "accept": [
+   "t",
+   "tea",
+   "tee"
+  ]
+ },
+ "letter_u": {
+  "ipa": "jˈuː",
+  "accept": [
+   "u",
+   "you"
+  ]
+ },
+ "letter_v": {
+  "ipa": "vˈiː",
+  "accept": [
+   "v",
+   "vee"
+  ]
+ },
+ "letter_w": {
+  "ipa": "dˈʌbəljuː",
+  "accept": [
+   "w",
+   "double you",
+   "double u"
+  ]
+ },
+ "letter_x": {
+  "ipa": "ˈɛks",
+  "accept": [
+   "x",
+   "ex"
+  ]
+ },
+ "letter_y": {
+  "ipa": "wˈaɪ",
+  "accept": [
+   "y",
+   "why"
+  ]
+ },
+ "letter_z": {
+  "ipa": "zˈiː",
+  "accept": [
+   "z",
+   "zee"
+  ]
+ },
+ "alphabet_25": {
+  "accept": [
+   "why is for yo yo"
+  ]
+ },
+ "phrases_1": {
+  "accept": [
+   "hello my name is sarah"
+  ]
+ },
+ "chick": {
+  "ipa": "tʃˈɪːk",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "croissant": {
+  "ipa": "kɹəsˈɑːnt",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "fish": {
+  "ipa": "ffˈɪʃ",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}."
+ },
+ "mirror": {
+  "ipa": "mˈɪɹəɹ",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "sofa": {
+  "ipa": "sˈoʊfɐ",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "scissors": {
+  "ipa": "sˈɪzɚz",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "calm": {
+  "ipa": "kˈɑːːm",
+  "voice": "af_heart",
+  "speed": 0.95,
+  "form": "{W}."
+ },
+ "fox": {
+  "ipa": "fˈɑːks",
+  "voice": "af_heart",
+  "speed": 1.05,
+  "form": "{W}!"
+ },
+ "olive": {
+  "ipa": "ˈɑlᵻv",
+  "voice": "af_heart",
+  "speed": 1.05,
+  "form": "{W}."
+ },
+ "mouth": {
+  "ipa": "mˈaʊθ",
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "peach": {
+  "ipa": "pˈiːtʃ",
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{W}!"
+ },
+ "peas": {
+  "voice": "af_heart",
+  "speed": 1.0,
+  "form": "{W}."
+ },
+ "tv": {
+  "text": "T.V.",
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{W}.",
+  "accept": [
+   "t v"
+  ]
+ },
+ "key": {
+  "accept": [
+   "q"
+  ],
+  "note": "Whisper writes the isolated word as the letter Q; Parakeet hears 'key' in every voice."
+ },
+ "body_4": {
+  "voice": "af_aoede",
+  "speed": 1.0,
+  "form": "{w}"
+ }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "colors",
+  "words": [
+    {
+      "id": "red",
+      "en": "red",
+      "ar": "أحمر"
+    },
+    {
+      "id": "blue",
+      "en": "blue",
+      "ar": "أزرق"
+    },
+    {
+      "id": "green",
+      "en": "green",
+      "ar": "أخضر"
+    },
+    {
+      "id": "yellow",
+      "en": "yellow",
+      "ar": "أصفر"
+    },
+    {
+      "id": "orange_color",
+      "en": "orange",
+      "ar": "برتقالي"
+    },
+    {
+      "id": "purple",
+      "en": "purple",
+      "ar": "بنفسجي"
+    },
+    {
+      "id": "pink",
+      "en": "pink",
+      "ar": "وردي"
+    },
+    {
+      "id": "brown",
+      "en": "brown",
+      "ar": "بني"
+    },
+    {
+      "id": "black",
+      "en": "black",
+      "ar": "أسود"
+    },
+    {
+      "id": "white",
+      "en": "white",
+      "ar": "أبيض"
+    },
+    {
+      "id": "gray",
+      "en": "gray",
+      "ar": "رمادي"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "colors_1",
+      "en": "The sky is blue.",
+      "ar": "السماء زرقاء.",
+      "words": [
+        "blue"
+      ]
+    },
+    {
+      "id": "colors_2",
+      "en": "The grass is green.",
+      "ar": "العشب أخضر.",
+      "words": [
+        "green"
+      ]
+    },
+    {
+      "id": "colors_3",
+      "en": "My bag is red.",
+      "ar": "حقيبتي حمراء.",
+      "words": [
+        "red"
+      ]
+    },
+    {
+      "id": "colors_4",
+      "en": "The sun is yellow.",
+      "ar": "الشمس صفراء.",
+      "words": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "colors_5",
+      "en": "I like pink.",
+      "ar": "أحب اللون الوردي.",
+      "words": [
+        "pink"
+      ]
+    },
+    {
+      "id": "colors_6",
+      "en": "The cloud is white.",
+      "ar": "السحابة بيضاء.",
+      "words": [
+        "white"
+      ]
+    },
+    {
+      "id": "colors_7",
+      "en": "The night is black.",
+      "ar": "الليل أسود.",
+      "words": [
+        "black"
+      ]
+    },
+    {
+      "id": "colors_8",
+      "en": "My shoes are brown.",
+      "ar": "حذائي بني.",
+      "words": [
+        "brown"
+      ]
+    }
+  ]
+}

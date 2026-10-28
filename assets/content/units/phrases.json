@@ -1,0 +1,137 @@
+{
+  "id": "phrases",
+  "words": [
+    {
+      "id": "hello",
+      "en": "hello",
+      "ar": "مرحباً"
+    },
+    {
+      "id": "goodbye",
+      "en": "goodbye",
+      "ar": "مع السلامة"
+    },
+    {
+      "id": "please",
+      "en": "please",
+      "ar": "من فضلك"
+    },
+    {
+      "id": "thank_you",
+      "en": "thank you",
+      "ar": "شكراً"
+    },
+    {
+      "id": "sorry",
+      "en": "sorry",
+      "ar": "آسف"
+    },
+    {
+      "id": "yes",
+      "en": "yes",
+      "ar": "نعم"
+    },
+    {
+      "id": "no",
+      "en": "no",
+      "ar": "لا"
+    },
+    {
+      "id": "good_morning",
+      "en": "good morning",
+      "ar": "صباح الخير"
+    },
+    {
+      "id": "good_night",
+      "en": "good night",
+      "ar": "تصبح على خير"
+    },
+    {
+      "id": "how_are_you",
+      "en": "how are you",
+      "ar": "كيف حالك؟"
+    },
+    {
+      "id": "i_am_fine",
+      "en": "I am fine",
+      "ar": "أنا بخير"
+    },
+    {
+      "id": "welcome",
+      "en": "welcome",
+      "ar": "أهلاً وسهلاً"
+    },
+    {
+      "id": "excuse_me",
+      "en": "excuse me",
+      "ar": "لو سمحت"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "phrases_1",
+      "en": "Hello, my name is Sara.",
+      "ar": "مرحباً، اسمي سارة.",
+      "words": [
+        "hello"
+      ]
+    },
+    {
+      "id": "phrases_2",
+      "en": "Good morning, teacher.",
+      "ar": "صباح الخير يا معلمي.",
+      "words": [
+        "good_morning"
+      ]
+    },
+    {
+      "id": "phrases_3",
+      "en": "Thank you very much.",
+      "ar": "شكراً جزيلاً.",
+      "words": [
+        "thank_you"
+      ]
+    },
+    {
+      "id": "phrases_4",
+      "en": "Please sit down.",
+      "ar": "اجلس من فضلك.",
+      "words": [
+        "please"
+      ]
+    },
+    {
+      "id": "phrases_5",
+      "en": "How are you today?",
+      "ar": "كيف حالك اليوم؟",
+      "words": [
+        "how_are_you"
+      ]
+    },
+    {
+      "id": "phrases_6",
+      "en": "I am fine, thank you.",
+      "ar": "أنا بخير، شكراً.",
+      "words": [
+        "i_am_fine",
+        "thank_you"
+      ]
+    },
+    {
+      "id": "phrases_7",
+      "en": "Goodbye, see you tomorrow.",
+      "ar": "مع السلامة، أراك غداً.",
+      "words": [
+        "goodbye"
+      ]
+    },
+    {
+      "id": "phrases_8",
+      "en": "Good night, Mom.",
+      "ar": "تصبحين على خير يا أمي.",
+      "words": [
+        "good_night"
+      ]
+    }
+  ]
+}

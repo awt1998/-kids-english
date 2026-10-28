@@ -1,0 +1,107 @@
+{
+  "id": "months",
+  "words": [
+    {
+      "id": "january",
+      "en": "January",
+      "ar": "يناير"
+    },
+    {
+      "id": "february",
+      "en": "February",
+      "ar": "فبراير"
+    },
+    {
+      "id": "march",
+      "en": "March",
+      "ar": "مارس"
+    },
+    {
+      "id": "april",
+      "en": "April",
+      "ar": "أبريل"
+    },
+    {
+      "id": "may",
+      "en": "May",
+      "ar": "مايو"
+    },
+    {
+      "id": "june",
+      "en": "June",
+      "ar": "يونيو"
+    },
+    {
+      "id": "july",
+      "en": "July",
+      "ar": "يوليو"
+    },
+    {
+      "id": "august",
+      "en": "August",
+      "ar": "أغسطس"
+    },
+    {
+      "id": "september",
+      "en": "September",
+      "ar": "سبتمبر"
+    },
+    {
+      "id": "october",
+      "en": "October",
+      "ar": "أكتوبر"
+    },
+    {
+      "id": "november",
+      "en": "November",
+      "ar": "نوفمبر"
+    },
+    {
+      "id": "december",
+      "en": "December",
+      "ar": "ديسمبر"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "months_1",
+      "en": "My birthday is in May.",
+      "ar": "عيد ميلادي في مايو.",
+      "words": [
+        "may"
+      ]
+    },
+    {
+      "id": "months_2",
+      "en": "January is the first month.",
+      "ar": "يناير هو الشهر الأول.",
+      "words": [
+        "january"
+      ]
+    },
+    {
+      "id": "months_3",
+      "en": "It is hot in August.",
+      "ar": "الجو حار في أغسطس.",
+      "words": [
+        "august"
+      ]
+    },
+    {
+      "id": "months_4",
+      "en": "December is the last month.",
+      "ar": "ديسمبر هو الشهر الأخير.",
+      "words": [
+        "december"
+      ]
+    },
+    {
+      "id": "months_5",
+      "en": "School starts in September.",
+      "ar": "تبدأ المدرسة في سبتمبر.",
+      "words": [
+        "september"
+      ]
+    }
+  ]
+}

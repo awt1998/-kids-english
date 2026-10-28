@@ -1,0 +1,118 @@
+{
+  "id": "toys",
+  "words": [
+    {
+      "id": "ball",
+      "en": "ball",
+      "ar": "كرة"
+    },
+    {
+      "id": "teddy_bear",
+      "en": "teddy bear",
+      "ar": "دبدوب"
+    },
+    {
+      "id": "kite",
+      "en": "kite",
+      "ar": "طائرة ورقية"
+    },
+    {
+      "id": "balloon",
+      "en": "balloon",
+      "ar": "بالون"
+    },
+    {
+      "id": "puzzle",
+      "en": "puzzle",
+      "ar": "أحجية"
+    },
+    {
+      "id": "yo_yo",
+      "en": "yo-yo",
+      "ar": "يويو"
+    },
+    {
+      "id": "robot",
+      "en": "robot",
+      "ar": "روبوت"
+    },
+    {
+      "id": "skateboard",
+      "en": "skateboard",
+      "ar": "لوح تزلج"
+    },
+    {
+      "id": "slide",
+      "en": "slide",
+      "ar": "زحليقة"
+    },
+    {
+      "id": "bubbles",
+      "en": "bubbles",
+      "ar": "فقاعات"
+    },
+    {
+      "id": "blocks",
+      "en": "blocks",
+      "ar": "مكعبات"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "toys_1",
+      "en": "I play with my ball.",
+      "ar": "ألعب بكرتي.",
+      "words": [
+        "ball"
+      ]
+    },
+    {
+      "id": "toys_2",
+      "en": "I love my teddy bear.",
+      "ar": "أحب دبدوبي.",
+      "words": [
+        "teddy_bear"
+      ]
+    },
+    {
+      "id": "toys_3",
+      "en": "The kite is in the sky.",
+      "ar": "الطائرة الورقية في السماء.",
+      "words": [
+        "kite"
+      ]
+    },
+    {
+      "id": "toys_4",
+      "en": "The balloon is red.",
+      "ar": "البالون أحمر.",
+      "words": [
+        "balloon"
+      ]
+    },
+    {
+      "id": "toys_5",
+      "en": "Let's play together.",
+      "ar": "هيا نلعب معاً.",
+      "words": [
+        "ball"
+      ]
+    },
+    {
+      "id": "toys_6",
+      "en": "The robot can walk.",
+      "ar": "الروبوت يستطيع أن يمشي.",
+      "words": [
+        "robot"
+      ]
+    },
+    {
+      "id": "toys_7",
+      "en": "I build with blocks.",
+      "ar": "أبني بالمكعبات.",
+      "words": [
+        "blocks"
+      ]
+    }
+  ]
+}

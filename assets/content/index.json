@@ -1,0 +1,201 @@
+{
+  "units": [
+    {
+      "id": "fruits",
+      "titleAr": "الفواكه",
+      "titleEn": "Fruits",
+      "icon": "unit_fruits",
+      "color": "coral"
+    },
+    {
+      "id": "animals_home",
+      "titleAr": "حيوانات البيت والمزرعة",
+      "titleEn": "Pets & Farm",
+      "icon": "unit_animals_home",
+      "color": "leaf"
+    },
+    {
+      "id": "colors",
+      "titleAr": "الألوان",
+      "titleEn": "Colors",
+      "icon": "unit_colors",
+      "color": "grape"
+    },
+    {
+      "id": "alphabet",
+      "titleAr": "الحروف",
+      "titleEn": "Alphabet",
+      "icon": "unit_alphabet",
+      "color": "sky"
+    },
+    {
+      "id": "numbers",
+      "titleAr": "الأرقام",
+      "titleEn": "Numbers",
+      "icon": "unit_numbers",
+      "color": "sun"
+    },
+    {
+      "id": "body",
+      "titleAr": "جسمي",
+      "titleEn": "My Body",
+      "icon": "unit_body",
+      "color": "mint"
+    },
+    {
+      "id": "vegetables",
+      "titleAr": "الخضار",
+      "titleEn": "Vegetables",
+      "icon": "unit_vegetables",
+      "color": "leaf"
+    },
+    {
+      "id": "shapes",
+      "titleAr": "الأشكال",
+      "titleEn": "Shapes",
+      "icon": "unit_shapes",
+      "color": "coral"
+    },
+    {
+      "id": "family",
+      "titleAr": "العائلة",
+      "titleEn": "Family",
+      "icon": "unit_family",
+      "color": "grape"
+    },
+    {
+      "id": "animals_wild",
+      "titleAr": "حيوانات الغابة",
+      "titleEn": "Wild Animals",
+      "icon": "unit_animals_wild",
+      "color": "sun"
+    },
+    {
+      "id": "food",
+      "titleAr": "الطعام والشراب",
+      "titleEn": "Food & Drinks",
+      "icon": "unit_food",
+      "color": "coral"
+    },
+    {
+      "id": "clothes",
+      "titleAr": "الملابس",
+      "titleEn": "Clothes",
+      "icon": "unit_clothes",
+      "color": "sky"
+    },
+    {
+      "id": "animals_sea",
+      "titleAr": "حيوانات البحر",
+      "titleEn": "Sea Animals",
+      "icon": "unit_animals_sea",
+      "color": "sky"
+    },
+    {
+      "id": "house",
+      "titleAr": "البيت",
+      "titleEn": "My House",
+      "icon": "unit_house",
+      "color": "mint"
+    },
+    {
+      "id": "toys",
+      "titleAr": "الألعاب",
+      "titleEn": "Toys",
+      "icon": "unit_toys",
+      "color": "grape"
+    },
+    {
+      "id": "transport",
+      "titleAr": "المواصلات",
+      "titleEn": "Transport",
+      "icon": "unit_transport",
+      "color": "sun"
+    },
+    {
+      "id": "school",
+      "titleAr": "المدرسة",
+      "titleEn": "School",
+      "icon": "unit_school",
+      "color": "coral"
+    },
+    {
+      "id": "weather",
+      "titleAr": "الطقس والطبيعة",
+      "titleEn": "Weather & Nature",
+      "icon": "unit_weather",
+      "color": "sky"
+    },
+    {
+      "id": "verbs",
+      "titleAr": "الأفعال",
+      "titleEn": "Action Words",
+      "icon": "unit_verbs",
+      "color": "leaf"
+    },
+    {
+      "id": "feelings",
+      "titleAr": "المشاعر",
+      "titleEn": "Feelings",
+      "icon": "unit_feelings",
+      "color": "sun"
+    },
+    {
+      "id": "phrases",
+      "titleAr": "التحيات والعبارات",
+      "titleEn": "Hello & Thank You",
+      "icon": "unit_phrases",
+      "color": "mint"
+    },
+    {
+      "id": "insects",
+      "titleAr": "الحشرات",
+      "titleEn": "Bugs & Insects",
+      "icon": "unit_insects",
+      "color": "leaf"
+    },
+    {
+      "id": "jobs",
+      "titleAr": "المهن",
+      "titleEn": "Jobs",
+      "icon": "unit_jobs",
+      "color": "sky"
+    },
+    {
+      "id": "places",
+      "titleAr": "الأماكن",
+      "titleEn": "Places",
+      "icon": "unit_places",
+      "color": "sun"
+    },
+    {
+      "id": "sports",
+      "titleAr": "الرياضة",
+      "titleEn": "Sports",
+      "icon": "unit_sports",
+      "color": "coral"
+    },
+    {
+      "id": "days",
+      "titleAr": "أيام الأسبوع",
+      "titleEn": "Days of the Week",
+      "icon": "unit_days",
+      "color": "grape",
+      "levels": [
+        "middle",
+        "big"
+      ]
+    },
+    {
+      "id": "months",
+      "titleAr": "شهور السنة",
+      "titleEn": "Months of the Year",
+      "icon": "unit_months",
+      "color": "coral",
+      "levels": [
+        "middle",
+        "big"
+      ]
+    }
+  ]
+}
