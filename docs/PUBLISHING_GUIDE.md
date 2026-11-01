@@ -35,7 +35,7 @@
 3. بعد الموافقة: ادخل appstoreconnect.apple.com ← **Business** (أو Agreements) ← وقّع **Paid Apps Agreement** وأضف حسابك البنكي وبيانات الضريبة. هذا شرط حتى يعمل الشراء داخل التطبيق.
 
 ### ٤. بريد الدعم 👤
-أنشئ بريداً خاصاً بالتطبيق (مثلاً labeeb.app@gmail.com) وأرسله لي. سيظهر في المتجر وصفحة الخصوصية.
+✅ تم: بريد الدعم `dev.awt1998@gmail.com` (في المتجر وصفحة الخصوصية).
 
 ### ٥. المختبِرون 👤
 اجمع ١٥–٢٠ إيميل Gmail لأشخاص عندهم أجهزة أندرويد (الرسالة الجاهزة في المحادثة)، وأرسلها لي.
@@ -73,7 +73,7 @@ Privacy policy، App access، Ads، Content rating، Target audience، Data safe
 - Feature graphic: `store/play_feature_graphic.png`
 - Phone screenshots: `store/screenshots/play-phone/ar/` (وللإنجليزية: `.../en/`)
 - 7-inch و10-inch tablet screenshots: `store/screenshots/play-tablet/ar/`
-- Category: **Education** — Contact email: بريد الدعم.
+- Category: **Education** — Contact email: `dev.awt1998@gmail.com`.
 
 ### ٤. Codemagic: مفتاح التوقيع ومعرّفات الإعلانات 👤🤖
 في Codemagic ← **Team settings**:

@@ -64,7 +64,7 @@ Open it from the "للأهل" button at the top of the child-picker screen.
 ## ٨. Store settings
 - App category: **Education**
 - Tags: Education, Language learning, Kids
-- Contact email: بريد الدعم
+- Contact email: dev.awt1998@gmail.com
 - Privacy policy: رابط صفحة الخصوصية
 
 ---
