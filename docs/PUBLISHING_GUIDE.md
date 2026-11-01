@@ -25,9 +25,7 @@
 3. **Apps → Add app** ← Android ← «Is the app listed on a supported app store?» اختر **No** ← الاسم: `لبيب`.
 4. داخل التطبيق: **Ad units → Add ad unit → Interstitial** ← الاسم: `after-lesson` ← Create.
 5. **App settings**: ابحث عن **Max ad content rating** واختر **G**.
-6. أرسل لي هنا معرّفين، وهما ليسا سرّيين:
-   - **App ID**، ويشبه: `ca-app-pub-1234567890123456~1234567890`
-   - **Ad unit ID**، ويشبه: `ca-app-pub-1234567890123456/1234567890`
+6. ✅ تم: المعرّفان موضوعان في `codemagic.yaml`.
 
 ### ٣. Apple Developer 👤
 1. على آيفونك: الإعدادات ← اسمك ← تسجيل الدخول والأمان ← تأكد أن **المصادقة بخطوتين** مفعّلة.
@@ -75,12 +73,10 @@ Privacy policy، App access، Ads، Content rating، Target audience، Data safe
 - 7-inch و10-inch tablet screenshots: `store/screenshots/play-tablet/ar/`
 - Category: **Education** — Contact email: `dev.awt1998@gmail.com`.
 
-### ٤. Codemagic: مفتاح التوقيع ومعرّفات الإعلانات 👤🤖
+### ٤. Codemagic: مفتاح التوقيع 👤🤖
 في Codemagic ← **Team settings**:
 - **Code signing identities → Android keystores → Add keystore**: ارفع ملف المفتاح الذي أرسلته لك، واكتب كلمة المرور، واسم المرجع (Reference name): `labeeb_upload`.
-- **Environment variables**: أنشئ مجموعة اسمها `admob` فيها:
-  - `ADMOB_APP_ID` = الـApp ID
-  - `ADMOB_INTERSTITIAL` = الـAd unit ID
+- معرّفات AdMob الحقيقية موضوعة مسبقاً في `codemagic.yaml`، فلا تحتاج إضافتها.
 - ثم **Start new build → android-release**. بعد ٥–١٥ دقيقة نزّل ملف `.aab` من صفحة البناء.
 
 ### ٥. الاختبار المغلق، والـ١٤ يوماً 👤

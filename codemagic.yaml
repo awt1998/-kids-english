@@ -3,8 +3,8 @@
 #  - Android: upload the upload keystore under Team settings → Code signing
 #    identities → Android keystores, with the reference name "labeeb_upload".
 #  - iOS: add an App Store Connect API key integration named "Labeeb ASC".
-#  - Environment group "admob" with ADMOB_APP_ID and ADMOB_INTERSTITIAL
-#    (the real ids from AdMob; without them the Google test ids are used).
+#  The AdMob ids below are public (they ship inside the app). Only release
+#  builds here use them; local/debug builds keep Google's test ids.
 workflows:
   android-release:
     name: Android release (AAB for Google Play)
@@ -15,8 +15,9 @@ workflows:
       java: 21
       android_signing:
         - labeeb_upload
-      groups:
-        - admob
+      vars:
+        ADMOB_APP_ID: ca-app-pub-8355791720063217~6828215843
+        ADMOB_INTERSTITIAL: ca-app-pub-8355791720063217/7510742123
     scripts:
       - name: Tests
         script: |
