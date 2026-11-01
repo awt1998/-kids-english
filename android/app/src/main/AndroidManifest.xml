@@ -13,7 +13,7 @@
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <!-- AdMob app id. Defaults to Google's public test id; the real one is
-             passed at build time with -PADMOB_APP_ID=ca-app-pub-... -->
+             passed at build time (ADMOB_APP_ID environment variable or -PADMOB_APP_ID) -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="${admobAppId}" />

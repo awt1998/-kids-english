@@ -53,6 +53,12 @@ python3 tool/build_review_page.py OUT.html # listen-and-flag page for the owner
   the iOS app contains no ads SDK at all (Kids Category). The app manifest removes `AD_ID`,
   the `ACCESS_ADSERVICES_*` permissions and `AD_SERVICES_CONFIG`; check with
   `aapt2 dump permissions` after touching dependencies.
+- Publishing kit: `store/` (STORE_LISTING.md with checked lengths, QUESTIONNAIRES.md, icons,
+  feature graphic, `screenshots/<size>/<lang>/` from `tool/make_store_screenshots.py`), `site/`
+  (index + bilingual privacy policy; `{{SUPPORT_EMAIL}}` placeholder until the owner gives one),
+  `docs/PUBLISHING_GUIDE.md` (owner's step-by-step), `codemagic.yaml` (android-release AAB,
+  ios-release TestFlight). Release signing: `CM_KEYSTORE_*` env (Codemagic) or
+  `android/key.properties` (git-ignored); otherwise debug key.
 - `lib/audio/music_controller.dart` — music on menus/map only; routes named `lesson`/`celebration` are quiet.
 - `test/lesson_driver.dart` plays any lesson like a child; reuse it in flow tests.
 - `lib/audio/` — `AudioService` (word audio, Arabic prompts, effects). Tests use `SilentAudioService`.

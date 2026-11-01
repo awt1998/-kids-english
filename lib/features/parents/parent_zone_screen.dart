@@ -131,7 +131,9 @@ class ParentZoneScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(AppSpacing.md),
                   child: Text(
-                    Ar.privacyText,
+                    context.read<Monetization>().ads
+                        ? '${Ar.privacyText} ${Ar.privacyAds}'
+                        : Ar.privacyText,
                     style: AppText.caption.copyWith(height: 1.6),
                   ),
                 ),

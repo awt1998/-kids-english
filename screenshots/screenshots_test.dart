@@ -26,6 +26,8 @@ import 'package:kids_english/features/parents/child_report_screen.dart';
 import 'package:kids_english/features/parents/parent_zone_screen.dart';
 import 'package:kids_english/features/parents/parental_gate.dart';
 import 'package:kids_english/features/parents/time_up_screen.dart';
+import 'package:kids_english/monetization/monetization.dart';
+import 'package:kids_english/monetization/purchase_service.dart';
 import 'package:kids_english/progress/app_settings.dart';
 import 'package:kids_english/progress/child_profile.dart';
 import 'package:kids_english/progress/srs.dart';
@@ -57,13 +59,34 @@ Future<void> loadFonts() async {
   );
 }
 
+/// Draws one natural finger stroke down the stem of the letter on the tracing pad.
+Future<void> traceStem(WidgetTester tester) async {
+  final g = tester.widget<TraceGame>(find.byType(TraceGame));
+  final rect = tester.getRect(find.byKey(const ValueKey('trace-pad')));
+  final size = rect.width - 16;
+  final path = (await LetterShapes.load()).pathFor(
+    g.letterWord.en.toUpperCase(),
+    size,
+  );
+  final bounds = path.getBounds();
+  final x = bounds.left + bounds.width * 0.12;
+  final origin = rect.topLeft + const Offset(8, 8);
+  final gesture = await tester.startGesture(origin + Offset(x, bounds.top + 6));
+  for (var y = bounds.top + 6; y < bounds.bottom - 6; y += 4) {
+    await gesture.moveTo(origin + Offset(x, y));
+  }
+  await gesture.up();
+}
+
 void main() {
   setUpAll(loadFonts);
 
   for (final device in devices.entries) {
     testWidgets('screens on ${device.key}', (tester) async {
-      tester.view.physicalSize = device.value * 2;
-      tester.view.devicePixelRatio = 2;
+      // Phone at 3x so store screenshots stay sharp at 1320 px wide.
+      final dpr = device.key == 'phone' ? 3.0 : 2.0;
+      tester.view.physicalSize = device.value * dpr;
+      tester.view.devicePixelRatio = dpr;
       addTearDown(tester.view.reset);
 
       Future<void> settle([int ms = 600]) async {
@@ -114,6 +137,8 @@ void main() {
       await tapKey('save-child');
       await shot('02-map');
       await tapKey('stop-fruits:0');
+      await tester.tap(find.byKey(const ValueKey('flashcard')));
+      await settle(900);
       await shot('03-flashcard');
       await playLesson(tester);
       await settle(2500);
@@ -138,6 +163,10 @@ void main() {
               Provider<AudioService>.value(value: audio),
               ChangeNotifierProvider.value(value: profiles),
               ChangeNotifierProvider.value(value: settings),
+              Provider.value(value: Monetization.android),
+              ChangeNotifierProvider.value(
+                value: PurchaseService(productId: 'remove_ads'),
+              ),
             ],
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
@@ -258,7 +287,7 @@ void main() {
       await game(
         '15-trace',
         TraceGame(key: UniqueKey(), letterWord: w('letter_b'), onDone: noop),
-        () async => traceCurrentLetter(tester, fraction: 0.5),
+        () async => traceStem(tester),
       );
       await game(
         '16-order-sentence',
