@@ -67,4 +67,19 @@ abstract final class Ar {
   static const timeUpTitle = 'لبيب نعسان!';
   static const timeUpBody = 'خلص وقت اللعب لليوم. نكمل بكرة!';
   static const minutesShort = 'د';
+
+  // The one purchase (behind the parental gate).
+  static const removeAds = 'إزالة الإعلانات';
+  static const removeAdsBody =
+      'دفعة واحدة تزيل كل الإعلانات من التطبيق نهائياً.';
+  static const unlockAll = 'فتح كل الدروس';
+  static const unlockAllBody =
+      'أول ٣ وحدات مجانية. دفعة واحدة تفتح كل الوحدات وأكثر من ٤٠٠ كلمة، نهائياً وبدون اشتراك.';
+  static const buy = 'شراء';
+  static const restorePurchases = 'استعادة المشتريات';
+  static const purchased = 'تم الشراء. شكراً لدعمكم لبيب!';
+  static const storeUnavailable =
+      'المتجر غير متاح الآن. تأكد من الاتصال بالإنترنت وحاول لاحقاً.';
+  static const purchaseFailed =
+      'لم تكتمل عملية الشراء. لم يُخصم أي مبلغ، ويمكنك المحاولة مرة أخرى.';
 }

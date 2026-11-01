@@ -11,6 +11,7 @@ import '../../core/theme/app_text.dart';
 import '../../core/widgets/confetti.dart';
 import '../../core/widgets/kid_button.dart';
 import '../../core/widgets/mascot.dart';
+import '../../monetization/ads_controller.dart';
 import '../../progress/profiles_store.dart';
 import '../rewards/garden_screen.dart';
 import '../rewards/sticker.dart';
@@ -32,6 +33,17 @@ class CelebrationScreen extends StatefulWidget {
 
 class _CelebrationScreenState extends State<CelebrationScreen> {
   int _shown = 0;
+  bool _leaving = false;
+
+  /// The end of a lesson is the one natural break where an ad may appear
+  /// (Android, never on the first day, at most every few minutes).
+  Future<void> _continue() async {
+    setState(() => _leaving = true);
+    context.read<AudioService>().stopVoice();
+    await context.read<AdsController>().atNaturalBreak();
+    if (mounted) Navigator.of(context).pop();
+  }
+
   final _timers = <Timer>[];
 
   @override
@@ -151,7 +163,7 @@ class _CelebrationScreenState extends State<CelebrationScreen> {
                       label: Ar.continueLabel,
                       icon: Icons.arrow_forward_rounded,
                       width: 260,
-                      onPressed: () => Navigator.of(context).pop(),
+                      onPressed: _leaving ? null : _continue,
                     ),
                   ],
                 ),

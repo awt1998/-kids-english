@@ -16,11 +16,15 @@ import '../../core/widgets/kid_button.dart';
 import '../../core/widgets/mascot.dart';
 import '../../core/widgets/shake.dart';
 import '../../progress/child_profile.dart';
+import '../../monetization/monetization.dart';
+import '../../monetization/purchase_service.dart';
 import '../../progress/play_time.dart';
 import '../../progress/profiles_store.dart';
 import '../../progress/progress_rules.dart';
 import '../../progress/srs.dart';
 import '../lesson/lesson_screen.dart';
+import '../parents/parent_zone_screen.dart';
+import '../parents/parental_gate.dart';
 import '../parents/time_up_screen.dart';
 import '../rewards/album_screen.dart';
 import '../rewards/garden_screen.dart';
@@ -38,7 +42,11 @@ class MapScreen extends StatelessWidget {
     final store = context.watch<ProfilesStore>();
     final child = store.current!;
     final units = context.read<ContentRepository>().unitsFor(child.level);
-    final next = nextLesson(child, units);
+    // iOS: only the first units are free until a parent unlocks everything.
+    final free = context.read<Monetization>().freeUnits;
+    final owned = context.watch<PurchaseService>().owned;
+    final playable = free == null || owned ? units : units.take(free).toList();
+    final next = nextLesson(child, playable);
 
     return PromptOnOpen(
       prompts: [_greeting(child, context.read<ProfilesStore>().now())],
@@ -73,7 +81,10 @@ class MapScreen extends StatelessWidget {
                                 child: Center(
                                   child: _UnitHeader(
                                     unit: h.unit,
-                                    open: isUnitOpen(child, units, h.unit),
+                                    open:
+                                        playable.contains(h.unit) &&
+                                        isUnitOpen(child, playable, h.unit),
+                                    forParents: !playable.contains(h.unit),
                                   ),
                                 ),
                               ),
@@ -84,7 +95,10 @@ class MapScreen extends StatelessWidget {
                                 child: _LessonStop(
                                   lesson: s.lesson,
                                   stars: child.lessonStars[s.lesson.key] ?? 0,
-                                  open: isLessonOpen(child, units, s.lesson),
+                                  open:
+                                      playable.contains(s.lesson.unit) &&
+                                      isLessonOpen(child, playable, s.lesson),
+                                  forParents: !playable.contains(s.lesson.unit),
                                   isNext: s.lesson.key == next?.key,
                                 ),
                               ),
@@ -243,10 +257,17 @@ class _TopBar extends StatelessWidget {
 }
 
 class _UnitHeader extends StatelessWidget {
-  const _UnitHeader({required this.unit, required this.open});
+  const _UnitHeader({
+    required this.unit,
+    required this.open,
+    this.forParents = false,
+  });
 
   final Unit unit;
   final bool open;
+
+  /// Part of the full version: shows a key instead of a lock.
+  final bool forParents;
 
   @override
   Widget build(BuildContext context) {
@@ -303,7 +324,9 @@ class _UnitHeader extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: SvgPicture.asset(
-                open ? unit.iconPath : 'assets/images/ui/lock.svg',
+                open
+                    ? unit.iconPath
+                    : (forParents ? _keyIcon : 'assets/images/ui/lock.svg'),
               ),
             ),
           ],
@@ -319,6 +342,7 @@ class _LessonStop extends StatelessWidget {
     required this.stars,
     required this.open,
     required this.isNext,
+    this.forParents = false,
   });
 
   final Lesson lesson;
@@ -326,11 +350,17 @@ class _LessonStop extends StatelessWidget {
   final bool open;
   final bool isNext;
 
+  /// Part of the full version (iOS): a parent unlocks it in the Parent Zone.
+  final bool forParents;
+
   @override
   Widget build(BuildContext context) {
     final color = open ? lesson.unit.color : AppColors.outline;
     final icon = !open
-        ? SvgPicture.asset('assets/images/ui/lock.svg', width: 48)
+        ? SvgPicture.asset(
+            forParents ? _keyIcon : 'assets/images/ui/lock.svg',
+            width: 48,
+          )
         : lesson.kind == LessonKind.review
         ? SvgPicture.asset('assets/images/ui/trophy.svg', width: 56)
         : SvgPicture.asset(lesson.words.first.imagePath, width: 56);
@@ -339,6 +369,10 @@ class _LessonStop extends StatelessWidget {
       key: ValueKey('stop-${lesson.key}'),
       onTap: () {
         final audio = context.read<AudioService>();
+        if (forParents) {
+          _askParent(context);
+          return;
+        }
         if (!open) {
           audio.playPrompt(Prompt.locked);
           return;
@@ -417,6 +451,20 @@ class _LessonStop extends StatelessWidget {
       ),
     );
   }
+}
+
+const _keyIcon = 'assets/images/words/key.svg';
+
+/// "This is for Mom and Dad": the gate, then the Parent Zone where the full
+/// version can be unlocked.
+Future<void> _askParent(BuildContext context) async {
+  if (!await passParentalGate(context) || !context.mounted) return;
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      settings: const RouteSettings(name: 'parents'),
+      builder: (_) => const ParentZoneScreen(),
+    ),
+  );
 }
 
 /// Dotted trail joining the lesson stops.

@@ -44,6 +44,15 @@ python3 tool/build_review_page.py OUT.html # listen-and-flag page for the owner
 - `lib/progress/app_settings.dart` (sound effects, music, daily limit) and `play_time.dart`
   (`PlayTimeTracker`: counts foreground play per child per day; the map shows the time-up
   screen instead of a new lesson once the limit is reached).
+- `lib/monetization/` — `Monetization` (Android: ads + `remove_ads`; iOS: no ads, first 3 units
+  free + `unlock_all`), `AdsController` + pure `AdPolicy` (only at the celebration's "continue",
+  never on day one, ≥4 min apart, never after purchase), `PurchaseService` (in_app_purchase,
+  cached ownership, restore button). Test IDs by default; real ones at build time:
+  `--dart-define=ADMOB_INTERSTITIAL=…` and `-PADMOB_APP_ID=…`.
+- `packages/labeeb_ads/` — our Android-only AdMob plugin (child-directed, G, npa=1). It exists so
+  the iOS app contains no ads SDK at all (Kids Category). The app manifest removes `AD_ID`,
+  the `ACCESS_ADSERVICES_*` permissions and `AD_SERVICES_CONFIG`; check with
+  `aapt2 dump permissions` after touching dependencies.
 - `lib/audio/music_controller.dart` — music on menus/map only; routes named `lesson`/`celebration` are quiet.
 - `test/lesson_driver.dart` plays any lesson like a child; reuse it in flow tests.
 - `lib/audio/` — `AudioService` (word audio, Arabic prompts, effects). Tests use `SilentAudioService`.

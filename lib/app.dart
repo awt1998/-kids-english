@@ -9,6 +9,9 @@ import 'core/strings_ar.dart';
 import 'core/theme/app_theme.dart';
 import 'features/profiles/add_child_screen.dart';
 import 'features/profiles/profile_select_screen.dart';
+import 'monetization/ads_controller.dart';
+import 'monetization/monetization.dart';
+import 'monetization/purchase_service.dart';
 import 'progress/app_settings.dart';
 import 'progress/play_time.dart';
 import 'progress/profiles_store.dart';
@@ -20,12 +23,20 @@ class KidsEnglishApp extends StatefulWidget {
     required this.profiles,
     required this.audio,
     required this.settings,
+    this.monetization = Monetization.android,
+    this.purchases,
+    this.ads,
   });
 
   final ContentRepository content;
   final ProfilesStore profiles;
   final AudioService audio;
   final AppSettings settings;
+  final Monetization monetization;
+
+  /// Real store and ads in the app; tests leave them out (offline, no ads).
+  final PurchaseService? purchases;
+  final AdsController? ads;
 
   @override
   State<KidsEnglishApp> createState() => _KidsEnglishAppState();
@@ -34,6 +45,12 @@ class KidsEnglishApp extends StatefulWidget {
 class _KidsEnglishAppState extends State<KidsEnglishApp> {
   late final _music = MusicController(widget.audio);
   late final _playTime = PlayTimeTracker(widget.profiles, widget.settings);
+  late final _purchases =
+      widget.purchases ??
+      PurchaseService(productId: widget.monetization.productId);
+  late final _ads =
+      widget.ads ??
+      AdsController(monetization: widget.monetization, purchases: _purchases);
 
   @override
   void initState() {
@@ -64,6 +81,9 @@ class _KidsEnglishAppState extends State<KidsEnglishApp> {
         ChangeNotifierProvider.value(value: widget.profiles),
         ChangeNotifierProvider.value(value: widget.settings),
         Provider.value(value: _playTime),
+        Provider.value(value: widget.monetization),
+        ChangeNotifierProvider.value(value: _purchases),
+        Provider.value(value: _ads),
       ],
       child: MaterialApp(
         title: Ar.appName,

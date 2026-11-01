@@ -7,6 +7,8 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_text.dart';
 import '../../core/widgets/kid_button.dart';
+import '../../monetization/monetization.dart';
+import '../../monetization/purchase_service.dart';
 import '../../progress/app_settings.dart';
 import '../../progress/child_profile.dart';
 import '../../progress/profiles_store.dart';
@@ -75,6 +77,7 @@ class ParentZoneScreen extends StatelessWidget {
                   ),
               ],
             ),
+            const _PurchaseSection(),
             _Section(
               title: Ar.settings,
               children: [
@@ -137,6 +140,75 @@ class ParentZoneScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// "Remove ads" (Android) or "Unlock all" (iOS): price from the store, buy and restore.
+class _PurchaseSection extends StatelessWidget {
+  const _PurchaseSection();
+
+  @override
+  Widget build(BuildContext context) {
+    final purchases = context.watch<PurchaseService>();
+    final ads = context.read<Monetization>().ads;
+    final title = ads ? Ar.removeAds : Ar.unlockAll;
+    final body = ads ? Ar.removeAdsBody : Ar.unlockAllBody;
+    final price = purchases.price;
+
+    return _Section(
+      title: title,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(AppSpacing.md),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (purchases.owned) ...[
+                Row(
+                  children: [
+                    const Icon(
+                      Icons.check_circle_rounded,
+                      color: AppColors.success,
+                      size: 32,
+                    ),
+                    const SizedBox(width: AppSpacing.sm),
+                    Expanded(child: Text(Ar.purchased, style: AppText.body)),
+                  ],
+                ),
+              ] else ...[
+                Text(body, style: AppText.caption.copyWith(height: 1.6)),
+                const SizedBox(height: AppSpacing.md),
+                if (price == null)
+                  Text(Ar.storeUnavailable, style: AppText.caption)
+                else
+                  KidButton(
+                    key: const ValueKey('buy'),
+                    label: '${Ar.buy} · $price',
+                    icon: ads ? Icons.block_rounded : Icons.lock_open_rounded,
+                    color: AppColors.grape,
+                    onPressed: purchases.status == PurchaseStatusView.buying
+                        ? null
+                        : purchases.buy,
+                  ),
+                if (purchases.status == PurchaseStatusView.failed) ...[
+                  const SizedBox(height: AppSpacing.sm),
+                  Text(Ar.purchaseFailed, style: AppText.caption),
+                ],
+              ],
+              const SizedBox(height: AppSpacing.sm),
+              TextButton(
+                key: const ValueKey('restore'),
+                style: TextButton.styleFrom(
+                  minimumSize: const Size.fromHeight(64),
+                ),
+                onPressed: purchases.restore,
+                child: Text(Ar.restorePurchases, style: AppText.body),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
