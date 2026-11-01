@@ -63,7 +63,7 @@ Play Console ← **Create app**:
 
 ### ٢. محتوى التطبيق (App content) 👤
 من القائمة الجانبية **Policy and programs → App content**، أكمل كل بند بالإجابات الموجودة في `store/QUESTIONNAIRES.md`:
-Privacy policy، App access، Ads، Content rating، Target audience، Data safety، Government apps، Financial features، Health، Advertising ID.
+Privacy policy، App access، Ads، Content rating، Target audience، Data safety، Government apps، Financial features، Health، Advertising ID. رابط الخصوصية: https://labeebapp-english.vercel.app/privacy.html
 
 ### ٣. صفحة المتجر (Main store listing) 👤
 - الأسماء والأوصاف: من `store/STORE_LISTING.md` (العربي، ثم **Add translation → English**).
@@ -119,7 +119,7 @@ Codemagic ← **Start new build → ios-release**. يبني النسخة وير�
 ### ٥. صفحة المتجر والمراجعة 👤
 في App Store Connect داخل التطبيق:
 - **App Information**: Category **Education** ← **Made for Kids** ← الفئة العمرية (راجع `store/QUESTIONNAIRES.md`) ← Age rating 4+.
-- **App Privacy**: Data Not Collected ← رابط صفحة الخصوصية.
+- **App Privacy**: Data Not Collected ← https://labeebapp-english.vercel.app/privacy.html.
 - **In-App Purchases → +** ← Non-Consumable ← Product ID: `unlock_all` ← السعر 4.99$.
 - صفحة النسخة: النصوص من `store/STORE_LISTING.md`، والصور:
   - iPhone 6.9": `store/screenshots/ios-6.9/ar/`

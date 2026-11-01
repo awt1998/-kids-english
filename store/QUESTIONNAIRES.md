@@ -65,7 +65,7 @@ Open it from the "للأهل" button at the top of the child-picker screen.
 - App category: **Education**
 - Tags: Education, Language learning, Kids
 - Contact email: dev.awt1998@gmail.com
-- Privacy policy: رابط صفحة الخصوصية
+- Privacy policy: https://labeebapp-english.vercel.app/privacy.html
 
 ---
 
