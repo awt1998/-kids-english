@@ -55,7 +55,7 @@ python3 tool/build_review_page.py OUT.html # listen-and-flag page for the owner
   `aapt2 dump permissions` after touching dependencies.
 - Publishing kit: `store/` (STORE_LISTING.md with checked lengths, QUESTIONNAIRES.md, icons,
   feature graphic, `screenshots/<size>/<lang>/` from `tool/make_store_screenshots.py`), `site/`
-  (index + bilingual privacy policy, live at https://labeebapp-english.vercel.app/privacy.html via Vercel from the `site/` folder; support email dev.awt1998@gmail.com),
+  (index + bilingual privacy policy, live at https://labeebapp-english.vercel.app/privacy.html via Vercel (deploys `main`; root `vercel.json` serves the `site/` folder); support email dev.awt1998@gmail.com),
   `docs/PUBLISHING_GUIDE.md` (owner's step-by-step), `codemagic.yaml` (android-release AAB,
   ios-release TestFlight). Release signing: `CM_KEYSTORE_*` env (Codemagic) or
   `android/key.properties` (git-ignored); otherwise debug key.
